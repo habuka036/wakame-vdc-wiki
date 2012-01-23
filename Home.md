@@ -1,0 +1,1 @@
+Welcome to the wakame-vdc wiki!
