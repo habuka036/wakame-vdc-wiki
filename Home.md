@@ -8,5 +8,7 @@ https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-l
 [API Reference](wiki/API Reference)  
   
   
-![Wakame logo](wiki/images/wakame-logo.png)
+
+
+<img style="width:100px; float:right" src="wiki/images/wakame-logo.png" />
 
