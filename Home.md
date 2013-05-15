@@ -5,5 +5,8 @@ https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-l
 
 [Quick Start](wiki/Quick Start)  
 [Administrator Guide](wiki/Administrator Guide)  
-[API Reference](wiki/API Reference)
+[API Reference](wiki/API Reference)  
+  
+  
+![Wakame logo](wiki/images/wakame-logo.png)
 
