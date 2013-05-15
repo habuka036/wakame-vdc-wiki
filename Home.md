@@ -10,5 +10,5 @@ https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-l
   
 
 
-<img style="width:100px; float:right" src="wiki/images/wakame-logo.png" />
+<img src="wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" style="float:left" />
 
