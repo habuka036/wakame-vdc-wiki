@@ -1,3 +1,4 @@
+<img src="wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" style="float:left" />
 Welcome to the wakame-vdc wiki!
 
 How to Install to Gentoo?
