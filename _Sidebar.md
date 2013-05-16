@@ -5,5 +5,6 @@
 [Administrator Guide](/axsh/wakame-vdc/wiki/Administrator-Guide)  
 [API Reference](/axsh/wakame-vdc/wiki/API-Reference)  
 [Test english page](/axsh/wakame-vdc/wiki/en/en)  
-[Test japanese page](/axsh/wakame-vdc/wiki/jp/jp)
-[CSS Page](/axsh/wakame-vdc/wiki/css/first-css)
+[Test japanese page](/axsh/wakame-vdc/wiki/jp/jp)  
+[CSS Page](/axsh/wakame-vdc/wiki/css/first-css)  
+[CSS Page 2](/axsh/wakame-vdc/wiki/css/second-css)  
