@@ -3,4 +3,5 @@
 [Home Page](wiki)  
 [Quick Start](wiki/Quick-Start)  
 [Administrator Guide](wiki/Administrator-Guide)  
-[API Reference](wiki/API-Reference) 
+[API Reference](wiki/API-Reference)
+[Test en page](wiki/en/en)
