@@ -1,4 +1,4 @@
-<div id="wakame_body" style="color:green" >
+<div id="wakame_body" style="font-size:large;color: green" >
 This is a test page to see why get push doesn't push to the github wiki.
 </div>
 [Main Page](../wiki)
