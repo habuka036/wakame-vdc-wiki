@@ -1,4 +1,4 @@
-<code>
+<pre>
 .addon-store .container{
 width:960px
 }
@@ -8430,6 +8430,6 @@ display:block;list-style-type:none;overflow:hidden;padding:0
 #wiki-wrapper #files .file .data tr td.line_numbers{
 width:1%;font-size:12px
 }
-</code>
+</pre>
 
 
