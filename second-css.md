@@ -1,3 +1,4 @@
+This is the second external CSS loaded into this page  
 <pre>
 .addon-store .container{
 width:960px
