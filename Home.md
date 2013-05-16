@@ -1,4 +1,6 @@
-<img src="wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" style="float:left" /> 
+<span class="float-right">
+<img src="wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80"/> 
+</span>
 <div style="font-size:130%;">
 Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, facilitating the provisioning and management of a heterogeneous virtualized infrastructure. Wakame-vdc virtualizes the entire data center; servers, storage, and networking. Wakame-vdc is managed via a native Web Interface, the Wakame-vdc CLI, or the powerful Wakame-vdc API.</div>
 
