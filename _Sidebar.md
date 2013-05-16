@@ -7,4 +7,4 @@
 [Test english page](/axsh/wakame-vdc/wiki/en/en)  
 [Test japanese page](/axsh/wakame-vdc/wiki/jp/jp)  
 [CSS Page](/axsh/wakame-vdc/wiki/first-css)  
-[CSS Page2](/axsh/wakame-vdc/wiki/second.css)  
+[CSS Page2](/axsh/wakame-vdc/wiki/second-css)  
