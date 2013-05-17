@@ -11,7 +11,7 @@ We have some more verbiage, I wonder if the span float class will work.
     </tr>
   </table> 
 </span>
-<span class "align-right">
+<span class="align-right">
 Here is some verbiage for our wiki  
 It should align on the right  
 </span>
