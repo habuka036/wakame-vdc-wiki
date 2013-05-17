@@ -1,1 +1,1 @@
-This is the custom footer for any files in this wiki directory.
+[[English Home|wiki]]|[[日本語ホーム|日本語ホームページ]]
