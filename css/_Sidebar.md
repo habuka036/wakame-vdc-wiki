@@ -9,3 +9,4 @@
 [Test japanese page 2](/axsh/wakame-vdc/wiki/jp/Jp-home)  
 [CSS Page](/axsh/wakame-vdc/wiki/first-css)  
 [CSS Page2](/axsh/wakame-vdc/wiki/second-css)  
+Can I make discreet sidebar edits?  
