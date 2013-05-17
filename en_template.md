@@ -13,6 +13,11 @@ Here is some verbiage for our wiki
 It should align at the top  
 <!-- END OF CONTENT -->
 </tr>
+<td>
+</td>
+<td>
+</td>
+<tr>
 <td colspan="2">
 <!-- START OF FOOTER--> 
 This is our cool footer
