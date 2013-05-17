@@ -1,4 +1,4 @@
-<span class="align-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80"></span>
+<span class="align-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120"></span>
   
 [[ホームページ|日本語ホームページ]]   
 [[クイックスタート|クイックスタート]]   
