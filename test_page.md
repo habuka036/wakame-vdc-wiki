@@ -1,6 +1,6 @@
 We have some more verbiage, I wonder if the span float class will work. 
 <span class="float-right">
-  <table border="0" width="50%">
+  <table border="0" width="100%">
     <tr>
       <td width="150px">
         <table border="0" width="100%">
