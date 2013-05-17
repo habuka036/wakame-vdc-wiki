@@ -19,7 +19,7 @@ Japanese
 </td></tr></table></td><td valign="top">
 <!-- START OF CONTENT--> 
 Here is some verbiage for our wiki  
-It should align on the right  
+It should align at the top  
 <!-- END OF CONTENT -->
 </td></tr><tr><td colspan="2">
 <!-- START OF FOOTER--> 
