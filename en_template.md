@@ -7,14 +7,12 @@ Top Left
 </font>
 <!-- END OF MENU--> 
 </td>
-<td valign="top">
+<td rowspan="2" valign="top">
 <!-- START OF CONTENT--> 
 Here is some verbiage for our wiki  
 It should align at the top  
 <!-- END OF CONTENT -->
 </tr>
-<td>
-</td>
 <td>
 </td>
 <tr>
