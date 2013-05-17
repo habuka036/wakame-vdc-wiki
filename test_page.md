@@ -16,7 +16,7 @@
 English  
 Japanese
 <!-- START OF LANGUAGES-->
-</td></tr></table></td><td>
+</td></tr></table></td><td valign="top">
 <!-- START OF CONTENT--> 
 Here is some verbiage for our wiki  
 It should align on the right  
