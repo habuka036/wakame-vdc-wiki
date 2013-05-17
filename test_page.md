@@ -17,15 +17,12 @@ We have some more verbiage, I wonder if the span float class will work.
         </table>
       </td>
       <td>
-        Top Right
+        Right Column
       </td>
     </tr>
     <tr>
-      <td>
-        Bottom Left
-      </td>
-      <td>
-        Bottom Right
+      <td colspan="2">
+        Bottom 
       </td>
     </tr>
   </table> 
