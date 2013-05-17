@@ -1,6 +1,6 @@
 <span><table border="0" cellpadding="0" width="100%" height="100%"><tr><td width="150px"><table border="0" cellpadding="0" width="100%"><tr><td width="180px">
 <!-- START OF MENU-->
-<span class="align-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" /></span>  
+<span class="float-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" /></span>  
 <font size=2>
 [Home Page](/axsh/wakame-vdc/wiki)  
 [Quick Start](/axsh/wakame-vdc/wiki/Quick-Start)  
