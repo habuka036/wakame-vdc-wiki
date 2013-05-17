@@ -1,3 +1,8 @@
+This is the contents of the second stype sheet.  
+(Only showing relevant tags that can be used  
+in the wiki content. ymmv)  
+
+<pre>
 .boxed-group .boxed-group-inner.markdown-body{
 padding-top:10px;padding-bottom:10px
 }
@@ -409,4 +414,4 @@ margin:0 1em 0 0
 #wiki-wrapper.compare #compare-content ul.actions li,#wiki-wrapper.compare #gollum-footer ul.actions li{
 margin-left:0;margin-right:0.6em
 }
-
+</pre>

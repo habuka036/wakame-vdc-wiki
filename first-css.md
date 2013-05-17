@@ -1,3 +1,8 @@
+This is the contents of the first stype sheet.  
+(Only showing relevant tags that can be used  
+in the wiki content. ymmv)  
+
+<pre>
 .markdown-body{
 font-size:15px;line-height:1.7;overflow:hidden
 }
@@ -309,4 +314,4 @@ display:inline-block;margin-top:1px;vertical-align:top
 .select-menu-footer .octicon{
 color:#666
 }
-
+</pre>
