@@ -8,16 +8,10 @@ We have some more verbiage, I wonder if the span float class will work.
             <td width="150px" padding="0">
              Top Left
             </td>
-            <td>
-             Top Right
-            </td>
           </tr>
           <tr>
             <td>
              Bottom Left
-            </td>
-            <td>
-             Bottom Right
             </td>
           </tr>
         </table>
