@@ -1,6 +1,7 @@
 <span><table border="0" cellpadding="0" width="100%" height="100%"><tr><td width="150px"><table border="0" cellpadding="0" width="100%"><tr><td width="150px">
 <!-- START OF MENU-->
 <img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80">  
+<font size=2>
 [Home Page](/axsh/wakame-vdc/wiki)  
 [Quick Start](/axsh/wakame-vdc/wiki/Quick-Start)  
 [Administrator Guide](/axsh/wakame-vdc/wiki/Administrator-Guide)  
@@ -9,7 +10,8 @@
 [Test japanese page](/axsh/wakame-vdc/wiki/jp/jp)  
 [Test japanese page 2](/axsh/wakame-vdc/wiki/jp/Jp-home)  
 [CSS Page](/axsh/wakame-vdc/wiki/first-css)  
-[CSS Page2](/axsh/wakame-vdc/wiki/second-css)    
+[CSS Page2](/axsh/wakame-vdc/wiki/second-css)  
+</font>
 <!-- END OF MENU--> 
 </td></tr><tr><td>
 <!-- START OF LANGUAGES--> 
