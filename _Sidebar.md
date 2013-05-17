@@ -6,5 +6,6 @@
 [API Reference](/axsh/wakame-vdc/wiki/API-Reference)  
 [Test english page](/axsh/wakame-vdc/wiki/en/en)  
 [Test japanese page](/axsh/wakame-vdc/wiki/jp/jp)  
+[Test japanese page 2](/axsh/wakame-vdc/wiki/jp/Jp-home)
 [CSS Page](/axsh/wakame-vdc/wiki/first-css)  
 [CSS Page2](/axsh/wakame-vdc/wiki/second-css)  
