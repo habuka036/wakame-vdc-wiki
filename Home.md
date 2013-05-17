@@ -3,7 +3,7 @@
 <!-- ############################################ -->
 <!-- ###### -->
 <!-- START OF MENU-->
-<img align="center" src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" />  
+<img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" />  
 <font size=2>
 [Home Page](/axsh/wakame-vdc/wiki)  
 [Quick Start](/axsh/wakame-vdc/wiki/Quick-Start)  
