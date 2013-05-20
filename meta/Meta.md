@@ -6,9 +6,9 @@ Firstly, we will be using Markdown formatting, so all of your page names must en
 
 Please take a peak at the Documentation below:   
   
-[[Github Flavored Markdown|https://help.github.com/articles/github-flavored-markdown]]
-[[Markdown Syntax|http://daringfireball.net/projects/markdown/syntax]]  
-[[Gollum Documentation|https://github.com/gollum/gollum/wiki]]  
+[[Github Flavored Markdown|https://help.github.com/articles/github-flavored-markdown]]  
+[[Markdown Syntax|http://daringfireball.net/projects/markdown/syntax]]   
+[[Gollum Documentation|https://github.com/gollum/gollum/wiki]]   
 
   
 Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat namespace".  
@@ -39,7 +39,7 @@ Below is an example of a link:
 [[Meta First Steps|Meta_First_Steps]]  
 
 The code looks like this:  
-<pre>[[Meta First Steps|Meta_First_Steps]]</pre>
+<pre>![[Meta First Steps|Meta_First_Steps]]</pre>
 
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
 On the right side of the pipe is the name of the page or external link.  
