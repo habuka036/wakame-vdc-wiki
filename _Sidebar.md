@@ -1,8 +1,7 @@
 <span class="float-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120"></span>
-  
+[[wakame-logo.png|align=center width=120px]]  
 [[Home Page|Home]]   
 [[Quick Start|Quick-Start]]   
 [[Administrator Guide|Administrator-Guide]]   
 [[API Reference|API-Reference]]   
-[[CSS Ref Page1|first-css]]   
-[[CSS Ref Page2|second-css]]   
+[[Meta Wiki Info|Meta]]   
