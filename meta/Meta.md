@@ -39,7 +39,7 @@ Below is an example of a link:
 [[Meta First Steps|Meta_First_Steps]]  
 
 The code looks like this:  
-<pre>![[Meta First Steps|Meta_First_Steps]]</pre>
+<pre>'[[Meta First Steps|Meta_First_Steps]]</pre>
 
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
 On the right side of the pipe is the name of the page or external link.  
