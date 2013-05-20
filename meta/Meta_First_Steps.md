@@ -23,12 +23,14 @@ Do some work ....
 # Merge your work to Staging
 $ git checkout staging
 $ git merge yourName
+$ git status
 $ git push origin staging</pre>
 
 <pre>
 # Merge Staging to Master
 $ git checkout master
 $ git merge staging
+$ git status
 $ git push origin master</pre>
 
 Handy Commands:
