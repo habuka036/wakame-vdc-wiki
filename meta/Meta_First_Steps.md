@@ -17,9 +17,19 @@ $git checkout -b yourName
 
 
 Do some work ....
+(if you are in a new subdirectory, 
+  move up to a previously existing one.)
+
+# Merge your work to Staging
+$git checkout staging
+$git merge yourName
+
+# Merge Staging to Master
+$git checkout master
+$git merge staging
 
 
-
+Handy Commands:
 
 # Check that you are in your branch
 $git status
