@@ -12,6 +12,11 @@ Wakame-vdc allows the administrator to spend less time managing the entire data 
 
 Wakame-vdc strives to provide the same experience to the entire data center, as virtual machines have done for operating systems. The VDC (Virtual Data Center) offers virtualized facilities such as servers, storage, and networking, in what can be described as a data center level hypervisor. Deployment, migration and backup of a Wakame-vdc installation can freely be replicated between any site running Wakame-vdc, with minimal reconfiguration.
 
+### License
+
+Wakame-vdc components are licensed under the GNU lesser general public license Ver. 3 and/or the Apache License Ver. 2.0
+
+
 ## Framework
 
 ### Core Components
