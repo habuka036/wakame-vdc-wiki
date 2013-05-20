@@ -51,7 +51,8 @@ PLEASE JOIN THE WAKAME PROJECT!
 [[Google Group|http://groups.google.com/group/wakame-ug?hl=en]]  
 [[Japanese Google Group|http://groups.google.com/group/wakametech?hl=jp]]  
 
-[[irc|irc://freenode/wakame-vdc]]
+### irc
+irc://freenode/wakame-vdc
 
 
 How to Install to Gentoo?
