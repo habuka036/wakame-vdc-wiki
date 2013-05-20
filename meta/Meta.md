@@ -1,20 +1,20 @@
-This is the Meta Wiki Documentation.  
+This is the Wiki Meta Documentation, I hope you find it useful.
 
-I hope you find it useful - Shaun  
-
+## Markdown Documentation
 Firstly, we will be using Markdown formatting, so all of your page names must end in ".md".  
-
 Please take a peak at the Documentation below:   
   
 [[Github Flavored Markdown|https://help.github.com/articles/github-flavored-markdown]]  
 [[Markdown Syntax|http://daringfireball.net/projects/markdown/syntax]]   
 [[Gollum Documentation|https://github.com/gollum/gollum/wiki]]   
 
-  
+## File naming convention  
 Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat namespace".  
-  
 For those of you who don't understand the implecations of having a "flat namespace", it just means that every wiki page MUST have a unique name.  
-  
+You can create pages in other languages, just make sure they end in ".md" ie:  
+<pre>$ echo "# こんにちは" >  "こんにちは.md"</pre>  
+
+## Directory Structure    
 Thirdly, you can have sub-directories and use them to organize the wiki.   
 Please note the directory listings below:  
 <pre>
@@ -33,7 +33,7 @@ By using sub-directories, you can have different sidebar's and footer's.
 You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory.
 (Although for the sake of consistency, you might want to leave the "_Footer" alone)  
 
-
+## Creating Links
 Links, Links, Links ....  
 Below is an example of a link:  
 [[Meta First Steps|Meta_First_Steps]]  

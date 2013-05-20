@@ -4,4 +4,4 @@
 [[Quick Start|Quick-Start]]   
 [[Administrator Guide|Administrator-Guide]]   
 [[API Reference|API-Reference]]   
-[[Meta Wiki Info|Meta]]   
+[[Wiki Meta Info|Meta]]   
