@@ -13,6 +13,7 @@ Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat
 For those of you who don't understand the implecations of having a "flat namespace", it just means that every wiki page MUST have a unique name.  
 You can create pages in other languages, just make sure they end in ".md" ie:  
 <pre>$ echo "# こんにちは" >  "こんにちは.md"</pre>  
+Please use ascii a-z,A-z,0-9 for directory naming. 
 
 ## Directory Structure    
 Thirdly, you can have sub-directories and use them to organize the wiki.   
@@ -21,15 +22,16 @@ Please note the directory listings below:
 $ ls -p
 css/  en/  _Footer.md  Home.md  images/  jp/  meta/  _Sidebar.md
 $ ls -p en
-admin-guide/  api-ref/  quick-start/  test_page.md
+admin-guide/  api-ref/  quick-start/ 
 $ ls -p en/admin-guide/
 Administrator-Guide.md
-$ ls -p
+$ ls -p jp
 PI-参考文献.md  クイックスタート.md  _Sidebar.md  日本語ホームページ.md  管理者ガイド.md
 </pre>
   
 Typically, the "_Footer" and "_Sidebar" will inherit from the parent directory.  
 By using sub-directories, you can have different sidebar's and footer's.  
+(Note the "_Sidebar" under the "jp" directory)  
 You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory.
 (Although for the sake of consistency, you might want to leave the "_Footer" alone)  
 
