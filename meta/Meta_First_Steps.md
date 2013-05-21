@@ -2,7 +2,7 @@ Meta::First Steps
 
 Set Up your working branch:
 
-```
+```bash
 # Clone the project wiki repository
 $ git clone git@github.com:axsh/wakame-vdc.wiki.git
 
