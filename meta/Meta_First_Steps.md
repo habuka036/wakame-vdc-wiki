@@ -21,7 +21,7 @@ Do some work ....
 (if you are in a new subdirectory, 
   move up to a previously existing one.)
 
-```
+```bash
 # Merge your work to Staging
 $ git checkout staging
 $ git merge yourName
@@ -29,7 +29,7 @@ $ git status
 $ git push origin staging
 ```
 
-```
+```bash
 # Merge Staging to Master
 $ git checkout master
 $ git merge staging
@@ -39,7 +39,7 @@ $ git push origin master
 
 Handy Commands:
 
-```
+```bash
 # Check that you are in your branch
 $ git status
 # On branch shaun
@@ -47,7 +47,7 @@ nothing to commit (working directory clean)
 ```
 
 
-```
+```bash
 # Check what other current branches are created
 $ git branch
   master
