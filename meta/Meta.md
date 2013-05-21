@@ -13,7 +13,7 @@ Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat
 For those of you who don't understand the implecations of having a "flat namespace", it just means that every wiki page MUST have a unique name.  
 You can create pages in other languages, just make sure they end in ".md" ie: 
  
-```
+```bash
 $ echo "# こんにちは" >  "こんにちは.md"
 ```
 Please use ascii a-z,A-z,0-9 for directory naming. 
@@ -22,7 +22,7 @@ Please use ascii a-z,A-z,0-9 for directory naming.
 Thirdly, you can have sub-directories and use them to organize the wiki.   
 Please note the directory listings below:  
 
-```
+```bash
 $ ls -p
 css/  en/  _Footer.md  Home.md  images/  jp/  meta/  _Sidebar.md
 $ ls -p en
