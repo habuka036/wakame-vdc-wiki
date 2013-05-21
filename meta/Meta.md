@@ -54,6 +54,7 @@ On the left side of the pipe, ("|" is the pipe), is what is displayed on the pag
 On the right side of the pipe is the name of the page or external link.
 
 ## Fenced Code Blocks  
-Just wrap your code blocks in 3 backquotes on the prior and following lines.
+Just wrap your code blocks in a blank line then 3 backquotes on the prior line,  
+and 3 backquotes and a blank following line.
 
 
