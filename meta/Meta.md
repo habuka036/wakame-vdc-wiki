@@ -12,13 +12,15 @@ Please take a peak at the Documentation below:
 Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat namespace".  
 For those of you who don't understand the implecations of having a "flat namespace", it just means that every wiki page MUST have a unique name.  
 You can create pages in other languages, just make sure they end in ".md" ie:  
-<pre>$ echo "# こんにちは" >  "こんにちは.md"</pre>  
+```
+$ echo "# こんにちは" >  "こんにちは.md"
+```  
 Please use ascii a-z,A-z,0-9 for directory naming. 
 
 ## Directory Structure    
 Thirdly, you can have sub-directories and use them to organize the wiki.   
 Please note the directory listings below:  
-<pre>
+```
 $ ls -p
 css/  en/  _Footer.md  Home.md  images/  jp/  meta/  _Sidebar.md
 $ ls -p en
@@ -27,7 +29,7 @@ $ ls -p en/admin-guide/
 Administrator-Guide.md
 $ ls -p jp
 PI-参考文献.md  クイックスタート.md  _Sidebar.md  日本語ホームページ.md  管理者ガイド.md
-</pre>
+```
   
 Typically, the "_Footer" and "_Sidebar" will inherit from the parent directory.  
 By using sub-directories, you can have different sidebar's and footer's.  
@@ -41,7 +43,14 @@ Below is an example of a link:
 [[Meta First Steps|Meta_First_Steps]]  
 
 The code looks like this:  
-<pre>'[[Meta First Steps|Meta_First_Steps]]</pre>
+```
+[[Meta First Steps|Meta_First_Steps]]
+```
 
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
-On the right side of the pipe is the name of the page or external link.  
+On the right side of the pipe is the name of the page or external link.
+
+## Fenced Code Blocks  
+Just wrap your code blocks in 3 backquotes on the prior and following lines.
+
+
