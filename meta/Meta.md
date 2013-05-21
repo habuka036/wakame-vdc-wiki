@@ -11,15 +11,17 @@ Please take a peak at the Documentation below:
 ## File naming convention  
 Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat namespace".  
 For those of you who don't understand the implecations of having a "flat namespace", it just means that every wiki page MUST have a unique name.  
-You can create pages in other languages, just make sure they end in ".md" ie:  
+You can create pages in other languages, just make sure they end in ".md" ie: 
+ 
 ```
 $ echo "# こんにちは" >  "こんにちは.md"
-```  
+```
 Please use ascii a-z,A-z,0-9 for directory naming. 
 
 ## Directory Structure    
 Thirdly, you can have sub-directories and use them to organize the wiki.   
 Please note the directory listings below:  
+
 ```
 $ ls -p
 css/  en/  _Footer.md  Home.md  images/  jp/  meta/  _Sidebar.md
@@ -43,6 +45,7 @@ Below is an example of a link:
 [[Meta First Steps|Meta_First_Steps]]  
 
 The code looks like this:  
+
 ```
 [[Meta First Steps|Meta_First_Steps]]
 ```
