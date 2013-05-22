@@ -1,5 +1,5 @@
 <div align="center">
-<img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png" alt="Wakame Logo" />
+<img src="http://axsh.github.io/wiki/img/wakame-logo-140.png" alt="Wakame Logo" />
 </div>
   
 - [[ホームページ|日本語ホームページ]]   

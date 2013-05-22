@@ -17,7 +17,7 @@ Here is some text in the center! <br />
 Note - You cannot use Markdown in a "div" element
 </div>
 
-![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
+![Wakame Logo](http://axsh.github.io/wiki/img/wakame-logo-140.png)
 
 <a name="table" />
 ### Tables
@@ -27,15 +27,11 @@ Below is a cool table!
 <span><table border="0" cellpadding="0" width="100%" height="100%"><tr><td width="150px"><table border="0" cellpadding="0" width="100%"><tr><td width="180px">
 <!-- START OF MENU-->
 <font size=2>
-[Home Page](/axsh/wakame-vdc/wiki)  
-[Quick Start](/axsh/wakame-vdc/wiki/Quick-Start)  
-[Administrator Guide](/axsh/wakame-vdc/wiki/Administrator-Guide)  
-[API Reference](/axsh/wakame-vdc/wiki/API-Reference)  
-[Test en page](/axsh/wakame-vdc/wiki/en/en)  
-[Test jp page 1](/axsh/wakame-vdc/wiki/jp/jp)  
-[Test jp page 2](/axsh/wakame-vdc/wiki/jp/Jp-home)  
-[CSS Page](/axsh/wakame-vdc/wiki/first-css)  
-[CSS Page2](/axsh/wakame-vdc/wiki/second-css)  
+- [[Home Page|Home]]  
+- [[Quick Start Guide|Quick-Start]]  
+- [[Administrator Guide|Administrator-Guide]]    
+- [[API Reference Guide|API-Reference]]  
+- [[Wiki Meta Info|Meta]]   
 </font>
 <!-- END OF MENU--> 
 </td></tr><tr><td>
@@ -60,28 +56,30 @@ This is our cool footer
 ## Images
 wakame-logo-18px
 
-![Wakame Logo 18px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-18.png)
+![Wakame Logo 18px](http://axsh.github.io/wiki/img/wakame-logo-18.png)
+
+http://axsh.github.io/wiki
  
 wakame-logo-35px
   
-![Wakame Logo 35px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-35.png)
+![Wakame Logo 35px](http://axsh.github.io/wiki/img/wakame-logo-35.png)
   
 wakame-logo-70px
   
-![Wakame Logo 70px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-70.png)
+![Wakame Logo 70px](http://axsh.github.io/wiki/img/wakame-logo-70.png)
 
 wakame-logo-105px
     
-![Wakame Logo 105px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png)
+![Wakame Logo 105px](http://axsh.github.io/wiki/img/wakame-logo-105.png)
   
 wakame-logo-140px
   
-![Wakame Logo 140px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
+![Wakame Logo 140px](http://axsh.github.io/wiki/img/wakame-logo-140.png)
   
 wakame-logo-210px
   
-![Wakame Logo 210px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-210.png)  
+![Wakame Logo 210px](http://axsh.github.io/wiki/img/wakame-logo-210.png)  
 
 wakame-logo-420px
   
-![Wakame Logo 420px](http://sphughes.github.io/wakame-vdc/img/wakame-logo.png)
+![Wakame Logo 420px](http://axsh.github.io/wiki/img/wakame-logo.png)

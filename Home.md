@@ -60,7 +60,7 @@ PLEASE JOIN THE WAKAME PROJECT!
 `irc://freenode/wakame-vdc`
 
 ## Sponsor
-<span class="float-left><a href="http://axsh.jp/"><img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
+<span class="float-left><a href="http://axsh.jp/"><img src="http://axsh.github.io/wiki/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
 
 
 [How to Install to Gentoo?](https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-linux-v1.0)
