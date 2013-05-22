@@ -7,10 +7,11 @@
 2. [Images](#images)
 <span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
-<div align="center">
 <a name="testing" />
 ### Testing Area
-Here is some text in the center!
+<div align="center">
+Here is some text in the center! <br />
+Note - You cannot use Markdown in a <code><div></code> element
 </div>
 ![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
 
