@@ -59,16 +59,23 @@ This is our cool footer
 <a name="images" />
 ## Images
 wakame-logo-18px
+
 ![Wakame Logo 18px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-18.png) 
-wakame-logo-35px  
+wakame-logo-35px
+  
 ![Wakame Logo 35px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-35.png)  
-wakame-logo-70px  
+wakame-logo-70px
+  
 ![Wakame Logo 70px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-70.png)
-wakame-logo-105px    
+wakame-logo-105px
+    
 ![Wakame Logo 105px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png)  
-wakame-logo-140px  
+wakame-logo-140px
+  
 ![Wakame Logo 140px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)  
-wakame-logo-210px  
+wakame-logo-210px
+  
 ![Wakame Logo 210px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-210.png)  
+
 wakame-logo-420px  
 ![Wakame Logo 420px](http://sphughes.github.io/wakame-vdc/img/wakame-logo.png)
