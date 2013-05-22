@@ -7,6 +7,7 @@
 2. [Images](#images)
 <span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
+
 <a name="testing" />
 ### Testing Area
 
