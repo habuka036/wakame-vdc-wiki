@@ -42,7 +42,7 @@ You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory
 ## Creating Links
 Links, Links, Links ....
 
-#### Do not use this style on the "Home.md" page. There seems to be a bug. Use the other method.  
+###### Do not use this style on the "Home.md" page. There seems to be a bug. Use the other method.  
 (This Style renders well in the ReText markdown Editor)  
 
 Below is an example of a link:  
