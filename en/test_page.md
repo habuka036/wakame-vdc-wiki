@@ -1,9 +1,9 @@
-<div align=center>
-<img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120" align="center">
+<div align="center">
+<img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120" />
 </div>
 <span class="float-right">here is some text floating on the right</span>
-<div class=align-center>
-Here is some text!
+<div align="center">
+Here is some text in the center!
 </div>
 ![Wakame Logo align=center](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 
