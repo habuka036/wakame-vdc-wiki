@@ -58,8 +58,6 @@ wakame-logo-18px
 
 ![Wakame Logo 18px](http://axsh.github.io/wiki/img/wakame-logo-18.png)
 
-http://axsh.github.io/wiki
- 
 wakame-logo-35px
   
 ![Wakame Logo 35px](http://axsh.github.io/wiki/img/wakame-logo-35.png)
