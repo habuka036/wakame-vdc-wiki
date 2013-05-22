@@ -40,7 +40,10 @@ You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory
 (Although for the sake of consistency, you might want to leave the "_Footer" alone)  
 
 ## Creating Links
-Links, Links, Links ....  
+Links, Links, Links ....
+
+Do not use this style on the "Home.md" page. There seems to be a bug. Use the other method.  
+(This Style renders well in the ReText markdown Editor)  
 
 Below is an example of a link:  
 [Meta First Steps](Meta-First-Steps)  
@@ -50,7 +53,6 @@ The code looks like this:
 ```
 [Meta First Steps](Meta-First-Steps)
 ```
-
 The left side of the code, is what is displayed on the page.  
 The right side of the code is the name of the page or external link.
   
@@ -66,7 +68,7 @@ The code looks like this:
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
 On the right side of the pipe is the name of the page or external link.
 
-(The first example renders well in the ReText markdown Editor) 
+
 ## Fenced Code Blocks  
 Just wrap your code blocks in ` ``` `.   
 (Blank lines might be necessary between adjacent code blocks)
