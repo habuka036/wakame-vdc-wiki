@@ -57,7 +57,7 @@ The left side of the code, is what is displayed on the page.
 The right side of the code is the name of the page or external link.
   
   
-Below is another example of a link:
+Below is another example of a link:  
 [[Meta First Steps|Meta-First-Steps]]  
 
 The code looks like this:  
