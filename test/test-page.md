@@ -3,8 +3,8 @@
 <img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png" alt="Wakame Logo" />
 </div>
 #### Table of Contents
-1. [Test Area](test page#Testing Area)
-2. [Images](test page#Images)
+1. [Test Area](#Testing Area)
+2. [Images](#Images)
 <span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
 <div align="center">
