@@ -1,4 +1,4 @@
-![Wakame Logo](/axsh/wakame-vdc/wiki/images/wakame-logo.png|align=center)
+![Wakame Logo](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 
 <span><table border="0" cellpadding="0" width="100%" height="100%"><tr><td width="150px"><table border="0" cellpadding="0" width="100%"><tr><td width="180px">
 <!-- START OF MENU-->
