@@ -70,7 +70,7 @@ On the right side of the pipe is the name of the page or external link.
 
 
 ## Fenced Code Blocks  
-Just wrap your code blocks in ` ``` `.   
+Just wrap your code blocks in ``` ``` ```.   
 (Blank lines might be necessary between adjacent code blocks)
 
 ## Installing ReText Markdown Editor on CentOS 6
