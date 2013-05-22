@@ -1,4 +1,4 @@
-<div align="center>
+<div align="center">
 <img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120">
 </div>
   
