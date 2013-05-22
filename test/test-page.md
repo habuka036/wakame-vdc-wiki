@@ -1,9 +1,14 @@
+## This is a test page. You can safely edit the sidebar, body, or footer without affecting the rest of the wiki
 <div align="center">
-<img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo.png" alt="Wakame Logo" width="120" height="120" />
+<img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png" alt="Wakame Logo" />
 </div>
-<span class="float-right">here is some text floating on the right</span>  
+#### Table of Contents
+1. [Test Area](test page/#Testing Area)
+2. [Images](test page/#Images)
+<span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
 <div align="center">
+### Testing Area
 Here is some text in the center!
 </div>
 ![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
@@ -42,3 +47,13 @@ It should align at the top
 This is our cool footer
 <!-- END OF FOOTER--> 
 </td></tr></table></span>
+<div align="center">
+
+## Images
+![Wakame Logo 18px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-18.png) 
+![Wakame Logo 35px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-35.png)  
+![Wakame Logo 70px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-70.png)  
+![Wakame Logo 105px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png)  
+![Wakame Logo 140px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)  
+![Wakame Logo 210px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-210.png)  
+![Wakame Logo 420px](http://sphughes.github.io/wakame-vdc/img/wakame-logo.png)

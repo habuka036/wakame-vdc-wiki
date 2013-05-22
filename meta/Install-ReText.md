@@ -111,3 +111,37 @@ $ vi /usr/lib64/qt4/mkspecs/default/qmake.conf
 # export PYTHONPATH
 # /usr/local/bin/easy_install-3.3 Pygments
 ```
+
+## Configure ReText
+
+```bash
+$ mkdir ~/.config/"ReText project"
+
+$ cat > ~/.config/ReText\ project/ReText.conf <<EOF
+[General]
+iconTheme=gnome
+styleSheet=/home/sphughes/.config/ReText\ project/github.css
+useWebKit=true
+EOF
+
+$ cat ~/.config/markdown-extensions.txt <<EOF
+extra
+codehilite
+headerid
+meta
+nl2br
+sane_lists
+wikilinks
+EOF
+
+```
+
+Download this file:
+[Github css](github.txt)
+
+```bash
+$ cp github.txt ~/.config/ReText\ project/github.css
+```
+
+
+

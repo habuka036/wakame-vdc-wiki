@@ -4,9 +4,9 @@ This is the Wiki Meta Documentation, I hope you find it useful.
 Firstly, we will be using Markdown formatting, so all of your page names must end in ".md".  
 Please take a peak at the Documentation below:   
   
-[[Github Flavored Markdown|https://help.github.com/articles/github-flavored-markdown]]  
-[[Markdown Syntax|http://daringfireball.net/projects/markdown/syntax]]   
-[[Gollum Documentation|https://github.com/gollum/gollum/wiki]]   
+[Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)  
+[Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)   
+[Gollum Documentation](https://github.com/gollum/gollum/wiki)   
 
 ## File naming convention  
 Secondly, you REALLY need to understand that GitHub Wiki pages reside in a "flat namespace".  
@@ -41,7 +41,21 @@ You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory
 
 ## Creating Links
 Links, Links, Links ....  
+
 Below is an example of a link:  
+[Meta First Steps](Meta First Steps)  
+
+The code looks like this:  
+
+```
+[Meta First Steps](Meta First Steps)
+```
+
+The left side of the code, is what is displayed on the page.  
+The right side of the code is the name of the page or external link.
+  
+  
+Below is another example of a link:
 [[Meta First Steps|Meta First Steps]]  
 
 The code looks like this:  
@@ -49,19 +63,22 @@ The code looks like this:
 ```
 [[Meta First Steps|Meta First Steps]]
 ```
-
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
 On the right side of the pipe is the name of the page or external link.
 
+(The first example renders well in the ReText markdown Editor) 
 ## Fenced Code Blocks  
 Just wrap your code blocks in a blank line then 3 backquotes on the prior line,  
 and 3 backquotes and a blank following line. (Blank lines not always necessary)
 
 ## Installing ReText Markdown Editor on CentOS 6
-[[Installing ReText - CentOS 6|Install ReText]]
+[Installing ReText - CentOS 6](Install ReText)
 
 ## Markdown Cheat Sheet
-[[Markdown Cheat Sheet|Cheat Sheet]]
+[Markdown Cheat Sheet](Cheat Sheet)
+
+## Test Formatting Page
+[Test Formatting page](test page)
 
 
 
