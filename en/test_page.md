@@ -1,4 +1,4 @@
-<span align="center">
+<span class="align-center">
 ![Wakame Logo|width=100px](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 </span>
 
