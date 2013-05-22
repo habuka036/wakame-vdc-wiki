@@ -3,6 +3,7 @@
 </div>
 <span class="float-right">here is some text floating on the right</span>  
 <p>
+</p>
 <div align="center">
 Here is some text in the center!
 </div>
