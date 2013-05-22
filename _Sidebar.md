@@ -1,3 +1,4 @@
+<!-- This is the sidebar for Home.md -->
 <div align="center">
 <img src="http://axsh.github.io/wiki/img/wakame-logo-140.png" alt="Wakame Logo" />
 </div>
