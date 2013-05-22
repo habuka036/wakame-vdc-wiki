@@ -137,7 +137,9 @@ EOF
 ```
 
 Download this file:
-[Github css](http://sphughes.github.io/wakame-vdc/github.txt)
+<a href="http://sphughes.github.io/wakame-vdc/github.txt" target="_blank">Github css</a>  
+and save as github.txt.  
+
 
 ```bash
 $ cp github.txt ~/.config/ReText\ project/github.css

@@ -35,8 +35,8 @@ Wakame-vdc components are licensed under the GNU lesser general public license V
 
 ###Installation
 #### Downloads
-[[RPS|http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html]]  
-[[Source|https://github.com/axsh/wakame-vdc]] 
+[RPMs](http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html)  
+[Source](https://github.com/axsh/wakame-vdc)
 
 ### Wakame-vdc Quick Start
 
@@ -53,12 +53,14 @@ PLEASE JOIN THE WAKAME PROJECT!
 ## Support
 ### Community
 ### Mailing Lists
-[[Google Group|http://groups.google.com/group/wakame-ug?hl=en]]  
-[[Japanese Google Group|http://groups.google.com/group/wakametech?hl=jp]]  
+[Google Group](http://groups.google.com/group/wakame-ug?hl=en)  
+[Japanese Google Group](http://groups.google.com/group/wakametech?hl=jp)  
 
 ### irc
 `irc://freenode/wakame-vdc`
 
+## Sponsor
+<span class="float-left><a href="http://axsh.jp/"><img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
 
-How to Install to Gentoo?
-https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-linux-(ver1)
+
+[How to Install to Gentoo?](https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-linux-v1.0)
