@@ -1,6 +1,6 @@
 <div align=center>
 <img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120" align="center">
-</dev>
+</div>
 <span class="float-right">here is some text floating on the right</span>
 ![Wakame Logo align=center](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 
