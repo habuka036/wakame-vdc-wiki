@@ -1,8 +1,8 @@
-# Installing ReText on CentOS 6  :q
+# Installing ReText on CentOS 6
 
 
 
-## IMPORTANT USE "make altinstall" to install Python 3.3
+## IMPORTANT USE "make altinstall" when  installing Python 3.3
 ### Install Python 3.x
 
 ```
