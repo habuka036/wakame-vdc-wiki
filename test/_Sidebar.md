@@ -3,8 +3,8 @@
 </div>
 
   
-- [Home Page](Home)  
-- [Quick Start Guide](Quick-Start)  
-- [Administrator Guide](Administrator-Guide)  
-- [API Reference Guide](API-Reference)  
-- [Wiki Meta Info](Meta)  
+- [Home Page](wiki/Home)  
+- [Quick Start Guide](wiki/Quick-Start)  
+- [Administrator Guide](wiki/Administrator-Guide)  
+- [API Reference Guide](wiki/API-Reference)  
+- [Wiki Meta Info](wiki/Meta)  
