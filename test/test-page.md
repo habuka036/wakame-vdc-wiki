@@ -28,10 +28,10 @@ Below is a cool table!
 <!-- START OF MENU-->
 <font size=2>
 [Home Page](Home)  
-[[Quick Start Guide|Quick-Start]]  
-[[Administrator Guide|Administrator-Guide]]    
-[[API Reference Guide|API-Reference]]  
-[[Wiki Meta Info|Meta]]   
+[Quick Start Guide](Quick-Start)  
+[Administrator Guide](Administrator-Guide)    
+[API Reference Guide](API-Reference)  
+[Wiki Meta Info](Meta)   
 </font>
 <!-- END OF MENU--> 
 </td></tr><tr><td>
