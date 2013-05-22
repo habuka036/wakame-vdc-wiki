@@ -9,10 +9,12 @@
 <p>
 <a name="testing" />
 ### Testing Area
+
 <div align="center">
 Here is some text in the center! <br />
 Note - You cannot use Markdown in a <code><div></code> element
 </div>
+
 ![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
 
 
