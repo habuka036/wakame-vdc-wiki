@@ -55,13 +55,13 @@ On the right side of the pipe is the name of the page or external link.
 
 ## Fenced Code Blocks  
 Just wrap your code blocks in a blank line then 3 backquotes on the prior line,  
-and 3 backquotes and a blank following line.
+and 3 backquotes and a blank following line. (Blank lines not always necessary)
 
 ## Installing ReText Markdown Editor on CentOS 6
 [[Installing ReText - CentOS 6|Install ReText]]
 
 ## Markdown Cheat Sheet
-
+[[Markdown Cheat Sheet|Cheat Sheet]]
 
 
 

@@ -1,12 +1,12 @@
 <div align="center">
-<img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120" />
+<img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo.png" alt="Wakame Logo" width="120" height="120" />
 </div>
 <span class="float-right">here is some text floating on the right</span>  
 <p>
 <div align="center">
 Here is some text in the center!
 </div>
-![Wakame Logo](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
+![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
 
 
 Below is a cool table!
