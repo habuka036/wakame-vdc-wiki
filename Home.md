@@ -64,3 +64,5 @@ PLEASE JOIN THE WAKAME PROJECT!
 
 
 [How to Install to Gentoo?](https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-linux-v1.0)
+
+[Quick Start Page Test](Quick-Start)
