@@ -3,11 +3,12 @@
 <img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png" alt="Wakame Logo" />
 </div>
 #### Table of Contents
-1. [Test Area](#Testing Area)
-2. [Images](#Images)
+1. [Test Area](#testing)
+2. [Images](#images)
 <span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
 <div align="center">
+<a name="testing" />
 ### Testing Area
 Here is some text in the center!
 </div>
@@ -48,7 +49,7 @@ This is our cool footer
 <!-- END OF FOOTER--> 
 </td></tr></table></span>
 <div align="center">
-
+<a name="images" />
 ## Images
 ![Wakame Logo 18px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-18.png) 
 ![Wakame Logo 35px](http://sphughes.github.io/wakame-vdc/img/wakame-logo-35.png)  
