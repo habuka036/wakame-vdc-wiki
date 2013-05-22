@@ -27,7 +27,7 @@ Below is a cool table!
 <span><table border="0" cellpadding="0" width="100%" height="100%"><tr><td width="150px"><table border="0" cellpadding="0" width="100%"><tr><td width="180px">
 <!-- START OF MENU-->
 <font size=2>
-[[Home Page|Home]]  
+[Home Page](Home)  
 [[Quick Start Guide|Quick-Start]]  
 [[Administrator Guide|Administrator-Guide]]    
 [[API Reference Guide|API-Reference]]  
