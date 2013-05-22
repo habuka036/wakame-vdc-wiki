@@ -1,6 +1,6 @@
 ## This is a test page. You can safely edit the sidebar, body, or footer without affecting the rest of the wiki
 <div align="center">
-<img src="http://sphughes.github.io/wakame-vdc/img/wakame-logo-105.png" alt="Wakame Logo" />
+<img src="http://axsh.github.io/wiki/img/wakame-logo-105.png" alt="Wakame Logo" />
 </div>
 #### Table of Contents
 1. [Test Area](#testing)
@@ -41,7 +41,7 @@ Japanese
 <!-- START OF LANGUAGES-->
 </td></tr></table></td><td valign="top">
 <!-- START OF CONTENT-->
-<span class="float-right"><img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="80" height="80" /></span>   
+<span class="float-right"><img src="http://axsh.github.io/wiki/img/wakame-logo-70.png" alt="Wakame Logo" /></span>   
 Here is some verbiage for our wiki  
 It should align at the top  
 <!-- END OF CONTENT -->
