@@ -42,12 +42,12 @@ You only need to create a file "_Sidebar.md" or "_Footer.md" in the subdirectory
 ## Creating Links
 Links, Links, Links ....  
 Below is an example of a link:  
-[[Meta First Steps|Meta_First_Steps]]  
+[[Meta First Steps|Meta First Steps]]  
 
 The code looks like this:  
 
 ```
-[[Meta First Steps|Meta_First_Steps]]
+[[Meta First Steps|Meta First Steps]]
 ```
 
 On the left side of the pipe, ("|" is the pipe), is what is displayed on the page.  
@@ -58,7 +58,10 @@ Just wrap your code blocks in a blank line then 3 backquotes on the prior line,
 and 3 backquotes and a blank following line.
 
 ## Installing ReText Markdown Editor on CentOS 6
-[[Installing ReText - CentOS 6|Install_ReText]]
+[[Installing ReText - CentOS 6|Install ReText]]
+
+## Markdown Cheat Sheet
+
 
 
 
