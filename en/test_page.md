@@ -3,11 +3,10 @@
 </div>
 <span class="float-right">here is some text floating on the right</span>  
 <p>
-
 <div align="center">
 Here is some text in the center!
 </div>
-![Wakame Logo align=center](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
+![Wakame Logo](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 
 
 Below is a cool table!
