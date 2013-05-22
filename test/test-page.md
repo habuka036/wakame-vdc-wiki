@@ -4,7 +4,8 @@
 </div>
 #### Table of Contents
 1. [Test Area](#testing)
-2. [Images](#images)
+2. [Cool Table](#table)
+3. [Images](#images)
 <span class="float-right">here is some text floating on the right using a css class</span>  
 <p>
 
@@ -18,7 +19,8 @@ Note - You cannot use Markdown in a "div" element
 
 ![Wakame Logo](http://sphughes.github.io/wakame-vdc/img/wakame-logo-140.png)
 
-
+<a name="table" />
+### Tables
 Below is a cool table!
 
 
