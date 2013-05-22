@@ -2,6 +2,8 @@
 <img src="/axsh/wakame-vdc/wiki/images/wakame-logo.png" alt="Wakame Logo" width="120" height="120" />
 </div>
 <span class="float-right">here is some text floating on the right</span>
+  
+  
 <div align="center">
 Here is some text in the center!
 </div>
