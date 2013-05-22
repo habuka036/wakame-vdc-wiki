@@ -1,4 +1,4 @@
-<span class="align-right">here is some text
+<span class="float-right">here is some text
 </span>
 ![Wakame Logo|align=center](/axsh/wakame-vdc/wiki/images/wakame-logo.png)
 
