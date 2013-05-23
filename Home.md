@@ -1,6 +1,15 @@
 # Wakame-vdc
-<span>Wakame-VDC is an IaaS (Infrastructure as a Service) cloud computing framework, facilitating the provisioning and management of a heterogeneous virtualized infrastructure. Wakame-vdc virtualizes the entire data center; servers, storage, and networking. Wakame-vdc is managed via a native Web Interface, the Wakame-vdc CLI, or the powerful Wakame-vdc API.</span>
+Wakame-VDC is an IaaS (Infrastructure as a Service) cloud computing framework, facilitating the provisioning and management of a heterogeneous virtualized infrastructure. Wakame-vdc virtualizes the entire data center; servers, storage, and networking. Wakame-vdc is managed via a native Web Interface, the Wakame-vdc CLI, or the powerful Wakame-vdc API.
 
+#### Table of Contents
+1. [About](#about)  
+2. [Framework](#framework)  
+3. [Documentation](#documentation)  
+4. [Support](#support)  
+5. [Sponsor](#sponsor)  
+
+
+<a name="about" />
 ## About
 Wakame-vdc is Datacenter Level Hypervisor, and gives your infrastructure higher portability. Since it is fully Open Sourced, with Wakame-vdc you are free to design and extend your own datacenter. Wakame-vdc provides the best method to build your cloud infrastructure. Enjoy!  
 
@@ -14,21 +23,44 @@ Wakame-vdc strives to provide the same experience to the entire data center, as 
 
 ### License
 
-Wakame-vdc components are licensed under the GNU lesser general public license Ver. 3 and/or the Apache License Ver. 2.0
+Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 
-
+<a name="framework" />
 ## Framework
 
 ### Core Components
-#### vdc-manage
-#### vdc-hva
+#### vdc-dcmgr (Data Center Manager)
+The <big>Wakame-vdc-dcmgr</big> is the brain of Wakame-vdc. The Data Center Manager communicates with and manages all of the other components. 
+##### vdc-dcmgr_gui (Data Center Manager Web API)
+The <big>Wakame-vdc-dcmgr_gui</big> provides communication between the Data Center Manager and the GUI Server
+##### vdc-dcmgr_collector (Data Center Manager Collector)
+<big>Wakame-dc-dcmgr_collector</big> provides DB Access Endpoints, Scheduler, Job Queues
+##### vdc-dcmgr_API (Data Center Manager API)
+The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer.The Wakame-vdc-dcmgr_API is RESTful API. 
+#### vdc-hva (Hyper Visor Agent)
+<big>Wakame-vdc-hva</big> provides VM and Edge Networking Management
+#### vdc-sta (Storage Target Agent)
+<big>Wakame-vdc-sta</big> communicates with the Data Center Manager and the Hyper Visor Agents. 
+#### vdc-nwmongw (Network Monitoring Gateway)
+<big>Wakame-vdc-nwmongw</big> serves as a gateway between VM instances and monitoring.
+#### OS
+Wakame-vdc runs as an application suite on CentOS 6/RHEL 6.
+#### Database
+Wakame-vdc uses [MySql](http://www.mysql.com/) to store information such as virtual machine configuration and state.
+#### Messaging
+Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper Visor Agents, Storage Target Agents, and the Data cennter Manager.
+#### GUI Server
+Wakame-vdc uses [Unicorn](http://unicorn.bogomips.org/) and [Nginx](http://nginx.org/) to provide a rich graphical interface, accessed via web browser.
+
 
 ### Sub-Systems
 #### Hypervisors
 #### Storage
 #### Networking
-#### Interfaces
+#### Interfaces (API, etc.)
+  
 
+<a name="documentation" />
 ## Documentation
 ### Overview
 #### Requirements
@@ -50,6 +82,7 @@ Gui-manage command reference
 
 PLEASE JOIN THE WAKAME PROJECT! 
 
+<a name="support" />
 ## Support
 ### Community
 ### Mailing Lists
@@ -58,7 +91,7 @@ PLEASE JOIN THE WAKAME PROJECT!
 
 ### irc
 `irc://freenode/wakame-vdc`
-
+<a name="sponsor" />
 ## Sponsor
 <span class="float-left><a href="http://axsh.jp/"><img src="http://axsh.github.io/wiki/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
 
