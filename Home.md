@@ -36,7 +36,7 @@ The <big>Wakame-vdc-dcmgr_gui</big> provides communication between the Data Cent
 ##### ~~ vdc-dcmgr_collector (Data Center Manager Collector)
 <big>Wakame-dc-dcmgr_collector</big> provides DB Access Endpoints, Scheduler, Job Queues
 ##### ~~ vdc-dcmgr_API (Data Center Manager API)
-The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is RESTful API. 
+The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is a RESTful API. 
 #### ~ vdc-hva (Hyper Visor Agent)
 <big>Wakame-vdc-hva</big> provides VM and Edge Networking Management
 #### ~ vdc-sta (Storage Target Agent)
@@ -64,10 +64,10 @@ Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper
 <a name="documentation" />
 ## Documentation
 ### Overview
-#### Requirements
+#### ~ Requirements
 
 ###Installation
-#### Downloads
+#### ~ Downloads
 [RPMs](http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html)  
 [Source](https://github.com/axsh/wakame-vdc)
 
