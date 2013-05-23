@@ -25,36 +25,37 @@ Wakame-vdc strives to provide the same experience to the entire data center, as 
 
 Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 
-<a name="framework" />
-## Framework
+
+## Framework {#framework}
 
 ### Core Components
-#### vdc-dcmgr (Data Center Manager)
+#### ~ vdc-dcmgr (Data Center Manager) 
 The <big>Wakame-vdc-dcmgr</big> is the brain of Wakame-vdc. The Data Center Manager communicates with and manages all of the other components. 
-##### vdc-dcmgr_gui (Data Center Manager Web API)
+##### ~~ vdc-dcmgr_gui (Data Center Manager Web API)
 The <big>Wakame-vdc-dcmgr_gui</big> provides communication between the Data Center Manager and the GUI Server
-##### vdc-dcmgr_collector (Data Center Manager Collector)
+##### ~~ vdc-dcmgr_collector (Data Center Manager Collector)
 <big>Wakame-dc-dcmgr_collector</big> provides DB Access Endpoints, Scheduler, Job Queues
-##### vdc-dcmgr_API (Data Center Manager API)
-The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer.The Wakame-vdc-dcmgr_API is RESTful API. 
-#### vdc-hva (Hyper Visor Agent)
+##### ~~ vdc-dcmgr_API (Data Center Manager API)
+The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is RESTful API. 
+#### ~ vdc-hva (Hyper Visor Agent)
 <big>Wakame-vdc-hva</big> provides VM and Edge Networking Management
-#### vdc-sta (Storage Target Agent)
+#### ~ vdc-sta (Storage Target Agent)
 <big>Wakame-vdc-sta</big> communicates with the Data Center Manager and the Hyper Visor Agents. 
-#### vdc-nwmongw (Network Monitoring Gateway)
+#### ~ vdc-nwmongw (Network Monitoring Gateway)
 <big>Wakame-vdc-nwmongw</big> serves as a gateway between VM instances and monitoring.
-#### OS
+#### ~ OS
 Wakame-vdc runs as an application suite on CentOS 6/RHEL 6.
-#### Database
+#### ~ Database
 Wakame-vdc uses [MySql](http://www.mysql.com/) to store information such as virtual machine configuration and state.
-#### Messaging
+#### ~ Messaging
 Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper Visor Agents, Storage Target Agents, and the Data cennter Manager.
-#### GUI Server
-Wakame-vdc uses [Unicorn](http://unicorn.bogomips.org/) and [Nginx](http://nginx.org/) to provide a rich graphical interface, accessed via web browser.
+#### ~ GUI Server
+  Wakame-vdc uses [Unicorn](http://unicorn.bogomips.org/) and [Nginx](http://nginx.org/) to provide a rich graphical interface, accessed via web browser.
 
 
 ### Sub-Systems
 #### Hypervisors
+#### Virtual Machines
 #### Storage
 #### Networking
 #### Interfaces (API, etc.)
