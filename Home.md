@@ -25,7 +25,7 @@ Wakame-vdc strives to provide the same experience to the entire data center, as 
 
 Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 
-<a name="about" />
+<a name="framework" />
 ## Framework
 
 ### Core Components
