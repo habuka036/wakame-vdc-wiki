@@ -54,11 +54,11 @@ Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper
 
 
 ### Sub-Systems
-#### Hypervisors
-#### Virtual Machines
-#### Storage
-#### Networking
-#### Interfaces (API, etc.)
+#### ~ Hypervisors
+#### ~ Virtual Machines
+#### ~ Storage
+#### ~ Networking
+#### ~ Interfaces (API, etc.)
   
 
 <a name="documentation" />
