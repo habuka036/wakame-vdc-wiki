@@ -8,4 +8,3 @@
 - [[Quick Start Guide|Quick-Start]]  
 - [[Administrator Guide|Administrator-Guide]]    
 - [[API Reference Guide|API-Reference]]  
-- [[Wiki Meta Info|Meta]] 
