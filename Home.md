@@ -90,8 +90,14 @@ PLEASE JOIN THE WAKAME PROJECT!
 [Google Group](http://groups.google.com/group/wakame-ug?hl=en)  
 [Japanese Google Group](http://groups.google.com/group/wakametech?hl=jp)  
 
-### irc
-`irc://freenode/wakame-vdc`
+### Hipchat
+[Public HipChat Room](https://www.hipchat.com/gC3AhFzIa)  
+You won't need to install anything!  
+
+### Twitter
+[@Wakamevdc](https://twitter.com/wakamevdc)
+Follow us on twitter! 
+
 <a name="sponsor" />
 ## Sponsor
 <span class="float-left><a href="http://axsh.jp/"><img src="http://axsh.github.io/wiki/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
