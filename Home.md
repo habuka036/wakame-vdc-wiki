@@ -30,19 +30,23 @@ Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 
 ### Core Components
 #### ~ vdc-dcmgr (Data Center Manager) 
-The <big>Wakame-vdc-dcmgr</big> is the brain of Wakame-vdc. The Data Center Manager communicates with and manages all of the other components. 
-##### ~~ vdc-dcmgr_gui (Data Center Manager Web API)
+The <big>Wakame-vdc-dcmgr</big> is the brain of Wakame-vdc. The Data Center Manager communicates with and manages all of the other components. Master -> Slave failover is supported using [UCarp](https://github.com/jedisct1/UCarp).
+##### ~ ~ vdc-dcmgr_gui (Data Center Manager Web API)
 The <big>Wakame-vdc-dcmgr_gui</big> provides communication between the Data Center Manager and the GUI Server
 ##### ~~ vdc-dcmgr_collector (Data Center Manager Collector)
 <big>Wakame-dc-dcmgr_collector</big> provides DB Access Endpoints, Scheduler, Job Queues
-##### ~~ vdc-dcmgr_API (Data Center Manager API)
+##### ~ ~ vdc-dcmgr_API (Data Center Manager API)
 The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is a RESTful API. 
 #### ~ vdc-hva (Hyper Visor Agent)
 <big>Wakame-vdc-hva</big> provides VM and Edge Networking Management
 #### ~ vdc-sta (Storage Target Agent)
-<big>Wakame-vdc-sta</big> communicates with the Data Center Manager and the Hyper Visor Agents. 
+<big>Wakame-vdc-sta</big> communicates with the Data Center Manager and the Hyper Visor Agents.
+#### ~ vdc-bksta (Backup Storage Agent)
+<big>Wakame-vdc-bksta</big> Relays to External Datacenter.
 #### ~ vdc-nwmongw (Network Monitoring Gateway)
 <big>Wakame-vdc-nwmongw</big> serves as a gateway between VM instances and monitoring.
+#### ~ vdc-natbox (Network Address Server)
+<big>vdc-natbox</big> handles external IP address management.
 #### ~ OS
 Wakame-vdc runs as an application suite on CentOS 6/RHEL 6.
 #### ~ Database
@@ -54,12 +58,27 @@ Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper
 
 
 ### Sub-Systems
-#### ~ Hypervisors
-#### ~ Virtual Machines
-#### ~ Storage
-#### ~ Networking
-#### ~ Interfaces (API, etc.)
+#### ~ Hypervisor Support
+##### ~ ~ Containers Virtualization  
+[OpenVZ](http://openvz.org/Main_Page)  
+[LXC](http://lxc.sourceforge.net/)  
+##### ~ ~ Paravirtualized
+[KVM](http://www.linux-kvm.org/page/Main_Page)  
+[VMWare ESXi](http://www.vmware.com/products/vsphere-hypervisor/overview.html) (Limited Support)  
+
+
+#### ~ Virtual Machine Support 
+CentOS/RHEL and Ubuntu 10.04 Linux guests VMs are suppported on all Hypervisors. 
   
+#### ~ Storage Support.
+Storage can be local, NFS, or iSCSI. The Wakame-vdc-sta can automatically create new volumes and root file systems.
+
+#### ~ Networking
+[Trema](http://trema.github.io/trema/) + [OpenFlow](http://www.openflow.org/)
+#### ~ Interfaces (API, etc.)
+
+#### ~ Monitoring
+[Zabbix](http://www.zabbix.com/)
 
 <a name="documentation" />
 ## Documentation
@@ -95,7 +114,7 @@ PLEASE JOIN THE WAKAME PROJECT!
 You won't need to install anything!  
 
 ### Twitter
-[@Wakamevdc](https://twitter.com/wakamevdc)
+[@Wakamevdc](https://twitter.com/wakamevdc)  
 Follow us on twitter! 
 
 <a name="sponsor" />
