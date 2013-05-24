@@ -90,11 +90,11 @@ Storage can be local, NFS, or iSCSI. The Wakame-vdc-sta can automatically create
 [RPMs](http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html)  
 [Source](https://github.com/axsh/wakame-vdc)
 
-### Wakame-vdc Quick Start
+### Wakame-vdc Quick Start  
 
-### Wakame-vdc Administrator's Guide
-Vdc-manage command reference
-Gui-manage command reference
+### Wakame-vdc Administrator's Guide  
+[Vdc-manage command reference](Vdc-manage-command-reference.md)
+Gui-manage command reference  
 
 ### Core API Reference
 
