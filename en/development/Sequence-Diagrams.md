@@ -1,42 +1,30 @@
 instance
 ========
 
--   create
--   [local-store &
-metadata-drive](Media:Instance.create.local store.md.png "wikilink")
--   [local-store &
-metadata-server](Media:Instance.create.local store.ms.png "wikilink")
--   [vol-store &
-metadata-drive](Media:Instance.create.vol store.md.png "wikilink")
--   [vol-store &
-metadata-server](Media:Instance.create.vol store.ms.png "wikilink")
+- create
+- [local-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.create.local store.md.png)
+- [local-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.create.local store.ms.png)
+- [vol-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.create.vol store.md.png)
+- [vol-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.create.vol store.ms.png)
 
--   destroy
--   [local-store](Media:Instance.destroy.local store.png "wikilink")
--   [vol-store](Media:Instance.destroy.vol store.png "wikilink")
+- destroy
+- [local-store](http://axsh.github.io/wiki/img/sdg/Instance.destroy.local store.png)
+- [vol-store](http://axsh.github.io/wiki/img/sdg/Instance.destroy.vol store.png)
 
--   reboot
--   [local-store &
-metadata-drive](Media:Instance.reboot.local store.md.png "wikilink")
--   [local-store &
-metadata-server](Media:Instance.reboot.local store.ms.png "wikilink")
--   [vol-store &
-metadata-drive](Media:Instance.reboot.vol store.md.png "wikilink")
--   [vol-store &
-metadata-server](Media:Instance.reboot.vol store.ms.png "wikilink")
+- reboot
+- [local-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.reboot.local store.md.png)
+- [local-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.reboot.local store.ms.png)
+- [vol-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.reboot.vol store.md.png)
+- [vol-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.reboot.vol store.ms.png)
 
--   start
--   [local-store &
-metadata-drive](Media:Instance.start.local store.md.png "wikilink")
--   [local-store &
-metadata-server](Media:Instance.start.local store.ms.png "wikilink")
--   [vol-store &
-metadata-drive](Media:Instance.start.vol store.md.png "wikilink")
--   [vol-store &
-metadata-server](Media:Instance.start.vol store.ms.png "wikilink")
+- start
+- [local-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.start.local store.md.png)
+- [local-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.start.local store.ms.png)
+- [vol-store & metadata-drive](http://axsh.github.io/wiki/img/sdg/Instance.start.vol store.md.png)
+- [vol-store & metadata-server](http://axsh.github.io/wiki/img/sdg/Instance.start.vol store.ms.png)
 
--   stop
--   [local-store](Media:Instance.stop.local store.png "wikilink")
--   [vol-store](Media:Instance.stop.vol store.png "wikilink")
+- stop
+- [local-store](http://axsh.github.io/wiki/img/sdg/Instance.stop.local store.png)
+- [vol-store](http://axsh.github.io/wiki/img/sdg/Instance.stop.vol store.png)
 
 
