@@ -4,7 +4,10 @@
 </div>
 
   
-- [[Home Page|Home]]  
-- [[Quick Start Guide|Quick-Start]]  
-- [[Administrator Guide|Administrator-Guide]]    
-- [[API Reference Guide|API-Reference]]  
++ [[Home Page|Home]]  
++ [[Quick Start Guide|Wakame-vdc-Quick-Start]]  
++ [[Administrator Guide|Wakame-vdc-Administrator-Guide]]    
+++ [[Vdc-manage command reference|Vdc-manage-command-reference]]  
+++ [[Gui-manage command reference|Gui-manage-command-reference]]   
+++ [[Core API Reference|Core-API-reference]]  
++ [[Development|Development]]  
