@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-ha-dcmgr-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
-##### Size: 2764 bytes - wakame-vdc-ha-dcmgr-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+##### Size: 2764 bytes  
 ##### MD5 Checksum: ff46be51b44692531f8f041875c6b194  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc-ha-dcmgr-config   Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 03:50:49 PM JST
@@ -26,49 +25,49 @@ URL         : http://wakame.jp/
 Summary     : Configuration set for HA dcmgr
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 wakame-vdc-ha-dcmgr-config = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 /bin/bash  
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-ha-dcmgr-config = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
-```  
+`````  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
-```  
+`````  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 /etc/ucarp/vip-common.d/vdc-collector 424 1366612999 53fc6cbad2a8cea4a7c8086f68db3d09 0100755 root root 0 0 0 X
 /etc/ucarp/vip-down.d/vdc-collector 29 1366612999 00000000000000000000000000000000 0120777 root root 0 0 0 ../vip-common.d/vdc-collector
 /etc/ucarp/vip-up.d/vdc-collector 29 1366612999 00000000000000000000000000000000 0120777 root root 0 0 0 ../vip-common.d/vdc-collector
-```  
+`````  
 &nbsp;  

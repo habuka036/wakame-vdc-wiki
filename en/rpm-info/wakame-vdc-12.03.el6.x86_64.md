@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
-##### Size: 121353971 bytes - wakame-vdc-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
+##### Size: 121353971 bytes  
 ##### MD5 Checksum: 9aed5bf6101b4f08cb8c6c05c963caa3  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc                   Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 04:11:24 PM JST
@@ -26,22 +25,22 @@ URL         : http://wakame.jp/
 Summary     : The wakame virtual data center.
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc(x86-64) = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 openssh-server  
 openssh-clients  
 curl  
@@ -67,13 +66,13 @@ parted
 /bin/sh  
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(CompressedFileNames) <= 3.0.4-1
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
+`````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add vdc-net-event
 
@@ -81,24 +80,24 @@ postinstall scriptlet (using /bin/sh):
 [[ -L /var/lib/wakame-vdc/trema ]] && rm -f /var/lib/wakame-vdc/trema
 trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/bin/bundle show trema`
 [[ -z "${trema_home_realpath}" ]] || ln -fs ${trema_home_realpath} /var/lib/wakame-vdc/trema
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
+`````  
 /etc/default/wakame-vdc
 /etc/init.d/vdc-net-event
 /etc/logrotate.d/wakame-vdc
 /etc/prelink.conf.d/wakame-vdc.conf
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 /etc/default/wakame-vdc 271 1366614253 d2cd00ab9f50e6e922b6be35fc472e33 0100644 root root 1 0 0 X
 /etc/init.d/vdc-net-event 1054 1366614253 67f14d5f0e301005b4bdae89bb2727dd 0100755 root root 1 0 0 X
 /etc/logrotate.d/wakame-vdc 172 1366614253 32262fd83e29683a1a7069e2fe831247 0100644 root root 1 0 0 X
@@ -22006,5 +22005,5 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 /opt/axsh/wakame-vdc/volumes 27 1366614621 00000000000000000000000000000000 0120777 root root 0 0 0 /var/lib/wakame-vdc/volumes
 /var/lib/wakame-vdc 4096 1366614621 00000000000000000000000000000000 040755 root root 0 0 0 X
 /var/log/wakame-vdc 4096 1366614621 00000000000000000000000000000000 040755 root root 0 0 0 X
-```  
+`````  
 &nbsp;  

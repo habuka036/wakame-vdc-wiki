@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-hva-kvm-vmapp-config-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
-##### Size: 1601 bytes - wakame-vdc-hva-kvm-vmapp-config-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
+##### Size: 1601 bytes  
 ##### MD5 Checksum: 3003e87989db3281148d95f7e3cf8be8  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc-hva-kvm-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 04:11:24 PM JST
@@ -26,48 +25,48 @@ URL         : http://wakame.jp/
 Summary     : Configuration set for hva KVM VM appliance
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 wakame-vdc-hva-kvm-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-hva-kvm-vmapp-config(x86-64) = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 wakame-vdc-hva-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 qemu-kvm  
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(CompressedFileNames) <= 3.0.4-1
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
-```  
+`````  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
+`````  
 (contains no files)
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 (contains no files)
-```  
+`````  
 &nbsp;  

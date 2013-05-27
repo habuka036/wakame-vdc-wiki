@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-example-1box-hva-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
-##### Size: 3303 bytes - wakame-vdc-example-1box-hva-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+##### Size: 3303 bytes  
 ##### MD5 Checksum: c4ac082c3418cbaa0291eaf1d3b104e4  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc-example-1box-hva-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 03:50:49 PM JST
@@ -26,35 +25,35 @@ URL         : http://wakame.jp/
 Summary     : Configuration set for hva example-1box
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 config(wakame-vdc-example-1box-hva-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-example-1box-hva-vmapp-config = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 /bin/sh  
 config(wakame-vdc-example-1box-hva-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc-example-1box-common-vmapp-config  
 wakame-vdc-hva-full-vmapp-config  
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
+`````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add iscsi
 /sbin/chkconfig       iscsi  on
@@ -67,21 +66,21 @@ sys_default_confs="hva"
 for sys_default_conf in ${sys_default_confs}; do
   sed -i s,^#RUN=.*,RUN=yes, /etc/default/vdc-${sys_default_conf}
 done
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
+`````  
 /etc/wakame-vdc/hva.conf
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 /etc/wakame-vdc/hva.conf 1589 1366613516 7af5529d6e142ec802eea7ca0eeebef7 0100644 root root 1 0 0 X
-```  
+`````  
 &nbsp;  

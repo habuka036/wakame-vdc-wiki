@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-dcmgr-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
-##### Size: 6087 bytes - wakame-vdc-dcmgr-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+##### Size: 6087 bytes  
 ##### MD5 Checksum: 20966392a53d8ddcff71534635750954  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc-dcmgr-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 03:50:49 PM JST
@@ -26,22 +25,22 @@ URL         : http://wakame.jp/
 Summary     : Configuration set for dcmgr VM appliance
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 config(wakame-vdc-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 /bin/sh  
 config(wakame-vdc-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 dnsmasq  
@@ -53,21 +52,21 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
+`````  
 postinstall program: /bin/sh
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
+`````  
 /etc/default/vdc-auth
 /etc/default/vdc-collector
 /etc/default/vdc-dcmgr
@@ -86,13 +85,13 @@ postinstall program: /bin/sh
 /etc/init/vdc-proxy.conf
 /etc/init/vdc-sta.conf
 /etc/init/vdc-webui.conf
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 /etc/default/vdc-auth 253 1366612999 0e900d11c4a8a295710be6862171dbaf 0100644 root root 1 0 0 X
 /etc/default/vdc-collector 188 1366612999 e8aa847fdef29d830c6ad0c028dcc02d 0100644 root root 1 0 0 X
 /etc/default/vdc-dcmgr 251 1366612999 2a47c412bca7fc62961827b7f5c571d2 0100644 root root 1 0 0 X
@@ -117,5 +116,5 @@ postinstall program: /bin/sh
 /var/lib/wakame-vdc/snap 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
 /var/lib/wakame-vdc/volumes 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
 /var/log/wakame-vdc/dcmgr_gui 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
-```  
+`````  
 &nbsp;  

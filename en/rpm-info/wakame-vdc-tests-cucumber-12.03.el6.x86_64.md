@@ -1,6 +1,5 @@
-&nbsp;  
 ### Info for RPM wakame-vdc-tests-cucumber-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
-##### Size: 14823568 bytes - wakame-vdc-tests-cucumber-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
+##### Size: 14823568 bytes  
 ##### MD5 Checksum: d1ce1d6cc214d430e5e778748943ec7d  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
@@ -14,7 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
-```  
+`````  
 Name        : wakame-vdc-tests-cucumber    Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 04:11:24 PM JST
@@ -26,13 +25,13 @@ URL         : http://wakame.jp/
 Summary     : tests-cucumber
 Description :
 <insert long description, indented with spaces>
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
-```  
+`````  
 ffi_c.so()(64bit)  
 generator.so()(64bit)  
 gherkin_lexer_ar.so()(64bit)  
@@ -89,13 +88,13 @@ parser.so()(64bit)
 pkgconfig(libffi) = 3.0.9
 wakame-vdc-tests-cucumber = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-tests-cucumber(x86-64) = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
-```  
+`````  
 /bin/bash  
 /bin/sh  
 /opt/axsh/wakame-vdc/ruby/bin/ruby  
@@ -117,27 +116,27 @@ rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(VersionedDependencies) <= 3.0.3-1
 rtld(GNU_HASH)  
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
-```  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
-```  
-```  
+`````  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
-```  
-```  
+`````  
+`````  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
-```  
+`````  
 /opt/axsh/wakame-vdc/tests/cucumber 4096 1366614562 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/cucumber/.bundle 4096 1366614562 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/cucumber/.bundle/config 63 1366614562 2ae972cc3b194aa2a21bfb0925638609 0100644 root root 0 0 0 X
@@ -3626,5 +3625,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/tests/cucumber/vendor/cache/slop-2.4.4.gem 23552 1366614602 5d5c47f17125860135feb3f940972b89 0100644 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/cucumber/vendor/cache/term-ansicolor-1.0.7.gem 16896 1366614602 e93cecce00004b4fca4ba1d1332ddc4e 0100644 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/cucumber/vendor/cache/thor-0.14.6.gem 73216 1366614602 d52dcc3cc08a2e6443bba665c2123a59 0100644 root root 0 0 0 X
-```  
+`````  
 &nbsp;  
