@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-rack-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+###### Info for RPM wakame-vdc-rack-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 2266 bytes  
 ##### MD5 Checksum: cd23fa98da15baf7e22106ce82c616bf  
 ##### Table of Contents  

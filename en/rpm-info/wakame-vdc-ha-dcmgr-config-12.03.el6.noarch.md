@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-ha-dcmgr-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+###### Info for RPM wakame-vdc-ha-dcmgr-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 2764 bytes  
 ##### MD5 Checksum: ff46be51b44692531f8f041875c6b194  
 ##### Table of Contents  

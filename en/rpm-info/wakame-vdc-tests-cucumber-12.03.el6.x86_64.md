@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-tests-cucumber-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
+###### Info for RPM wakame-vdc-tests-cucumber-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
 ##### Size: 14823568 bytes  
 ##### MD5 Checksum: d1ce1d6cc214d430e5e778748943ec7d  
 ##### Table of Contents  

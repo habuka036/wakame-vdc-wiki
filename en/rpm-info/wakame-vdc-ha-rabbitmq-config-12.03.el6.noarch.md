@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-ha-rabbitmq-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+###### Info for RPM wakame-vdc-ha-rabbitmq-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 3341 bytes  
 ##### MD5 Checksum: 3c1771a2a396e89a3dd4e704095cca28  
 ##### Table of Contents  

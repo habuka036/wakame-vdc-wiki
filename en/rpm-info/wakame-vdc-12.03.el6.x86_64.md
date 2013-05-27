@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
+###### Info for RPM wakame-vdc-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
 ##### Size: 121353971 bytes  
 ##### MD5 Checksum: 9aed5bf6101b4f08cb8c6c05c963caa3  
 ##### Table of Contents  

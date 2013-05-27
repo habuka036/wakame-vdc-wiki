@@ -1,4 +1,4 @@
-##### Info for RPM wakame-vdc-hva-common-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+###### Info for RPM wakame-vdc-hva-common-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 4162 bytes  
 ##### MD5 Checksum: d686e7b19a6e604d39e6cd639f51c648  
 ##### Table of Contents  
