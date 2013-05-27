@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -83,4 +82,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /etc/wakame-vdc/unicorn-common.conf 117 1366612999 0d6419c48addc1ef79f6e63316532bed 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -85,4 +84,5 @@ postinstall scriptlet (using /bin/sh):
 (contains no files)
 ```  
 
+&nbsp;  
 &nbsp;  

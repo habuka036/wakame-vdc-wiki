@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -82,4 +81,5 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 (contains no files)
 ```  
 
+&nbsp;  
 &nbsp;  

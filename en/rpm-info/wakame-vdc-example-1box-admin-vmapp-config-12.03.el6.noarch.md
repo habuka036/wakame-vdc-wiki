@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -84,4 +83,5 @@ wakame-vdc-example-1box-common-vmapp-config
 /etc/wakame-vdc/admin/admin.yml 461 1366613516 31bb82e8bdf2da5af87404490a6f3ce5 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

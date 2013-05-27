@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -92,4 +91,5 @@ postinstall scriptlet (using /bin/sh):
 /etc/sysctl.d/30-openvz.conf 524 1366612999 e30edadc6e27a51a8bb33d63a8d26847 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  
