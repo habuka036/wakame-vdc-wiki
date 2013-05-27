@@ -1,5 +1,6 @@
 ### Wakame-vdc Admin Guide
 
+[Wakame-vdc RPM Info](RPM-Info-Index): What the Various Wakame-vdc RPMs expose to your system.  
 [ESXi integration guide](ESXi-integration-guide): Instructions on how to integrate VMWare ESXi with Wakame-vdc.  
 [Machine Image](Machine-Image): Creating your own machine images.  
 [Networking](Networking): Setting up a network for Wakame-vdc  
