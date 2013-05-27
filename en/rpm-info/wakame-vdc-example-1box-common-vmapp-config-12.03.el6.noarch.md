@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -40,7 +39,6 @@ Description :
 wakame-vdc-example-1box-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -56,7 +54,6 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -69,7 +66,6 @@ postinstall scriptlet (using /bin/sh):
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -78,7 +74,6 @@ postinstall scriptlet (using /bin/sh):
 (contains no files)
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

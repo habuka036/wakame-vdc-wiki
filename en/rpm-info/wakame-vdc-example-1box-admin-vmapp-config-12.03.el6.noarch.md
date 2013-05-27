@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ config(wakame-vdc-example-1box-admin-vmapp-config) = 12.03-20130422152723git7ffa
 wakame-vdc-example-1box-admin-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -58,7 +56,6 @@ wakame-vdc-example-1box-common-vmapp-config
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -66,7 +63,6 @@ wakame-vdc-example-1box-common-vmapp-config
 ```  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
@@ -77,7 +73,6 @@ wakame-vdc-example-1box-common-vmapp-config
 /etc/wakame-vdc/admin/admin.yml
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

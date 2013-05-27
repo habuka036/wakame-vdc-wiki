@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc(x86-32) = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -78,7 +76,6 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -95,7 +92,6 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -107,7 +103,6 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 /etc/prelink.conf.d/wakame-vdc.conf
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -40,7 +39,6 @@ Description :
 wakame-vdc-example-1box-experiment-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -54,7 +52,6 @@ rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(CompressedFileNames) <= 3.0.4-1
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
@@ -76,7 +73,6 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -85,7 +81,6 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 (contains no files)
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ config(wakame-vdc-admin-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-admin-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -58,7 +56,6 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -66,7 +63,6 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
@@ -78,7 +74,6 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 /etc/init/vdc-admin.conf
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

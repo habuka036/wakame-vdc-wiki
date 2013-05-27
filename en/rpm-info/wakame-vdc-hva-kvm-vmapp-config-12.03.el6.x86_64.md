@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ wakame-vdc-hva-kvm-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-hva-kvm-vmapp-config(x86-64) = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -57,7 +55,6 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -65,7 +62,6 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 ```  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
@@ -76,7 +72,6 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 (contains no files)
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

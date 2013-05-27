@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ config(wakame-vdc-hva-common-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-hva-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -75,7 +73,6 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -86,7 +83,6 @@ postinstall scriptlet (using /bin/sh):
 /opt/axsh/wakame-vdc/rpmbuild/helpers/add-loopdev.sh
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
@@ -100,7 +96,6 @@ postinstall scriptlet (using /bin/sh):
 /etc/sysctl.d/30-bridge-if.conf
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

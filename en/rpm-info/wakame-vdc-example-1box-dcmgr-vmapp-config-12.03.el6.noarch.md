@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ config(wakame-vdc-example-1box-dcmgr-vmapp-config) = 12.03-20130422152723git7ffa
 wakame-vdc-example-1box-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -57,7 +55,6 @@ wakame-vdc-dcmgr-vmapp-config
 wakame-vdc-example-1box-common-vmapp-config  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
@@ -83,7 +80,6 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -100,7 +96,6 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 /etc/wakame-vdc/sta.conf
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

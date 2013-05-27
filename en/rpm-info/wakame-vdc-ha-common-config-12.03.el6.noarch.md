@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -40,7 +39,6 @@ Description :
 wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -59,7 +57,6 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
@@ -69,7 +66,6 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -77,7 +73,6 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 ```  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />

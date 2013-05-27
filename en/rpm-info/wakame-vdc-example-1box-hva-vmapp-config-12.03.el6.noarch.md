@@ -31,7 +31,6 @@ Description :
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
@@ -41,7 +40,6 @@ config(wakame-vdc-example-1box-hva-vmapp-config) = 12.03-20130422152723git7ffafa
 wakame-vdc-example-1box-hva-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
@@ -57,7 +55,6 @@ wakame-vdc-example-1box-common-vmapp-config
 wakame-vdc-hva-full-vmapp-config  
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
@@ -81,7 +78,6 @@ done
 
 &nbsp;  
 &nbsp;  
-&nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
@@ -90,7 +86,6 @@ done
 /etc/wakame-vdc/hva.conf
 ```  
 
-&nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
