@@ -14,6 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
+
 ```  
 Name        : wakame-vdc-rack-config       Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -27,52 +28,63 @@ Summary     : Configuration set for rack
 Description :
 <insert long description, indented with spaces>
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
+
 ```  
 config(wakame-vdc-rack-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
+
 ```  
 config(wakame-vdc-rack-config) = 12.03-20130422152723git7ffafa2.el6
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
+
 ```  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/unicorn-common.conf
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/unicorn-common.conf 117 1366612999 0d6419c48addc1ef79f6e63316532bed 0100644 root root 1 0 0 X
 ```  
+
 &nbsp;  

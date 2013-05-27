@@ -14,6 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
+
 ```  
 Name        : wakame-vdc-ha-common-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -27,21 +28,25 @@ Summary     : Configuration set for HA
 Description :
 <insert long description, indented with spaces>
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
+
 ```  
 wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
+
 ```  
 /bin/bash  
 drbd84-utils  
@@ -51,28 +56,34 @@ rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 ucarp  
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
+
 ```  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
+
 ```  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
+
 ```  
 /etc/ucarp/init-common.d 4096 1366612999 00000000000000000000000000000000 040755 root root 0 0 0 X
 /etc/ucarp/init-down.d 4096 1366612999 00000000000000000000000000000000 040755 root root 0 0 0 X
@@ -85,4 +96,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/rpmbuild/helpers/lodrbd-mounter.sh 1542 1366612999 a816a3b5cbdae640d99bb8167d9f30e0 0100755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/rpmbuild/helpers/lodrbd.sh 3445 1366612999 a807b714b1377071f9ad5b37b42c68cd 0100755 root root 0 0 0 X
 ```  
+
 &nbsp;  

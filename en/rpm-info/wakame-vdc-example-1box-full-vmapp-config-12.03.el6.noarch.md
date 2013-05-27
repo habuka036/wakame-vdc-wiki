@@ -14,6 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
+
 ```  
 Name        : wakame-vdc-example-1box-full-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -27,21 +28,25 @@ Summary     : Configuration set for full example-1box
 Description :
 <insert long description, indented with spaces>
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
+
 ```  
 wakame-vdc-example-1box-full-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
+
 ```  
 wakame-vdc-example-1box-dcmgr-vmapp-config  
 wakame-vdc-example-1box-hva-vmapp-config  
@@ -49,30 +54,37 @@ wakame-vdc-example-1box-admin-vmapp-config
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(CompressedFileNames) <= 3.0.4-1
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
+
 ```  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
+
 ```  
 (contains no files)
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
+
 ```  
 (contains no files)
 ```  
+
 &nbsp;  

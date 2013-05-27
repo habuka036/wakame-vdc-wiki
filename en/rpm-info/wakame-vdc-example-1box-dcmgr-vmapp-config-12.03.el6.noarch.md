@@ -14,6 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
+
 ```  
 Name        : wakame-vdc-example-1box-dcmgr-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -27,22 +28,26 @@ Summary     : Configuration set for dcmgr example-1box
 Description :
 <insert long description, indented with spaces>
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
+
 ```  
 config(wakame-vdc-example-1box-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-example-1box-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
+
 ```  
 /bin/sh  
 config(wakame-vdc-example-1box-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
@@ -51,12 +56,14 @@ rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc-dcmgr-vmapp-config  
 wakame-vdc-example-1box-common-vmapp-config  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
+
 ```  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add mysqld
@@ -73,12 +80,14 @@ done
 for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=demo1, ${sys_default_conf}; done
 [ -f /etc/wakame-vdc/unicorn-common.conf ] && sed -i "s,^worker_processes .*,worker_processes 1," /etc/wakame-vdc/unicorn-common.conf
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/convert_specs/load_balancer.yml
 /etc/wakame-vdc/dcmgr.conf
@@ -90,12 +99,14 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 /etc/wakame-vdc/proxy.conf
 /etc/wakame-vdc/sta.conf
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/convert_specs/load_balancer.yml 173 1366613516 a25b8cee4263fba86b40d8d4b0a74ade 0100644 root root 1 0 0 X
 /etc/wakame-vdc/dcmgr.conf 3181 1366613516 47cf1e90ebf6f2a841fbcabbfa84af82 0100644 root root 1 0 0 X
@@ -107,4 +118,5 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 /etc/wakame-vdc/proxy.conf 1461 1366613516 f236b76ff9f8ea98c8ae92049b7e2b90 0100644 root root 1 0 0 X
 /etc/wakame-vdc/sta.conf 301 1366613516 c6d24e95b85646b7e71a84028a565fb2 0100644 root root 1 0 0 X
 ```  
+
 &nbsp;  

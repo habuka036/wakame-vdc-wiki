@@ -14,6 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
+
 ```  
 Name        : wakame-vdc-example-1box-admin-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -27,22 +28,26 @@ Summary     : Configuration set for admin example-1box
 Description :
 <insert long description, indented with spaces>
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
+
 ```  
 config(wakame-vdc-example-1box-admin-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-example-1box-admin-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
+
 ```  
 config(wakame-vdc-example-1box-admin-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 rpmlib(CompressedFileNames) <= 3.0.4-1
@@ -50,30 +55,37 @@ rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc-admin-vmapp-config  
 wakame-vdc-example-1box-common-vmapp-config  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
+
 ```  
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/admin/admin.yml
 ```  
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
+
 ```  
 /etc/wakame-vdc/admin/admin.yml 461 1366613516 31bb82e8bdf2da5af87404490a6f3ce5 0100644 root root 1 0 0 X
 ```  
+
 &nbsp;  
