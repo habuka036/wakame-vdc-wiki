@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-example-1box-common-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc-example-1box-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 `````  
@@ -39,6 +41,7 @@ wakame-vdc-example-1box-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 wakame-vdc-vdcsh  
 /bin/sh  
@@ -50,6 +53,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig       ntpd on
@@ -60,6 +64,7 @@ postinstall scriptlet (using /bin/sh):
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 (contains no files)
 `````  
@@ -68,6 +73,7 @@ postinstall scriptlet (using /bin/sh):
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 (contains no files)
 `````  

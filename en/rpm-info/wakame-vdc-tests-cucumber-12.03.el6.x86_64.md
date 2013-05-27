@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-tests-cucumber    Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 ffi_c.so()(64bit)  
 generator.so()(64bit)  
@@ -94,6 +96,7 @@ wakame-vdc-tests-cucumber(x86-64) = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/bash  
 /bin/sh  
@@ -122,6 +125,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -129,6 +133,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -136,6 +141,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /opt/axsh/wakame-vdc/tests/cucumber 4096 1366614562 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/cucumber/.bundle 4096 1366614562 00000000000000000000000000000000 040755 root root 0 0 0 X

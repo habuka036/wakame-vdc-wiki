@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-ha-common-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 `````  
@@ -39,6 +41,7 @@ wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/bash  
 drbd84-utils  
@@ -53,6 +56,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -60,6 +64,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -67,6 +72,7 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/ucarp/init-common.d 4096 1366612999 00000000000000000000000000000000 040755 root root 0 0 0 X
 /etc/ucarp/init-down.d 4096 1366612999 00000000000000000000000000000000 040755 root root 0 0 0 X

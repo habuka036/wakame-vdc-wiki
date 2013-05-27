@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc                   Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc(x86-64) = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc(x86-64) = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 openssh-server  
 openssh-clients  
@@ -72,6 +75,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add vdc-net-event
@@ -86,6 +90,7 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 /etc/default/wakame-vdc
 /etc/init.d/vdc-net-event
@@ -97,6 +102,7 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/default/wakame-vdc 271 1366614253 d2cd00ab9f50e6e922b6be35fc472e33 0100644 root root 1 0 0 X
 /etc/init.d/vdc-net-event 1054 1366614253 67f14d5f0e301005b4bdae89bb2727dd 0100755 root root 1 0 0 X

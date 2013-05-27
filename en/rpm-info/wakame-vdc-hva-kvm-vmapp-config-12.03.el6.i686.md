@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-hva-kvm-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc-hva-kvm-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-hva-kvm-vmapp-config(x86-32) = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc-hva-kvm-vmapp-config(x86-32) = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 wakame-vdc-hva-common-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
@@ -50,6 +53,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -57,6 +61,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 (contains no files)
 `````  
@@ -65,6 +70,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 (contains no files)
 `````  

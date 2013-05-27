@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-example-1box-dcmgr-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 config(wakame-vdc-example-1box-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-example-1box-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc-example-1box-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/sh  
 config(wakame-vdc-example-1box-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
@@ -53,6 +56,7 @@ wakame-vdc-example-1box-common-vmapp-config
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add mysqld
@@ -74,6 +78,7 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 /etc/wakame-vdc/convert_specs/load_balancer.yml
 /etc/wakame-vdc/dcmgr.conf
@@ -90,6 +95,7 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/wakame-vdc/convert_specs/load_balancer.yml 173 1366613516 a25b8cee4263fba86b40d8d4b0a74ade 0100644 root root 1 0 0 X
 /etc/wakame-vdc/dcmgr.conf 3181 1366613516 47cf1e90ebf6f2a841fbcabbfa84af82 0100644 root root 1 0 0 X

@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-ha-rabbitmq-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc-ha-rabbitmq-config = 12.03-20130422152723git7ffafa2.el6
 `````  
@@ -39,6 +41,7 @@ wakame-vdc-ha-rabbitmq-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/bash  
 rpmlib(CompressedFileNames) <= 3.0.4-1
@@ -50,6 +53,7 @@ wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -57,6 +61,7 @@ wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -64,6 +69,7 @@ wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/ucarp/init-common.d/rabbitmq 1679 1366612999 aea8225ba8b298faa8c4a70704ec9f04 0100755 root root 0 0 0 X
 /etc/ucarp/vip-common.d/rabbitmq 433 1366612999 4e2169f7f7df984df66fa14857d8b93e 0100755 root root 0 0 0 X

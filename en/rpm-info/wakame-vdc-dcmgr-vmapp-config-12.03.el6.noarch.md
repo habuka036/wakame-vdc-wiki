@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-dcmgr-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 config(wakame-vdc-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc-dcmgr-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/sh  
 config(wakame-vdc-dcmgr-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
@@ -58,6 +61,7 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall program: /bin/sh
 `````  
@@ -66,6 +70,7 @@ postinstall program: /bin/sh
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 /etc/default/vdc-auth
 /etc/default/vdc-collector
@@ -91,6 +96,7 @@ postinstall program: /bin/sh
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/default/vdc-auth 253 1366612999 0e900d11c4a8a295710be6862171dbaf 0100644 root root 1 0 0 X
 /etc/default/vdc-collector 188 1366612999 e8aa847fdef29d830c6ad0c028dcc02d 0100644 root root 1 0 0 X

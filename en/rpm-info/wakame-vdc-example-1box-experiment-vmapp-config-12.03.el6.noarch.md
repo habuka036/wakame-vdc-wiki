@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-example-1box-experiment-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 wakame-vdc-example-1box-experiment-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 `````  
@@ -39,6 +41,7 @@ wakame-vdc-example-1box-experiment-vmapp-config = 12.03-20130422152723git7ffafa2
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 wakame-vdc-example-1box-full-vmapp-config  
 /bin/sh  
@@ -50,6 +53,7 @@ rpmlib(CompressedFileNames) <= 3.0.4-1
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall scriptlet (using /bin/sh):
 # add ifcfg-br0 ifcfg-eth0
@@ -67,6 +71,7 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 (contains no files)
 `````  
@@ -75,6 +80,7 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 (contains no files)
 `````  

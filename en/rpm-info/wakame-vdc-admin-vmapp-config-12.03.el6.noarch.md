@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-admin-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 config(wakame-vdc-admin-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-admin-vmapp-config = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc-admin-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 config(wakame-vdc-admin-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 rpmlib(CompressedFileNames) <= 3.0.4-1
@@ -52,6 +55,7 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 `````  
 &nbsp;  
@@ -59,6 +63,7 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 /etc/default/vdc-admin
 /etc/init/vdc-admin.conf
@@ -68,6 +73,7 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/default/vdc-admin 251 1366612999 57ad67d06a3711787086530203f9115c 0100644 root root 1 0 0 X
 /etc/init/vdc-admin.conf 800 1366612999 b0fd8bb20a588fdca53c24a9bdafa03b 0100644 root root 1 0 0 X

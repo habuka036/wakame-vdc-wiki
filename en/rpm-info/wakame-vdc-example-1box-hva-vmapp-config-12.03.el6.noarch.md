@@ -13,6 +13,7 @@
 &nbsp;  
 <a name="version" />
 #### RPM Version Information  
+&nbsp;  
 `````  
 Name        : wakame-vdc-example-1box-hva-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
@@ -31,6 +32,7 @@ Description :
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
+&nbsp;  
 `````  
 config(wakame-vdc-example-1box-hva-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
 wakame-vdc-example-1box-hva-vmapp-config = 12.03-20130422152723git7ffafa2.el6
@@ -40,6 +42,7 @@ wakame-vdc-example-1box-hva-vmapp-config = 12.03-20130422152723git7ffafa2.el6
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
+&nbsp;  
 `````  
 /bin/sh  
 config(wakame-vdc-example-1box-hva-vmapp-config) = 12.03-20130422152723git7ffafa2.el6
@@ -53,6 +56,7 @@ wakame-vdc-hva-full-vmapp-config
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
+&nbsp;  
 `````  
 postinstall scriptlet (using /bin/sh):
 /sbin/chkconfig --add iscsi
@@ -72,6 +76,7 @@ done
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
+&nbsp;  
 `````  
 /etc/wakame-vdc/hva.conf
 `````  
@@ -80,6 +85,7 @@ done
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
+&nbsp;  
 `````  
 /etc/wakame-vdc/hva.conf 1589 1366613516 7af5529d6e142ec802eea7ca0eeebef7 0100644 root root 1 0 0 X
 `````  
