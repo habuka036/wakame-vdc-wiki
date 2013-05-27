@@ -1,6 +1,4 @@
 &nbsp;  
-## RPM-Info-Index  
-&nbsp;  
 [wakame-vdc.el6.i686](wakame-vdc-12.03.el6.i686)  
 [wakame-vdc.el6.x86_64](wakame-vdc-12.03.el6.x86_64)  
 [wakame-vdc-admin-vmapp-config.el6.noarch](wakame-vdc-admin-vmapp-config-12.03.el6.noarch)  
