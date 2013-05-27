@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -93,4 +92,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/rpmbuild/helpers/lodrbd.sh 3445 1366612999 a807b714b1377071f9ad5b37b42c68cd 0100755 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

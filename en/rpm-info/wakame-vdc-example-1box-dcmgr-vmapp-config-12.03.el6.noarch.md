@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -115,4 +114,5 @@ for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=dem
 /etc/wakame-vdc/sta.conf 301 1366613516 c6d24e95b85646b7e71a84028a565fb2 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

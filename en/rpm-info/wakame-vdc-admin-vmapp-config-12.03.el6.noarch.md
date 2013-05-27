@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -88,4 +87,5 @@ wakame-vdc-rack-config = 12.03-20130422152723git7ffafa2.el6
 /var/log/wakame-vdc/admin 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

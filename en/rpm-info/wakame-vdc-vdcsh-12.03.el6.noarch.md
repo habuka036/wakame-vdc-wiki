@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -134,4 +133,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/tests/vdc.sh.d/ubuntu/setup.sh 458 1366612999 979072ff4c6b1ff7af57dc93dd5eb1e4 0100755 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

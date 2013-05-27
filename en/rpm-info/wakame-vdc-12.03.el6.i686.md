@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -22020,4 +22019,5 @@ trema_home_realpath=`cd /opt/axsh/wakame-vdc/dcmgr && /opt/axsh/wakame-vdc/ruby/
 /var/log/wakame-vdc 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

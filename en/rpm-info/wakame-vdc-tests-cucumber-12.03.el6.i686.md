@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -3639,4 +3638,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/tests/cucumber/vendor/cache/thor-0.14.6.gem 73216 1366613360 d52dcc3cc08a2e6443bba665c2123a59 0100644 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -131,4 +130,5 @@ postinstall program: /bin/sh
 /var/log/wakame-vdc/dcmgr_gui 4096 1366613380 00000000000000000000000000000000 040755 root root 0 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

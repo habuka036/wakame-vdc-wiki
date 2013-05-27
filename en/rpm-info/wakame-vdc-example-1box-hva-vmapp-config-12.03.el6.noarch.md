@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -97,4 +96,5 @@ done
 /etc/wakame-vdc/hva.conf 1589 1366613516 7af5529d6e142ec802eea7ca0eeebef7 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  

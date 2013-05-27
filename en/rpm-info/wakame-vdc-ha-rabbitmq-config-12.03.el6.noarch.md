@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -84,4 +83,5 @@ wakame-vdc-ha-common-config = 12.03-20130422152723git7ffafa2.el6
 /etc/ucarp/vip-up.d/rabbitmq 24 1366612999 00000000000000000000000000000000 0120777 root root 0 0 0 ../vip-common.d/rabbitmq
 ```  
 
+&nbsp;  
 &nbsp;  

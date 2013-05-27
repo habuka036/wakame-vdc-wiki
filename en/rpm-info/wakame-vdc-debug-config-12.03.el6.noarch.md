@@ -10,7 +10,6 @@
 6. [RPM All Verifiable Information](#verifiable)  
 &nbsp;  
 &nbsp;  
-&nbsp;  
 
 <a name="version" />
 #### RPM Version Information  
@@ -86,4 +85,5 @@ postinstall scriptlet (using /bin/sh):
 /etc/sysctl.d/30-dump-core.conf 100 1366612999 353b79d92368dd8a8ba536c58aa239e0 0100644 root root 1 0 0 X
 ```  
 
+&nbsp;  
 &nbsp;  
