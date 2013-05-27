@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-admin-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 3133 bytes  
-##### MD5 Checksum: 0018e4eb716c3023c0b31f5b1727ea56  
+##### SHA-1 Checksum: b453a377519c7ecd31c046ec0a4880c630ec3318  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  

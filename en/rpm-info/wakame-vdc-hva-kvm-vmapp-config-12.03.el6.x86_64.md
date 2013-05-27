@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-hva-kvm-vmapp-config-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
 ##### Size: 1601 bytes  
-##### MD5 Checksum: 3003e87989db3281148d95f7e3cf8be8  
+##### SHA-1 Checksum: 73b0cac2ae2f010bda5260e1a5f1d42a2a084271  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  

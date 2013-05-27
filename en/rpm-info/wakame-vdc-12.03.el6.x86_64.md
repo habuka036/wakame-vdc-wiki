@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-12.03-20130422152723git7ffafa2.el6.x86_64.rpm  
 ##### Size: 121353971 bytes  
-##### MD5 Checksum: 9aed5bf6101b4f08cb8c6c05c963caa3  
+##### SHA-1 Checksum: 4e88694fbf589ab7301433cec2e80176b06c44e3  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  

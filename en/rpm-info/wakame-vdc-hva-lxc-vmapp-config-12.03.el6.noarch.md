@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-hva-lxc-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 1524 bytes  
-##### MD5 Checksum: fb4e8b413346b1b82a225cb36667a72d  
+##### SHA-1 Checksum: bce027e1dd29397aeafa0f1b1a0df4cc9321e219  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  

@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-ha-rabbitmq-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 3341 bytes  
-##### MD5 Checksum: 3c1771a2a396e89a3dd4e704095cca28  
+##### SHA-1 Checksum: e55fe670fe1c402b47c7b816b9cdb2efd35a8d25  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  

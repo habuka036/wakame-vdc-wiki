@@ -1,6 +1,6 @@
 ##### Info for RPM: wakame-vdc-ha-dcmgr-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 2764 bytes  
-##### MD5 Checksum: ff46be51b44692531f8f041875c6b194  
+##### SHA-1 Checksum: a251afcf290a981a633315fd99c0c62d04e7c40d  
 ##### Table of Contents  
 1. [RPM Version Information](#version)  
 2. [RPM Provides these Packages ](#provides)  
