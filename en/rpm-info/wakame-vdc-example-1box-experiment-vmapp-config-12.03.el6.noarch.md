@@ -14,7 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
-`````  
+``  
 Name        : wakame-vdc-example-1box-experiment-vmapp-config  Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 03:50:49 PM JST
@@ -26,35 +26,35 @@ URL         : http://wakame.jp/
 Summary     : Configuration set for experiment example-1box
 Description :
 <insert long description, indented with spaces>
-`````  
+``  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
-`````  
+``  
 wakame-vdc-example-1box-experiment-vmapp-config = 12.03-20130422152723git7ffafa2.el6
-`````  
+``  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
-`````  
+``  
 wakame-vdc-example-1box-full-vmapp-config  
 /bin/sh  
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rpmlib(CompressedFileNames) <= 3.0.4-1
-`````  
+``  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
-`````  
+``  
 postinstall scriptlet (using /bin/sh):
 # add ifcfg-br0 ifcfg-eth0
 /opt/axsh/wakame-vdc/rpmbuild/helpers/setup-bridge-if.sh
@@ -65,23 +65,23 @@ postinstall scriptlet (using /bin/sh):
 
 # set demo parameters
 for sys_default_conf in /etc/default/vdc-*; do sed -i s,^#NODE_ID=.*,NODE_ID=demo1, ${sys_default_conf}; done
-`````  
+``  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
-`````  
+``  
 (contains no files)
-`````  
+``  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
-`````  
+``  
 (contains no files)
-`````  
+``  
 &nbsp;  
