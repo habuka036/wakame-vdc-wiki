@@ -14,7 +14,7 @@
 <a name="version" />
 #### RPM Version Information  
 &nbsp;  
-``  
+```  
 Name        : wakame-vdc-vdcsh             Relocations: /opt/axsh 
 Version     : 12.03                             Vendor: Axsh Co. LTD <dev@axsh.net>
 Release     : 20130422152723git7ffafa2.el6   Build Date: Mon 22 Apr 2013 03:50:49 PM JST
@@ -26,52 +26,52 @@ URL         : http://wakame.jp/
 Summary     : vdcsh
 Description :
 <insert long description, indented with spaces>
-``  
+```  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="provides" />
 #### RPM Provides these Packages  
 &nbsp;  
-``  
+```  
 wakame-vdc-vdcsh = 12.03-20130422152723git7ffafa2.el6
-``  
+```  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="requires" />
 #### RPM Requires these Packages  
 &nbsp;  
-``  
+```  
 /bin/bash  
 /usr/bin/env  
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 wakame-vdc = 12.03-20130422152723git7ffafa2.el6
-``  
+```  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="scripts" />
 #### RPM Provides these Scripts  
 &nbsp;  
-``  
-``  
+```  
+```  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="config" />
 #### RPM Provides these Config Files  
 &nbsp;  
-``  
-``  
+```  
+```  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="verifiable" />
 #### RPM All Verifiable Information  
 &nbsp;  
-``  
+```  
 /opt/axsh/wakame-vdc/tests 4096 1366613376 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/builder 4096 1366613377 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/builder/functions.sh 25423 1366613364 feff15702b2ec805be39a0ecf16b6e66 0100755 root root 0 0 0 X
@@ -125,5 +125,5 @@ wakame-vdc = 12.03-20130422152723git7ffafa2.el6
 /opt/axsh/wakame-vdc/tests/vdc.sh.d/ubuntu 4096 1366612999 00000000000000000000000000000000 040755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/vdc.sh.d/ubuntu/install.sh 1702 1366612999 ac277ec61c9c8bbe298f90f0341e70d5 0100755 root root 0 0 0 X
 /opt/axsh/wakame-vdc/tests/vdc.sh.d/ubuntu/setup.sh 458 1366612999 979072ff4c6b1ff7af57dc93dd5eb1e4 0100755 root root 0 0 0 X
-``  
+```  
 &nbsp;  
