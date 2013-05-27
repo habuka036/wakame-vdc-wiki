@@ -1,4 +1,4 @@
-### Info for RPM wakame-vdc-example-1box-full-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
+##### Info for RPM wakame-vdc-example-1box-full-vmapp-config-12.03-20130422152723git7ffafa2.el6.noarch.rpm  
 ##### Size: 1618 bytes  
 ##### MD5 Checksum: cffea32bbb4e52c6f8396d096d07878c  
 ##### Table of Contents  
