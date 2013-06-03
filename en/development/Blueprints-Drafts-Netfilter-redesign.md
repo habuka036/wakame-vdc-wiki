@@ -28,10 +28,54 @@ There will be no more cache. Since Collector is deciding what tasks to apply, se
 
 I want to keep the tasks that are in https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/vnet/tasks. I just want to change the rules in them to a more abstract format. The idea is that the same tasks can be used for any firewall implementation. I imagine the format being something like this.
 
+```
 {:vnic => "vif-xxxxxxxx", :layer => 2, :protocol => "arp", :direction => "incoming", :destination => "not 2a:8a:df:ec:18:13", :action => "drop"}
 {:vnic => "vif-xxxxxxxx", :layer => 3, :protocol => "tcp", :direction => "incoming", :source => "192.168.2.22", :d_port => 22, :action => "accept"}
+```
 
 The rules should also be able to define anti spoofing to the host and such. I will write the exact format specification later.
+
+----
+Currently, hva local iptable/ebtable rule management system has several weak points:
+
+* Work with OS wide iptable rules. i.e. Rules form /etc/sysconfig/iptables.
+* Packet block action can be choosable. DROP or REJECT.
+* Differential update causes rule's inconsistency when it got install/uninstall times failed.
+
+My idea is that iptable/ebtable rules should be flushed at every rule update. This makes the operation simpler because the task system is just needed to have installing operation not to have uninstall operation. The iptables & ebtables commands can flush the rules in a particular custom chain name. It allows to install small part of rules for the flushed custom chain if the chains are sectioned in small parts and organized following the timing of rule refresh operations.
+
+In detail, Security Group has two major sections, friends (isolation) and firewall (text rule + referencers). If friends group the 
+
+iptables chains for inbound rules can be changed followings:
+
+```
+-A FORWARD -m physdev --physdev-out vif-kse09gd7 --physdev-is-bridged -j d_vif-kse09gd7
+# Allow established packets/connections for any protocols.
+-A d_vif-kse09gd7 -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A d_vif-kse09gd7 -m state --state NEW -j d_vif-kse09gd7_fw
+-A d_vif-kse09gd7 -m state --state NEW -j d_vif-kse09gd7_friends
+-A d_vif-kse09gd7 -j DROP
+# Start accept rules for NEW state connections.
+## Rules from firewall part.
+-A d_vif-kse09gd7_fw -s 124.215.250.100/32 -p tcp -m tcp --dport 22 -j ACCEPT # Text Rule
+-A d_vif-kse09gd7_fw -p icmp -j ACCEPT                                    # Text Rule
+-A d_vif-kse09gd7_fw -s 10.112.9.35/32 -p tcp -m tcp --dport 22 -j ACCEPT # Referencer
+-A d_vif-kse09gd7_fw -s 10.112.9.42/32 -p tcp -m tcp --dport 22 -j ACCEPT # Referencer
+-A d_vif-kse09gd7_fw -j RETURN
+## Rules for friend part.
+-A d_vif-kse09gd7_friends -s 10.112.9.81/32 -j ACCEPT
+-A d_vif-kse09gd7_friends -s 10.112.9.80/32 -j ACCEPT
+-A d_vif-kse09gd7_friends -j RETURN
+```
+
+For updating friends rule (10.112.9.80/32 is removed from the group):
+
+```
+iptables -F d_vif-kse09gd7_friends
+iptables -A d_vif-kse09gd7_friends -s 10.112.9.81/32 -j ACCEPT
+iptables -A d_vif-kse09gd7_friends -j RETURN
+```
+
 
 ## The collector
 
