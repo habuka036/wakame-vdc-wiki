@@ -12,11 +12,11 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
 ### Installation requirements
 
-TODO: Memory requirement
-
   * A machine running Centos 6.4. This can be either bare metal or a virtual machine. Instances are going to run as [OpenVZ](http://openvz.org/Main_Page) containers so you don't need to worry about nested virtualization.
 
   * About 2 gigabytes of disk space available in the `/opt` directory.
+
+  * One gigabyte of RAM memory should be more than enough for Wakame-vdc to run in this simple demo environment.
 
   * Some free disk space in the `/var/lib` directory. How much you need depends on how many instances you want to start. Wakame-vdc is going to place its instances data in `/var/lib/wakame-vdc`. One instance of the Ubuntu lucid image used in this guide takes up about 350 MB.
 
@@ -34,15 +34,11 @@ Add the official Wakame-vdc yum repository to `/etc/yum.repos.d`.
 
     sudo curl -o /etc/yum.repos.d/wakame-vdc.repo -R https://raw.githubusercontent.com/axsh/wakame-vdc/master/rpmbuild/wakame-vdc.repo
 
-Add the Axsh OpenVZ yum repository to `/etc/yum.repos.d`.
-
-TODO: Figure out why we are mainting our own repository at Axsh and explain here.
+Add the Axsh OpenVZ yum repository to `/etc/yum.repos.d`. We are hosting an older version of OpenVZ on which Wakame-vdc is confirmed to be working.
 
     sudo curl -o /etc/yum.repos.d/openvz.repo -R https://raw.githubusercontent.com/axsh/wakame-vdc/master/rpmbuild/openvz.repo
 
-Install the Axsh epel release. We need to pull some OpenVZ dependencies from here.
-
-TODO: Figure out why we are mainting our own repository at Axsh and explain here.
+Install the epel release. We need to pull some OpenVZ dependencies from here. This url will just redirect to another epel mirror.
 
     sudo rpm -Uvh http://dlc.wakame.axsh.jp.s3-website-us-east-1.amazonaws.com/epel-release
 
@@ -70,6 +66,10 @@ This is Wakame-vdc's GUI. It's actually a rails application that sits in front t
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
 
+
+#### Reboot to load OpenVZ kernel
+
+These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Restart so that kernel gets loaded.
 
 #### Configuration
 
