@@ -4,7 +4,7 @@
 
 This guide will set up a basic Wakame-vdc environment on a single host. When we are done with this guide we will have the following features available:
 
-  * We will have a simple machine image ubuntu lucid. We will be able to start instances of this image.
+  * We will have a simple *machine image* running Ubuntu 10.04 (Lucid Lynx). We will be able to start instances of this image.
 
   * We will be able to create dynamic firewalls using security groups
 
@@ -18,15 +18,15 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
   * One gigabyte of RAM memory should be more than enough for Wakame-vdc to run in this simple demo environment.
 
-  * Some free disk space in the `/var/lib` directory. How much you need depends on how many instances you want to start. Wakame-vdc is going to place its instances data in `/var/lib/wakame-vdc`. One instance of the Ubuntu lucid image used in this guide takes up about 350 MB.
+  * Some free disk space in the `/var/lib` directory. How much you need depends on how many instances you want to start. Wakame-vdc is going to place its instances data in `/var/lib/wakame-vdc`. One instance of the Ubuntu Lucid image used in this guide takes up about 350 MB.
 
 ### What will this guide do to my machine?
 
-  * Since we are going to use OpenVZ, we will install OpenVZ's modified Linux kernel.
+  * Since we are going to use [OpenVZ](http://openvz.org/Main_Page), we will install OpenVZ's modified Linux kernel.
 
   * We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) and connect the host's eth0 interface to it.
 
-### Guide
+### Let's get started
 
 #### Yum repository setup
 
@@ -38,7 +38,7 @@ Add the Axsh OpenVZ yum repository to `/etc/yum.repos.d`. We are hosting an olde
 
     sudo curl -o /etc/yum.repos.d/openvz.repo -R https://raw.githubusercontent.com/axsh/wakame-vdc/master/rpmbuild/openvz.repo
 
-Install the epel release. We need to pull some OpenVZ dependencies from here. This url will just redirect to another epel mirror.
+Install [EPEL](https://fedoraproject.org/wiki/EPEL). We need to pull some OpenVZ dependencies from here. This url will just redirect to the official EPEL site.
 
     sudo rpm -Uvh http://dlc.wakame.axsh.jp.s3-website-us-east-1.amazonaws.com/epel-release
 
@@ -48,7 +48,7 @@ The dcmgr package contains two things.
 
 * The Wakame-vdc web API. This is Wakame-vdc's user interface. You tell Wakame-vdc to do stuff by making http requests to this API.
 
-* The Wakame-vdc collector. This is Wakame-vdc's decision making organ. When you start an instance it decides which hva will start it, which IP address it will get, etc.
+* The Wakame-vdc collector. This is Wakame-vdc's decision making organ. When you start an instance it decides which HVA (We'll tell you what a HVA is below) will host it, which IP address it will get, etc.
 
 Install it with the following command.
 
@@ -66,14 +66,13 @@ This is Wakame-vdc's GUI. It's actually a rails application that sits in front t
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
 
-
 #### Reboot to load OpenVZ kernel
 
-These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Restart so that kernel gets loaded.
+These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Reboot your machine so that kernel gets loaded.
 
 #### Configuration
 
-By default Wakame-vdc's upstart jobs require an environment variable `RUN=yes` to be set. We can set it right now in the `/etc/default/vdc-*` scripts so we don't have to worry about it when starting services any more. 
+By default Wakame-vdc's [upstart jobs](http://upstart.ubuntu.com) require an environment variable `RUN=yes` to be set. We can set it right now in the `/etc/default/vdc-*` scripts so we don't have to worry about it when starting services any more. 
 
     sudo sed -i -e 's/^#\(RUN=yes\)/\1/' /etc/default/vdc-*
 
@@ -91,7 +90,7 @@ The different Wakame-vdc services require their own config files. Unfortunately 
 
     sudo cp /opt/axsh/wakame-vdc/frontend/dcmgr_gui/config/load_balancer_spec.yml.example /etc/wakame-vdc/dcmgr_gui/load_balancer_spec.yml
 
-All Wakame-vdc services have a `node id`. This is a unique id that AMQP uses to identify each service.
+All Wakame-vdc services have a `node id`. This is a unique id that [AMQP](http://www.amqp.org) uses to identify each service.
 
 In the next step we are going to prepare demo data. The script we will run is expecting the HVA's node id to be `demo1`. By default that node id is set to the host machine's hostname but let's manually set it to `demo1`.
 
@@ -107,7 +106,7 @@ Install the vdc.sh script
 
     sudo yum install -y wakame-vdc-vdcsh
 
-Unfortunately there is a bug in the vdc.sh rpm package. It fails to create a requires *Modulesfile*. Create it manually.
+Unfortunately there is a bug in the vdc.sh rpm package. It fails to create a required *Modulesfile*. Create it manually.
 
     echo "hva hva_id=demo1 host=localhost" | sudo tee /opt/axsh/wakame-vdc/tests/Modulesfile
 
@@ -119,7 +118,7 @@ The vdc.sh script comes with a few machine images but they need to be enabled ma
 
 * Lucid5d
 
-  This is just a simple image containing Ubuntu 10.04 (Lucid Lynx). It's not really meant to do anything more than start a few instances and play around with Wakame-vdc
+  This is just a simple image containing Ubuntu 10.04 (Lucid Lynx). It's not really meant to do anything more than allow users to start a few instances and play around with Wakame-vdc
 
 Enable these two images with the following commands.
 
@@ -150,7 +149,7 @@ The lucid5d image has a 32 bit architecture but our host is 64 bit. A 64 bit hyp
 
 #### Create the network bridge
 
-Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a bridge to attach instances to.
+Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to attach instances to.
 
 If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
 
@@ -169,7 +168,7 @@ Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following co
     DNS1=8.8.8.8
     DELAY=0
 
-Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts` with the following contents.
+Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
 
     DEVICE="eth0"
     ONBOOT="yes"
