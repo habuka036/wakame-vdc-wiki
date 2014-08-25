@@ -77,7 +77,7 @@ By default Wakame-vdc's upstart jobs require an environment variable `RUN=yes` t
 
     sudo sed -i -e 's/^#\(RUN=yes\)/\1/' /etc/default/vdc-*
 
-The different Wakame-vdc services require their own config files that aren't installed by default. Copy them over.
+The different Wakame-vdc services require their own config files. Unfortunately they aren't automatically installed with the rpm packages. There are examples included in the Wakame-vdc source tree though. Copy those over manually.
 
     sudo cp /opt/axsh/wakame-vdc/dcmgr/config/dcmgr.conf.example /etc/wakame-vdc/dcmgr.conf
 
@@ -91,42 +91,59 @@ The different Wakame-vdc services require their own config files that aren't ins
 
     sudo cp /opt/axsh/wakame-vdc/frontend/dcmgr_gui/config/load_balancer_spec.yml.example /etc/wakame-vdc/dcmgr_gui/load_balancer_spec.yml
 
-Set hva node id
+All Wakame-vdc services have a `node id`. This is a unique id that AMQP uses to identify each service.
 
-Edit the file /etc/default/vdc-hva and uncomment the following line:
+In the next step we are going to prepare demo data. The script we will run is expecting the HVA's node id to be `demo1`. By default that node id is set to the host machine's hostname but let's manually set it to `demo1`.
+
+Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
     NODE_ID=demo1
 
-Install vdc.sh script
+#### Prepare demo data
+
+We can't do much with Wakame-vdc without some initial data in the database and some machine images to start instances from. Let's put those things in place.
+
+Install the vdc.sh script
 
     sudo yum install -y wakame-vdc-vdcsh
 
-Create the file that wasn't included in the vdcsh script
+Unfortunately there is a bug in the vdc.sh rpm package. It fails to create a requires *Modulesfile*. Create it manually.
 
     echo "hva hva_id=demo1 host=localhost" | sudo tee /opt/axsh/wakame-vdc/tests/Modulesfile
 
-Enable the load balancer and lucid5d demo images
+The vdc.sh script comes with a few machine images but they need to be enabled manually. We are going to enable two:
+
+* Load balancer
+
+  This is actually a Wakame-vdc system image with [HAProxy](http://www.haproxy.org) and [stud](https://github.com/bumptech/stud) installed. It's not going to show up as an image that a user can start instances of. Instead when a user creates a *load balancer*, Wakame-vdc will start an instance of this image and configure it.
+
+* Lucid5d
+
+  This is just a simple image containing Ubuntu 10.04 (Lucid Lynx). It's not really meant to do anything more than start a few instances and play around with Wakame-vdc
+
+Enable these two images with the following commands.
 
     sudo ln -s /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.available/image-lb.meta /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.enabled/
+
     sudo ln -s /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.available/image-lucid5d.meta /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.enabled/
 
-Create a directory that vdc.sh expects to find
+The script will want to place its images in `/opt/axsh/wakame-vdc/tmp/images`. Create that directory.
 
     sudo mkdir -p /opt/axsh/wakame-vdc/tmp/images
 
-Run the vdc.sh script
+Run it.
 
     sudo /opt/axsh/wakame-vdc/tests/vdc.sh init
 
-* Set the backup storage.
+The script has now created the database and filled it up. Unfortunately it also expects the images to be accessible through a web server. We are not going to set up such a server in this guide. We are just going to keep the images on the local file system.
 
-The vdc.sh script creates the databases and fills them up with demo date for us. Unfortunately it also sets up web based storage. In this environment we are going to store our Wakame machine images on the local filesystem. We need to change that in the database using the vdc-manage cli.
+Using the vdc-manage cli, we can tell Wakame-vdc about that.
 
-      cd /opt/axsh/wakame-vdc/dcmgr/bin
-      ./vdc-manage backupobject modify bo-demolb --storage-id bkst-demo1
-      ./vdc-manage backupobject modify bo-lucid5d --storage-id bkst-demo1
+    cd /opt/axsh/wakame-vdc/dcmgr/bin
+    ./vdc-manage backupobject modify bo-demolb --storage-id bkst-demo1
+    ./vdc-manage backupobject modify bo-lucid5d --storage-id bkst-demo1
 
-The lucid5d image has a 32 bit architecture but our host is 64 bit. A 64 bit hypervisor is able to run 32 bit instances but unfortunately a Wakame-vdc 64 bit hypervisor will only run 64 instances right now. Work around this by setting the lucid5d image to 64 bit with `vdc-manage`.
+The lucid5d image has a 32 bit architecture but our host is 64 bit. A 64 bit hypervisor is technically able to run 32 bit instances but unfortunately Wakame-vdc's implementation currently prevents this. We can work around it by setting the lucid5d image to 64bit in Wakame-vdc's database.
 
       cd /opt/axsh/wakame-vdc/dcmgr/bin
       ./vdc-manage image modify wmi-lucid5d --arch x86_64
