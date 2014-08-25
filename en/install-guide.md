@@ -143,44 +143,50 @@ Using the vdc-manage cli, we can tell Wakame-vdc about that.
     ./vdc-manage backupobject modify bo-demolb --storage-id bkst-demo1
     ./vdc-manage backupobject modify bo-lucid5d --storage-id bkst-demo1
 
-The lucid5d image has a 32 bit architecture but our host is 64 bit. A 64 bit hypervisor is technically able to run 32 bit instances but unfortunately Wakame-vdc's implementation currently prevents this. We can work around it by setting the lucid5d image to 64bit in Wakame-vdc's database.
+The lucid5d image has a 32 bit architecture but our host is 64 bit. A 64 bit hypervisor is technically able to run 32 bit instances but unfortunately Wakame-vdc's implementation currently prevents this. We can work around it by setting the lucid5d image to 64 bit in Wakame-vdc's database.
 
-      cd /opt/axsh/wakame-vdc/dcmgr/bin
-      ./vdc-manage image modify wmi-lucid5d --arch x86_64
+    cd /opt/axsh/wakame-vdc/dcmgr/bin
+    ./vdc-manage image modify wmi-lucid5d --arch x86_64
 
-* Set up the bridge
+#### Create the network bridge
 
-Wakame-vdc uses bridged networking to allow users to connect to instances. You'll want to prepare an interface with a static ip address to connect the bridge to. For the sake of this guide, we are going to assume it is eth0. We will also assume that the static ip address we chose is 192.168.3.100. Please ajust these values for your environment.
+Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a bridge to attach instances to.
+
+If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
+
+For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`. Change these values to match your environment.
 
 Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following contents
 
-      DEVICE=br0
-      TYPE=Bridge
-      BOOTPROTO=static
-      ONBOOT=yes
-      NM_CONTROLLED=no
-      IPADDR=192.168.3.100
-      NETMASK=255.255.255.0
-      GATEWAY=192.168.3.1
-      DNS1=8.8.8.8
-      DELAY=0
+    DEVICE=br0
+    TYPE=Bridge
+    BOOTPROTO=static
+    ONBOOT=yes
+    NM_CONTROLLED=no
+    IPADDR=192.168.3.100
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.3.1
+    DNS1=8.8.8.8
+    DELAY=0
 
-Next we need to attach eth0 to the bridge. Create the file `/etc/sysconfig/network-scripts` with the following contents.
+Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts` with the following contents.
 
-      DEVICE="eth0"
-      ONBOOT="yes"
-      BRIDGE=br0
-      NM_CONTROLLED=no
+    DEVICE="eth0"
+    ONBOOT="yes"
+    BRIDGE=br0
+    NM_CONTROLLED=no
+
+#### Start Wakame-vdc
 
 Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communicate. Rabbitmq-server is the AMQP exchange managing all that traffic.
 
-      sudo /etc/init.d/rabbitmq-server start
+    sudo /etc/init.d/rabbitmq-server start
 
 After all this hard work we should be able to get Wakame-vdc up and running. Start the upstart jobs.
 
-      sudo start vdc-dcmgr
-      sudo start vdc-collector
-      sudo start vdc-hva
-      sudo start vdc-webui
+    sudo start vdc-dcmgr
+    sudo start vdc-collector
+    sudo start vdc-hva
+    sudo start vdc-webui
 
-If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to 192.168.3.100:9000. Log in with user 'demo' and password 'demo'.
+If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
