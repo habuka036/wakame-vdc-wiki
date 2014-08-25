@@ -3,7 +3,7 @@ Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, f
 
 #### Table of Contents
 1. [About](#about)
-2. [Quickstart](#Quickstart)
+2. [Quickstart](#quickstart)
 3. [Framework](#framework)
 4. [Documentation](#documentation)
 5. [Support](#support)
