@@ -2,11 +2,12 @@
 Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, facilitating the provisioning and management of a heterogeneous virtualized infrastructure. Wakame-vdc virtualizes the entire data center; servers, storage, and networking. Wakame-vdc is managed via a native Web Interface, the Wakame-vdc CLI, or the powerful Wakame-vdc API.
 
 #### Table of Contents
-1. [About](#about)  
-2. [Framework](#framework)  
-3. [Documentation](#documentation)  
-4. [Support](#support)  
-5. [Sponsor](#sponsor)  
+1. [About](#about)
+2. [Quickstart](#Quickstart)
+3. [Framework](#framework)
+4. [Documentation](#documentation)
+5. [Support](#support)
+6. [Sponsor](#sponsor)  
 
 
 <a name="about" />
@@ -24,6 +25,13 @@ Wakame-vdc strives to provide the same experience to the entire data center, as 
 ### License
 
 Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
+
+<a name="quickstart" />
+## Quickstart
+
+[Wakame-vdc pre-installed as a VirtualBox image](http://wakameusersgroup.org/demo_image.html)
+
+[Wakame-vdc install guide on a single Centos 6.4 host](install-guide)
 
 <a name="framework" />
 ## Framework
