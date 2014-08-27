@@ -13,7 +13,7 @@ Wakame-vdc is a Datacenter Level Hypervisor, and gives your infrastructure highe
 
 This is the fastest most painless way to get yourself a work Wakame-vdc environment to play with. Just download the image, follow the VirtualBox setup steps and you're good to go.
 
-[Wakame-vdc install guide on a single Centos 6.4 host](install-guide)
+[[Wakame-vdc install guide on a single Centos 6.4 host|install-guide]]
 
 This guide will teach you how to install Wakame-vdc on your own server. The end result will be similar to the VirtualBox image but since you're installing everything yourself you will be able to customize it much more. You'll also learn more about how Wakame-vdc works this way.
 
