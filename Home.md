@@ -4,23 +4,12 @@ Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, f
 Wakame-vdc is a Datacenter Level Hypervisor, and gives your infrastructure higher portability. Since it is fully Open Sourced, with Wakame-vdc you are free to design and extend your own datacenter. Wakame-vdc provides the best method to build your cloud infrastructure. Enjoy!
 
 #### Table of Contents
-1. [Quickstart](#quickstart)
-2. [Framework](#framework)
-3. [Documentation](#documentation)
-4. [Support](#support)
-5. [Sponsor](#sponsor)
-
-### Overview
-
-### Wakame-vdc's Goal
-
-Wakame-vdc allows the administrator to spend less time managing the entire data center infrastructure.
-
-Wakame-vdc strives to provide the same experience to the entire data center, as virtual machines have done for operating systems. The VDC (Virtual Data Center) offers virtualized facilities such as servers, storage, and networking, in what can be described as a data center level hypervisor. Deployment, migration and backup of a Wakame-vdc installation can freely be replicated between any site running Wakame-vdc, with minimal reconfiguration.
-
-### License
-
-Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
+* [Quickstart](#quickstart)
+* [Goal](#goal)
+* [Framework](#framework)
+* [Documentation](#documentation)
+* [Support](#support)
+* [Sponsor](#sponsor)
 
 <a name="quickstart" />
 ## Quickstart
@@ -28,6 +17,16 @@ Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 [Wakame-vdc pre-installed as a VirtualBox image](http://wakameusersgroup.org/demo_image.html)
 
 [Wakame-vdc install guide on a single Centos 6.4 host](install-guide)
+
+### Overview
+
+<a name="goal" />
+
+### Wakame-vdc's Goal
+
+Wakame-vdc allows the administrator to spend less time managing the entire data center infrastructure.
+
+Wakame-vdc strives to provide the same experience to the entire data center, as virtual machines have done for operating systems. The VDC (Virtual Data Center) offers virtualized facilities such as servers, storage, and networking, in what can be described as a data center level hypervisor. Deployment, migration and backup of a Wakame-vdc installation can freely be replicated between any site running Wakame-vdc, with minimal reconfiguration.
 
 <a name="framework" />
 ## Framework
@@ -59,7 +58,6 @@ Wakame-vdc uses [MySql](http://www.mysql.com/) to store information such as virt
 Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper Visor Agents, Storage Target Agents, and the Data cennter Manager.
 #### ~ GUI Server
   Wakame-vdc uses [Unicorn](http://unicorn.bogomips.org/) and [Nginx](http://nginx.org/) to provide a rich graphical interface, accessed via web browser.
-
 
 ### Sub-Systems
 #### ~ Hypervisor Support
@@ -123,6 +121,9 @@ Follow us on twitter!
 ## Sponsor
 <span class="float-left><a href="http://axsh.jp/"><img src="http://axsh.github.io/wiki/img/wakame-logo-70.png" alt="Wakame Logo" /></a></span><Font size=6>Axsh Co.</font>
 
+### License
+
+Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 
 [How to Install to Gentoo?](https://github.com/s1061123/wakame-vdc/wiki/Wakame-vdc-install-memo-for-Gentoo-linux-v1.0)
 
