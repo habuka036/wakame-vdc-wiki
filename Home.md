@@ -1,4 +1,7 @@
 # Wakame-vdc
+
+[[Wakame2-logo-large.png]]
+
 Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, facilitating the provisioning and management of a heterogeneous virtualized infrastructure. Wakame-vdc virtualizes the entire data center; servers, storage, and networking. Wakame-vdc is managed via a native Web Interface, the Wakame-vdc CLI, or the powerful Wakame-vdc API.
 
 Wakame-vdc is a Datacenter Level Hypervisor, and gives your infrastructure higher portability. Since it is fully Open Sourced, with Wakame-vdc you are free to design and extend your own datacenter. Wakame-vdc provides the best method to build your cloud infrastructure. Enjoy!
