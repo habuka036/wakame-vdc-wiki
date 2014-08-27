@@ -7,12 +7,12 @@ Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework, f
 3. [Framework](#framework)
 4. [Documentation](#documentation)
 5. [Support](#support)
-6. [Sponsor](#sponsor)  
+6. [Sponsor](#sponsor)
 
 
 <a name="about" />
 ## About
-Wakame-vdc is Datacenter Level Hypervisor, and gives your infrastructure higher portability. Since it is fully Open Sourced, with Wakame-vdc you are free to design and extend your own datacenter. Wakame-vdc provides the best method to build your cloud infrastructure. Enjoy!  
+Wakame-vdc is Datacenter Level Hypervisor, and gives your infrastructure higher portability. Since it is fully Open Sourced, with Wakame-vdc you are free to design and extend your own datacenter. Wakame-vdc provides the best method to build your cloud infrastructure. Enjoy!
 
 ### Overview
 
@@ -37,14 +37,14 @@ Wakame-vdc components are licensed under LGPL 3.0 and Apache 2.0
 ## Framework
 
 ### Core Components
-#### ~ vdc-dcmgr (Data Center Manager) 
+#### ~ vdc-dcmgr (Data Center Manager)
 The <big>Wakame-vdc-dcmgr</big> is the brain of Wakame-vdc. The Data Center Manager communicates with and manages all of the other components. Master -> Slave failover is supported using [UCarp](https://github.com/jedisct1/UCarp).
 ##### ~ ~ vdc-dcmgr_gui (Data Center Manager Web API)
 The <big>Wakame-vdc-dcmgr_gui</big> provides communication between the Data Center Manager and the GUI Server
 ##### ~~ vdc-dcmgr_collector (Data Center Manager Collector)
 <big>Wakame-dc-dcmgr_collector</big> provides DB Access Endpoints, Scheduler, Job Queues
 ##### ~ ~ vdc-dcmgr_API (Data Center Manager API)
-The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is a RESTful API. 
+The <big>Wakame-vdc-dcmgr_API</big> provides a powerful way to automate Wakame-vdc however you prefer. The Wakame-vdc-dcmgr_API is a RESTful API.
 #### ~ vdc-hva (Hyper Visor Agent)
 <big>Wakame-vdc-hva</big> provides VM and Edge Networking Management
 #### ~ vdc-sta (Storage Target Agent)
@@ -67,17 +67,17 @@ Wakame-vdc uses [RabbitMQ](http://www.rabbitmq.com/) for messaging between Hyper
 
 ### Sub-Systems
 #### ~ Hypervisor Support
-##### ~ ~ Containers Virtualization  
-[OpenVZ](http://openvz.org/Main_Page)  
-[LXC](http://lxc.sourceforge.net/)  
+##### ~ ~ Containers Virtualization
+[OpenVZ](http://openvz.org/Main_Page)
+[LXC](http://lxc.sourceforge.net/)
 ##### ~ ~ Paravirtualized
-[KVM](http://www.linux-kvm.org/page/Main_Page)  
-[VMWare ESXi](http://www.vmware.com/products/vsphere-hypervisor/overview.html) (Limited Support)  
+[KVM](http://www.linux-kvm.org/page/Main_Page)
+[VMWare ESXi](http://www.vmware.com/products/vsphere-hypervisor/overview.html) (Limited Support)
 
 
-#### ~ Virtual Machine Support 
-CentOS/RHEL and Ubuntu 10.04 Linux guests VMs are suppported on all Hypervisors. 
-  
+#### ~ Virtual Machine Support
+CentOS/RHEL and Ubuntu 10.04 Linux guests VMs are suppported on all Hypervisors.
+
 #### ~ Storage Support.
 Storage can be local, NFS, or iSCSI. The Wakame-vdc-sta can automatically create new volumes and root file systems.
 
@@ -94,34 +94,34 @@ Storage can be local, NFS, or iSCSI. The Wakame-vdc-sta can automatically create
 #### ~ [[Requirements|Requirements]]
 ###Installation
 #### ~ Downloads
-[RPMs](http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html)  
+[RPMs](http://dlc.wakame.axsh.jp/packages/rhel/6/current/index.html)
 [Source](https://github.com/axsh/wakame-vdc)
 
-### [[Wakame-vdc Quick Start|Wakame-vdc-Quick-Start]]  
+### [[Wakame-vdc Quick Start|Wakame-vdc-Quick-Start]]
 
-### [[Wakame-vdc Administrator's Guide|Wakame-vdc-Administrator-Guide]]  
-[[Vdc-manage command reference|Vdc-manage-command-reference]]  
-[[Gui-manage command reference|Gui-manage-command-reference]]  
-[[Core API Reference|Core-API-reference]]  
+### [[Wakame-vdc Administrator's Guide|Wakame-vdc-Administrator-Guide]]
+[[Vdc-manage command reference|Vdc-manage-command-reference]]
+[[Gui-manage command reference|Gui-manage-command-reference]]
+[[Core API Reference|Core-API-reference]]
 
-### [[Development|Development]]  
+### [[Development|Development]]
 
-PLEASE JOIN THE WAKAME PROJECT! 
+PLEASE JOIN THE WAKAME PROJECT!
 
 <a name="support" />
 ## Support
 ### Community
 ### Mailing Lists
-[Google Group](http://groups.google.com/group/wakame-ug?hl=en)  
-[Japanese Google Group](http://groups.google.com/group/wakametech?hl=jp)  
+[Google Group](http://groups.google.com/group/wakame-ug?hl=en)
+[Japanese Google Group](http://groups.google.com/group/wakametech?hl=jp)
 
 ### Hipchat
-[Public HipChat Room](https://www.hipchat.com/gC3AhFzIa)  
-You won't need to install anything!  
+[Public HipChat Room](https://www.hipchat.com/gC3AhFzIa)
+You won't need to install anything!
 
 ### Twitter
-[@Wakamevdc](https://twitter.com/wakamevdc)  
-Follow us on twitter! 
+[@Wakamevdc](https://twitter.com/wakamevdc)
+Follow us on twitter!
 
 <a name="sponsor" />
 ## Sponsor
