@@ -9,9 +9,9 @@ Wakame-vdc is a Datacenter Level Hypervisor, and gives your infrastructure highe
 <a name="quickstart" />
 ### Quick Start
 
-[Install on RHEL/CentOS through yum.](https://github.com/axsh/wakame-vdc/tree/master/rpmbuild/README.md)
+[Wakame-vdc pre-installed in VirtualBox.](http://wakameusersgroup.org/demo_image.html)
 
-[Try Wakame-vdc pre-installed in VirtualBox.](http://wakameusersgroup.org/demo_image.html)
+[Wakame-vdc install guide on a single Centos 6.4 host](install-guide)
 
 <a name="contact" />
 ### Contact us
