@@ -10,7 +10,11 @@ Yes, it is. Check our [[usage|home#usage]] section on the home page.
 
 ### Can I run Wakame-vdc in a virtual machine?
 
-Absolutely. We do it all the time in development. Have a look at our [VirtualBox image](http://wakameusersgroup.org/demo_image.html) with Wakame-vdc pre-installed.
+Absolutely. We do it all the time in development.
+
+It works really well when you use OpenVZ as your hypervisor. Since OpenVZ is a container and not full virtualization, it doesn't have the usual overhead that comes with nested virtualization. LXC should work just as well but isn't tested as extensively. Nested KVM also works if the host's cpu supports it but is a lot slower.
+
+Our [VirtualBox demo image](http://wakameusersgroup.org/demo_image.html) implement Wakame-vdc in a virtual machine using OpenVZ and our [[installation guide|install-guide]] can be used to do the same.
 
 ### What Hypervisors does Wakame-vdc support?
 
@@ -22,10 +26,10 @@ Currently the following:
 
   * [LXC](https://linuxcontainers.org)
 
-  * [VMWare ESXi](http://www.vmware.com/products/esxi-and-esx/overview) (Experimental only. We've made it work before but can't guarantee that it will now.)
+  * [VMWare ESXi](http://www.vmware.com/products/esxi-and-esx/overview) (Experimental only)
 
 ### What OS can I run on Wakame-vdc's instances?
 
-Depends on which Hypervisor you use. If you use a container like OpenVZ or LXC, all instances will use the same kernel as your host OS. Therefore your instances will be running either the same OS as your host or something very close to it.
+Depends on which hypervisor you use. If you use a container like OpenVZ or LXC, all instances will use the same kernel as your host OS. Therefore your instances will be running either the same OS as your host or something very close to it.
 
 If you use a full virtualization hypervisor like KVM, you can run any OS that you want in your instances.
