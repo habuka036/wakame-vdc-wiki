@@ -5,7 +5,8 @@
 
 
 + [[Home Page|Home]]
-+ [[Quick Start Guide|Wakame-vdc-Quick-Start]]
++ [Pre-installed VirtualBox image](http://wakameusersgroup.org/demo_image.html)
++ [[Installation guide|install-guide]]
 + [[Administrator Guide|Wakame-vdc-Administrator-Guide]]
 + [[Vdc-manage command reference|Vdc-manage-command-reference]]
 + [[Gui-manage command reference|Gui-manage-command-reference]]
