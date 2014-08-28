@@ -52,22 +52,20 @@ There are three things that make up a data center, either physical or virtual.
 
 * A type of storage that holds all the data.
 
-Wakame-vdc assigns jobs to certain servers in the physical data center. The most essential of these jobs include:
-
-* **Data center manager (dcmgr)** is in charge of processing user input a adjusting the virtual data center accordingly.
-
-* **Hypervisor agent (hva)** is in charge of spinning up virtual machines or virtual servers rather. In Wakame-vdc we call those *instances*.
-
-* **Storage target agent (sta)** is in charge of storage. It basically provides storage in the form of iSCSI targets that can be attached to instances.
-
 ### Servers
 
-Wakame-vdc virtualizes servers by implementing the very virtual machine software mentioned above. Check out the [[F.A.Q.|faq]] to see which ones it uses exactly.
+Wakame-vdc virtualizes servers by implementing the very virtual machine software (hypervisors) mentioned at the top of this page. Check out the [[F.A.Q.|faq]] to see which ones it uses exactly.
 
-Wakame keeps track of a number of `machine images`. These are essentially virtual servers. It doesn't boot these up directly though.
-
-### Storage
+Wakame keeps track of a number of *machine images*. These are essentially virtual servers. It doesn't boot these up directly though. Instead it boots *instances* of these images. That basically means that it starts up a copy of a machine image, leaving the original image unchanged. In theory you can start up an infinite amount of instances.
 
 ### Network
 
-It virtualizes storage using iSCSI targets that support various backends. For the network part, Wakame-vdc implements our other project, [OpenVNet](http://openvnet.com). OpenVNet is still experimental at the time of writing.
+Wakame-vdc by itself has only partial network virtualization. Namely, it has a virtualized firewall that updates itself automatically as the data center changes. This is refered to as security groups.
+
+In order to let users connect to instances, Wakame-vdc uses bridged networking. This is explained in the usage guide of several hypervisors and beyond the scope of this document.
+
+In order to do full network virtualization, Wakame-vdc integrates with our other product, [OpenVNet](http://www.openvnet.com). OpenVNet achieves full network virtualization using [OpenFlow](http://archive.openflow.org). This is currently still experimental.
+
+### Storage
+
+Wakame-vdc virtualizes storage using [iSCSI](http://en.wikipedia.org/wiki/ISCSI) targets or [NFS](http://en.wikipedia.org/wiki/Network_File_System). In the case of iSCSI, several backends are supported.
