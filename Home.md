@@ -8,7 +8,7 @@ There are a couple of ways you could answer this question.
 
 * Wakame-vdc is a virtual datacenter. You may have heard of virtual machines. Those virtualize a single computer. What Wakame-vdc does is virtualize an entire datacenter. More on that on the [[virtual datacenter concept|virtual-datacenter-concept]] page.
 
-* Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework. Basically you can set it up and offer actual sever infrastructure *"up in the cloud"*. Users can control Wakame-vdc through a web browser. That means you can for example set up Wakame-vdc on your servers, and then hire out virtual servers to users. Some of the companies [[currently using Wakame-vdc|home#usage]] do just that.
+* Wakame-vdc is an IaaS (Infrastructure as a Service) cloud computing framework. Basically you can set it up and offer server infrastructure *"up in the cloud"*. Users can control Wakame-vdc through a web browser. That means you can for example set up Wakame-vdc on your servers, and then hire out virtual servers to users. Some of the companies [[currently using Wakame-vdc|home#usage]] do just that.
 
 Wakame-vdc is free open source software. The source is freely available on [Github](https://github.com/axsh/wakame-vdc) and everybody is welcome to contribute to development or distribute the software. (Within the rules of the LGPL license)
 
