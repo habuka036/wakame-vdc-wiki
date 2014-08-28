@@ -1,24 +1,40 @@
-# Virtual Datacenter Concept
+# Virtual Data center Concept
 
-## What is a virtual datacenter?
+## What is a virtual data center?
 
-It is a virtual datacenter that runs on top of a physical datacenter.
+It is a virtual data center that runs on top of a physical data center.
 
-Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](https://www.virtualbox.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines. A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up. Keeping that in mind, virtualization provides the following merits.
+Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](https://www.virtualbox.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines. A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up.
 
-* Virtual machines are software and can thus be copied. This means they can also be backed up.
+Wakame-vdc extends this from a single machine to an entire data center. You install Wakame-vdc on top a physical data center. After that you can use Wakame-vdc to set up a virtual data center. That virtual data center is software. It can be copied. If you have another physical data center with Wakame-vdc installed on it, it is possible to copy over your virtual data center to that, even if its physical hardware is completely different. It could run on a single laptop or it could run on a huge data center with many servers.
 
-* The hardware a virtual machine runs on can be changed without the virtual machine changing.
+Virtualizing the data center provides these merits:
 
-* The virtual machine can change without the hardware changing.
+* Portability
 
-Wakame-vdc takes these exact merits and extends them from a single machine to an entire datacenter. You install Wakame-vdc on top a physical datacenter. After that you can use Wakame-vdc to set up a virtual datacenter. That virtual datacenter is software. It can be copied.
+* Scalability
 
-If you have another physical datacenter with Wakame-vdc installed on it, it is possible to copy over your virtual datacenter to that, even if its physical hardware is completely different. It could run on a single laptop or it could run on a huge datacenter with many servers.
+* Reliability
 
-## Virtual datacenter components
+## What do these buzzwords even mean?
 
-There are three things that make up a datacenter, either physical or virtual.
+### Portability
+
+You can run the same virtual data center on any physical data center that has Wakame-vdc installed. In this context we use the term physical data center loosely. Wakame-vdc can run perfectly on something as simple as one single laptop. It will even run just fine [in a virtual machine](http://wakameusersgroup.org/demo_image.html). The same virtual data center you've created on that single laptop, you can then move over to a production environment running on a physical data center composed of a hundred servers.
+
+### Scalability
+
+When you need to add a new server to a physical data center, what do you do? You buy the hardware, put it in place and set up the networking infrastructure and firewalls to connect it. It's a very time consuming and expensive process. In a virtual data center like Wakame-vdc, all you do is click a few buttons. This creates a new server (instance) and puts it in the data center while all network settings get configured automatically. Depending on the size of the server's vm image, it comes up in a matter of seconds.
+
+Now imagine that you have a website running on top of your virtual data center. You get a traffic spike the servers hosting your website just aren't enough any more. You are now able to quickly spin up a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily throw away those extra servers.
+
+### Reliability
+
+Since a virtual data center is software and software can be copied, it is very easy to take regular backups of certain servers or even the entire data center.
+
+## Virtual data center components
+
+There are three things that make up a data center, either physical or virtual.
 
 * A bunch of servers.
 
@@ -28,11 +44,11 @@ There are three things that make up a datacenter, either physical or virtual.
 
 Wakame-vdc assigns jobs to certain servers in the physical data center. The most essential of these jobs include:
 
-* **Data center manager (dcmgr):** This one is in charge of processing user input a adjusting the virtual datacenter accordingly.
+* **Data center manager (dcmgr)** is in charge of processing user input a adjusting the virtual data center accordingly.
 
-* **Hypervisor agent (hva):** This one is in charge of spinning up virtual machines or virtual servers rather. In Wakame-vdc we call those *instances*.
+* **Hypervisor agent (hva)** is in charge of spinning up virtual machines or virtual servers rather. In Wakame-vdc we call those *instances*.
 
-* **Storage target agent (sta):** This one is in charge of storage. It basically provides storage in the form of iSCSI targets that can be attached to instances.
+* **Storage target agent (sta)** is in charge of storage. It basically provides storage in the form of iSCSI targets that can be attached to instances.
 
 ### Servers
 
