@@ -4,9 +4,13 @@
 
 It is a virtual data center that runs on top of a physical data center.
 
-Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](https://www.virtualbox.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines. A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up.
+Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](https://www.virtualbox.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines.
 
-Wakame-vdc extends this from a single machine to an entire data center. You install Wakame-vdc on top a physical data center. After that you can use Wakame-vdc to set up a virtual data center. That virtual data center is software. It can be copied. If you have another physical data center with Wakame-vdc installed on it, it is possible to copy over your virtual data center to that, even if its physical hardware is completely different. It could run on a single laptop or it could run on a huge data center with many servers.
+A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up.
+
+Wakame-vdc extends this from a single machine to an entire data center. You install Wakame-vdc on top a physical data center. After that you can use Wakame-vdc to set up a virtual data center. That virtual data center is software. It can be copied.
+
+If you have another physical data center with Wakame-vdc installed on it, it is possible to copy over your virtual data center to that, even if its physical hardware is completely different. It could run on a single laptop or it could run on a huge data center with many servers.
 
 Virtualizing the data center provides these merits:
 
@@ -20,13 +24,17 @@ Virtualizing the data center provides these merits:
 
 ### Portability
 
-You can run the same virtual data center on any physical data center that has Wakame-vdc installed. In this context we use the term physical data center loosely. Wakame-vdc can run perfectly on something as simple as one single laptop. It will even run just fine [in a virtual machine](http://wakameusersgroup.org/demo_image.html). The same virtual data center you've created on that single laptop, you can then move over to a production environment running on a physical data center composed of a hundred servers.
+You can run the same virtual data center on any physical data center that has Wakame-vdc installed. In this context we use the term physical data center loosely. Wakame-vdc can run perfectly on something as simple as one single laptop. It will even run just fine [in a virtual machine](http://wakameusersgroup.org/demo_image.html).
+
+The same virtual data center you've created on that single laptop, you can then move over to a production environment running on a physical data center composed of a hundred servers.
 
 ### Scalability
 
-When you need to add a new server to a physical data center, what do you do? You buy the hardware, put it in place and set up the networking infrastructure and firewalls to connect it. It's a very time consuming and expensive process. In a virtual data center like Wakame-vdc, all you do is click a few buttons. This creates a new server (instance) and puts it in the data center while all network settings get configured automatically. Depending on the size of the server's vm image, it comes up in a matter of seconds.
+When you need to add a new server to a physical data center, what do you do? You buy the hardware, put it in place and set up the networking infrastructure and firewalls to connect it. It's a very time consuming and expensive process.
 
-Now imagine that you have a website running on top of your virtual data center. You get a traffic spike the servers hosting your website just aren't enough any more. You are now able to quickly spin up a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily throw away those extra servers.
+In a virtual data center like Wakame-vdc, all you do is click a few buttons. This creates a new server (instance) and puts it in the data center while all network settings get configured automatically. Depending on the size of the server's vm image, it comes up in a matter of seconds.
+
+Now imagine that you have a website running on top of your virtual data center. You get a traffic spike and the servers hosting your website just aren't enough any more. You are now able to quickly spin up a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily throw away those extra servers.
 
 ### Reliability
 
