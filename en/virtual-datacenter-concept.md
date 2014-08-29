@@ -2,7 +2,7 @@
 
 ## What is a virtual data center?
 
-Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](http://www.linux-kvm.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines.
+Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](http://www.linux-kvm.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can create virtual machines.
 
 A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up.
 
@@ -32,11 +32,11 @@ When you need to add a new server to a physical data center, what do you do? You
 
 In a virtual data center like Wakame-vdc, all you do is click a few buttons. This creates a new server (instance) and puts it in the data center while all network settings get configured automatically. Depending on the size of the server's vm image, it comes up in a matter of seconds.
 
-Now imagine that you have a website running on top of your virtual data center. You get a traffic spike and the servers hosting your website just aren't enough any more. You are now able to quickly spin up a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily throw away those extra servers.
+Now imagine that you have a website running on top of your virtual data center. You get a traffic spike and the servers hosting your website just aren't enough any more. You are now able to quickly create a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily delete those extra servers.
 
 ### Reliability
 
-A virtual data center spins up virtual servers on top of physical servers in a physical data center. From the user's point of view it doesn't matter on which physical server a virtual server is running. All the user cares about is being able to connect to their virtual server. If a physical server fails, virtual servers can be quickly migrated to another virtual server.
+A virtual data center creates virtual servers on top of physical servers in a physical data center. From the user's point of view it doesn't matter on which physical server a virtual server is running. All the user cares about is being able to connect to their virtual server. If a physical server fails, virtual servers can be quickly migrated to another virtual server.
 
 Since a virtual data center is software and software can be copied, it is very easy to take regular backups of certain servers or even the entire data center.
 
@@ -60,7 +60,7 @@ Wakame keeps track of a number of *machine images*. These are essentially virtua
 
 Wakame-vdc by itself has only partial network virtualization. Namely, it has a virtualized firewall that updates itself automatically as the data center changes. This is refered to as security groups.
 
-In order to let users connect to instances, Wakame-vdc uses bridged networking. This is explained in the usage guide of several hypervisors and beyond the scope of this document.
+In order to let users connect to instances, Wakame-vdc uses bridged networking. This is explained in the usage guides of several hypervisors and beyond the scope of this wiki.
 
 In order to do full network virtualization, Wakame-vdc integrates with our other product, [OpenVNet](http://www.openvnet.com). OpenVNet achieves full network virtualization using [OpenFlow](http://archive.openflow.org). This is currently still experimental.
 
