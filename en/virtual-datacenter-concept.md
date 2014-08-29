@@ -32,7 +32,7 @@ When you need to add a new server to a physical data center, what do you do? You
 
 In a virtual data center like Wakame-vdc, all you do is click a few buttons. This creates a new server (instance) and puts it in the data center while all network settings get configured automatically. Depending on the size of the server's vm image, it comes up in a matter of seconds.
 
-Now imagine that you have a website running on top of your virtual data center. You get a traffic spike and the servers hosting your website just aren't enough any more. You are now able to quickly create a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily delete those extra servers.
+Now imagine that a user has a website running on top of a virtual data center. They get a traffic spike and the servers hosting their website just aren't enough any more. They are now able to quickly create a bunch of new virtual servers to help you take care of that extra traffic. Once things settle down again, you can easily delete those extra servers.
 
 ### Reliability
 
