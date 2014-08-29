@@ -2,8 +2,6 @@
 
 ## What is a virtual data center?
 
-It is a virtual data center that runs on top of a physical data center.
-
 Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](https://www.virtualbox.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. On top of those they can spin up virtual machines.
 
 A virtual machine is software. Therefore it can be moved, copied and deleted easily. You can take a virtual machine image and copy it over to any other machine which might have a completely different hardware configuration. On top of that completely different hardware, the exact same virtual machine will come up.
@@ -46,7 +44,7 @@ Since a virtual data center is software and software can be copied, it is very e
 
 There are three things that make up a data center, either physical or virtual.
 
-* A bunch of servers.
+* A number of servers.
 
 * A network that connects these servers to each other.
 
