@@ -36,7 +36,7 @@ Now imagine that a user has a website running on top of a virtual data center. T
 
 ### Reliability
 
-A virtual data center creates virtual servers on top of physical servers in a physical data center. From the user's point of view it doesn't matter on which physical server a virtual server is running. All the user cares about is being able to connect to their virtual server. If a physical server fails, virtual servers can be quickly migrated to another virtual server.
+A virtual data center provides much more flexible failover alternatives. Its virtual servers on top of physical servers in a physical data center. From the user's point of view it doesn't matter on which physical server a virtual server is running. All the user cares about is being able to connect to their virtual server. If a physical server fails, virtual servers can be quickly migrated to another virtual server.
 
 Since a virtual data center is software and software can be copied, it is very easy to take regular backups of certain servers or even the entire data center.
 
