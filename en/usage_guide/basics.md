@@ -10,7 +10,7 @@ A working Wakame-vdc environment with at least one machine image registered. If 
 
 ## Guide
 
-Surf to the Wakame-vdc gui and log in. By default the GUI runs on port 9000. Its ip address will be the one of whatever machine has installed the **wakame-vdc-webui-vmapp-config** package. If you have followed either of the guides mentioned in prerequisites, you can log in user username `demo` and password `demo`.
+Surf to the Wakame-vdc gui and log in. By default the GUI runs on port 9000. Its ip address will be the one of whatever machine has installed the **wakame-vdc-webui-vmapp-config** package. If you have followed either of the guides mentioned in prerequisites, you can log in using username `demo` and password `demo`.
 
 [[basics_images/01_login.png]]
 
