@@ -1,8 +1,8 @@
 # Basic Wakame-vdc usage
 
-## What are we doing?
+## What is covered here?
 
-We are going to walk you through Wakame-vdc's most basic function. Namely starting instances. Instance is the term that Wakame-vdc uses for a virtual server. The reasoning behind this is that we're not booting virtual machine images directly. Instead we're booting copies of it. We're instantiating an virtual machine image.
+We are going to walk you through Wakame-vdc's most basic function, namely starting instances. Instance is the term that Wakame-vdc uses for a virtual server. The reasoning behind this is that we're not booting virtual machine images directly. Instead we're booting copies of it. We're instantiating an virtual machine image.
 
 ## Prerequisites
 
