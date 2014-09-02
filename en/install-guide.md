@@ -210,3 +210,7 @@ After all this hard work we should be able to get Wakame-vdc up and running. Sta
     sudo start vdc-webui
 
 If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
+
+The `lucid5d` image has password login through ssh enabled. After starting instances you are able to log in using username `ubuntu` and password `ubuntu`. You are of course also able to log in using username `ubuntu` and a key pair registered with Wakame-vdc.
+
+Check out the [[basic usage guide|Basic-usage]] if you're not sure were to go from here.
