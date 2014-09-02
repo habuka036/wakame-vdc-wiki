@@ -2,7 +2,7 @@
 
 ## What is covered here?
 
-We are going to walk you through Wakame-vdc's most basic function, namely starting instances. Instance is the term that Wakame-vdc uses for a virtual server. The reasoning behind this is that we're not booting virtual machine images directly. Instead we're booting copies of it. We're instantiating an virtual machine image.
+We are going to walk you through Wakame-vdc's most basic function which is starting instances. Instance is the term that Wakame-vdc uses for a virtual server. The reasoning behind this is that we're not booting virtual machine images directly. Instead we're booting copies of it. We're instantiating a virtual machine image.
 
 ## Prerequisites
 
@@ -10,25 +10,27 @@ A working Wakame-vdc environment with at least one machine image registered. If 
 
 ## Guide
 
-Surf to the Wakame-vdc gui and log in. By default the GUI runs on port 9000. Its ip address will be the one of whatever machine has installed the **wakame-vdc-webui-vmapp-config** package. If you have followed either of the guides mentioned in prerequisites, you can log in using username `demo` and password `demo`.
+Surf to the Wakame-vdc gui and log in. By default the GUI runs on port `9000`. Its ip address will be the one of whatever machine has installed the **wakame-vdc-webui-vmapp-config** package. If you have followed either of the guides mentioned in prerequisites, you can log in using username `demo` and password `demo`.
 
 [[basics_images/01_login.png]]
 
-Before we can start an instance there are two things we need. An [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem)) **key pair** and a **security group**. The key pair will be used to log into the instance through ssh. The security group will act as a firewall.
+Before we can start an instance there are two things we need. An [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem)) **key pair** and a **security group**. The key pair will be used to log into the instance through [SSH](http://en.wikipedia.org/wiki/Secure_Shell). The security group will act as a firewall.
 
 Let's take care of the key pair first. Click on `Key Pairs` in the menu on the left.
 
 [[basics_images/02_dashboard_key_pairs.png]]
 
-Click on `create key`.
+Click on `Create Key Pair`.
 
 [[basics_images/03_keypairs_create_key.png]]
 
-If you already have your own RSA key, you can just register your public key. If you leave the public key field blank, Wakame-vdc will generate a new key for you. Let's do that now. Fill in a name for your key and click on `Create`.
+If you already have your own RSA key, you can just register your public key. If you leave the public key field blank, Wakame-vdc will generate a new key for you. Let's do that now.
 
 After you've clicked on `Create`, Wakame-vdc will generate a new RSA key pair and offer the private key for download. On a production environment, this key would be very sensitive information. Make sure to use [https](http://en.wikipedia.org/wiki/HTTP_Secure) when running this on a production server.
 
 We're going to need this private key later so remember where you saved it. The private key will *not* be stored by Wakame-vdc in any way. If you accidentally delete it, it's gone forever.
+
+Fill in a name for your key and click on `Create`.
 
 [[basics_images/04_keypairs_dialog.png]]
 
@@ -56,15 +58,15 @@ This guide is written based on an image that was set up using the [[installation
 
 [[basics_images/09_machine_images_launch.png]]
 
-There's a lot of information on the `Launch Instance` dialog. On this page we are only going to explain the bare essentials needed to launch an instance. Fill in the following:
+There's a lot of information on the `Launch Instance` dialog. We are only going to fill in the bare essentials needed to launch an instance.
 
 * **Instance Name** (a human readable name for the instance)
 
 * **SSH Key Pair** (the RSA key pair we created before and are going to use to log into the instance)
 
-* Security Groups (the security group we created before which will open tcp port 22)
+* **Security Groups** (the security group we created before which will open tcp port 22)
 
-* eth0 (this will give the instance a virtual network interface and connect it to a network)
+* **eth0** (this will give the instance a virtual network interface and connect it to a network)
 
 Once all of these are filled in, click on `Launch`.
 
@@ -76,7 +78,7 @@ You'll be taken back to the `Machine Images` page. Don't worry if you don't see 
 
 You should be able to see your instance on this page. Under `State` it will say either *running* or *initializing*. If it's the latter then just wait for a while and refresh the page. It should get to the *running* state eventually. If it says *terminated*, then something went wrong. Make sure you've followed the steps in this guide correctly and check out the logs in the `/var/log/wakame-vdc` directory for clues.
 
-Once your instance has reached state *running*, it might still take a little while before you can ssh into it. The *running* state means that Wakame-vdc has started your instances. It's equivalent to pressing the power button on a physical server. The instance is turned on but the OS still needs a little time to boot.
+Once your instance has reached state *running*, it might still take a little while before you can ssh into it. The *running* state means that Wakame-vdc has started your instance. It's equivalent to pressing the power button on a physical server. The instance is turned on but the OS still needs a little time to boot.
 
 You will also see the ip address that has been assigned to your instance. On the screenshot below that would be `192.168.3.2`.
 
@@ -84,7 +86,7 @@ You will also see the ip address that has been assigned to your instance. On the
 
 At this point we're done with the Wakame-vdc GUI. That instance is now a server running in a network. We're going to log into it just like you'd log into any other server: using SSH. Remember how we downloaded the RSA private key that we created earlier? This is where we'll use it. On a Linux machine you'd run this command.
 
-    ssh -i /path/to/your/private/key -l username <ip-of-your-instance>
+    ssh -i /path/to/your/private/key -l username ip-of-your-instance
 
 If we fill in the values used in this guide, we get the following command:
 
