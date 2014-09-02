@@ -4,6 +4,8 @@
 
 We are going to walk you through Wakame-vdc's most basic function which is starting instances. Instance is the term that Wakame-vdc uses for a virtual server. The reasoning behind this is that we're not booting virtual machine images directly. Instead we're booting copies of it. We're instantiating a virtual machine image.
 
+At the end of this guide, we'll also tell you how to terminate started instances.
+
 ## Prerequisites
 
 A working Wakame-vdc environment with at least one machine image registered. If you've followed the [[installation guide|install-guide]] or the [VirtualBox demo image guide](http://wakameusersgroup.org/demo_image.html), you already have that.
