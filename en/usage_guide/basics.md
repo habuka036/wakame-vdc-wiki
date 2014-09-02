@@ -91,3 +91,25 @@ At this point we're done with the Wakame-vdc GUI. That instance is now a server 
 If we fill in the values used in this guide, we get the following command:
 
     ssh -i ~/Downloads/ssh-tziiy9n6.pem -l ubuntu 192.168.3.2
+
+That's it. You have now started an instance and can start using it. Feel free to play around and start any number of instances.
+
+Once you've decided you don't need an instance any more, you can terminate it. Before you do so, you need to be absolutely sure that you don't need this instance any more. Once an instance is terminated, it is irrevocably deleted. It will not be possible to recover it!
+
+To terminate an instance, select it from the list and click on `Select an Action`.
+
+[[basics_images/13_select_an_action.png]]
+
+Now click on `Terminate`.
+
+[[basics_images/14_terminate.png]]
+
+A dialog pops up asking for confirmation. Confirm that this is indeed the instance that you want to terminate and click on `Terminate`.
+
+[[basics_images/15_terminate_dialog.png]]
+
+You'll be taken back to the instances list. You'll see the state of your instance is now *shutting down*. If you wait a few seconds and refresh it will have changed to *terminated*. The instance is now gone forever.
+
+[[basics_images/16_terminated.png]]
+
+That concludes this basic Wakame-vdc usage guide. We hope everything went smoothly and if you run into any problems, don't hesitate to contact us on the [Wakame Users Group](https://groups.google.com/forum/?hl=en-GB#!forum/wakame-ug). We'll do our best to help you resolve any issues you might run into.
