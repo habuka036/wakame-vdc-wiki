@@ -12,6 +12,8 @@ A working Wakame-vdc environment with at least one machine image registered. If 
 
 ## Guide
 
+### Starting instances
+
 Surf to the Wakame-vdc gui and log in. By default the GUI runs on port `9000`. Its ip address will be the one of whatever machine has installed the **wakame-vdc-webui-vmapp-config** package. If you have followed either of the guides mentioned in prerequisites, you can log in using username `demo` and password `demo`.
 
 [[basics_images/01_login.png]]
@@ -86,6 +88,8 @@ You will also see the ip address that has been assigned to your instance. On the
 
 [[basics_images/12_instances.png]]
 
+### Using instances
+
 At this point we're done with the Wakame-vdc GUI. That instance is now a server running in a network. We're going to log into it just like you'd log into any other server: using SSH. Remember how we downloaded the RSA private key that we created earlier? This is where we'll use it. On a Linux machine you'd run this command.
 
     ssh -i /path/to/your/private/key -l username ip-of-your-instance
@@ -95,6 +99,8 @@ If we fill in the values used in this guide, we get the following command:
     ssh -i ~/Downloads/ssh-tziiy9n6.pem -l ubuntu 192.168.3.2
 
 That's it. You have now started an instance and can start using it. Feel free to play around and start any number of instances.
+
+### Terminating instances
 
 Once you've decided you don't need an instance any more, you can terminate it. Before you do so, you need to be absolutely sure that you don't need this instance any more. Once an instance is terminated, it is irrevocably deleted. It will not be possible to recover it!
 
