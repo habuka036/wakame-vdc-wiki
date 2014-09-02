@@ -4,5 +4,5 @@
 + [[Concept|virtual-datacenter-concept]]
 + [VirtualBox demo image](http://wakameusersgroup.org/demo_image.html)
 + [[Installation guide|install-guide]]
-+ [[Basic usage|en/usage_guide/basics]]
++ [[Basic usage|basics]]
 + [[F.A.Q.|faq]]
