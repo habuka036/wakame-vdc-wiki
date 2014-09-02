@@ -1,5 +1,3 @@
-# Virtual Data center Concept
-
 ## Why virtualize?
 
 Think about the concept of virtual machines like [VirtualBox](https://www.virtualbox.org) or [KVM](http://www.linux-kvm.org) for a bit. What do they do? They run on some kind of physical hardware. It can be either a big tower PC or a small laptop. The exact same virtual machines can run on either hardware.
