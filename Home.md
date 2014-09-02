@@ -1,5 +1,3 @@
-# Wakame-vdc
-
 [[images/Wakame2-logo-large.png]]
 
 ### What is Wakame-vdc?
