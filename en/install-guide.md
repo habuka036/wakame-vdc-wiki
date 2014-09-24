@@ -111,15 +111,7 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
 We can't do much with Wakame-vdc without some initial data in the database and some machine images to start instances from. Let's put those things in place.
 
-Install the `vdc.sh` script
-
-    sudo yum install -y wakame-vdc-vdcsh
-
-Unfortunately there is a bug in the `vdc.sh` rpm package. It fails to create a required *Modulesfile*. Create it manually.
-
-    echo "hva hva_id=demo1 host=localhost" | sudo tee /opt/axsh/wakame-vdc/tests/Modulesfile
-
-The vdc.sh script comes with a few machine images but they need to be enabled manually. We are going to enable two:
+For this guide we are going to install two machine images:
 
 * Load balancer
 
@@ -130,34 +122,9 @@ can start instances of. Instead when a user creates a *load balancer*, Wakame-vd
 
   This is just a simple image containing Ubuntu 10.04 (Lucid Lynx). It's not really meant to do anything more than allow users to start a few instances and play around with Wakame-vdc
 
-Enable these two images with the following commands.
+Wakame-vdc's default directory for keeping images is `/var/lib/wakame-vdc/images`. Unfortunately the rpm packages don't create that directory automatically for us yet. Create it manually.
 
-    sudo ln -s /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.available/image-lb.meta /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.enabled/
-
-    sudo ln -s /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.available/image-lucid5d.meta /opt/axsh/wakame-vdc/tests/vdc.sh.d/image.enabled/
-
-The script will want to place its images in `/opt/axsh/wakame-vdc/tmp/images`. Create that directory.
-
-    sudo mkdir -p /opt/axsh/wakame-vdc/tmp/images
-
-Run it.
-
-    sudo /opt/axsh/wakame-vdc/tests/vdc.sh init
-
-The script has now created the database, filled it up and downloaded the images for us. Unfortunately it also expects the images to be accessible through a web server. We are not going to set
-up such a server in this guide. We are just going to keep the images on the local file system.
-
-Using the `vdc-manage` cli, we can tell Wakame-vdc about that.
-
-    cd /opt/axsh/wakame-vdc/dcmgr/bin
-    ./vdc-manage backupobject modify bo-demolb --storage-id bkst-demo1
-    ./vdc-manage backupobject modify bo-lucid5d --storage-id bkst-demo1
-
-The `lucid5d` image has a 32 bit architecture but our host is 64 bit. A 64 bit hypervisor is technically able to run 32 bit instances but unfortunately Wakame-vdc's implementation currently
-prevents this. We can work around it by setting the lucid5d image to 64 bit in Wakame-vdc's database.
-
-    cd /opt/axsh/wakame-vdc/dcmgr/bin
-    ./vdc-manage image modify wmi-lucid5d --arch x86_64
+    sudo mkdir -p /var/lib/wakame-vdc/images
 
 #### Create the network bridge
 
