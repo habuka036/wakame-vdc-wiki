@@ -139,6 +139,10 @@ Uncompress them
     sudo gunzip ubuntu-lucid-kvm-md-32.raw.gz
     sudo gunzip lb-centos-openvz-md-64-stud.raw.gz
 
+After uncompressing the images should have the following md5 checksums.
+    22cf1844b64c391bb382764c24c8f5e2  ubuntu-lucid-kvm-md-32.raw
+    5728272e1d73dcae229953654343b58c  lb-centos-openvz-md-64-stud.raw
+
 #### Create the network bridge
 
 Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to
