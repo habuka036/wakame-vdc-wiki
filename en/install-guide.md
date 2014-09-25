@@ -150,10 +150,29 @@ Now download both images in that directory.
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/ubuntu-lucid-kvm-md-32.raw.gz
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/lb-centos-openvz-md-64-stud.raw.gz
 
-The images should have the following md5 sums
+The images should have the following md5 sums. We will need those when registering these in the database.
 
     ad5904e9cf4213ce441fe5e12cd14b41  lb-centos-openvz-md-64-stud.raw.gz
     55dcc87838af4aa14eb3eb986ea756d3  ubuntu-lucid-kvm-md-32.raw.gz
+
+##### Register machine images
+
+It's time to let Wakame-vdc know about the images we downloaded. First of all here's a brief explanation of how Wakame-vdc treats machine images. There are two terms we'll need to understand here. **Backup objects** and **machine images**. A *backup object* is basically a hard drive image. A *machine image* is a backup object that's bootable. In case of a linux instance, the *machine image* would hold the root partition.
+
+We can use the `vdc-manage` cli to perform operations on Wakame-vdc's database. It's located in the following directory. Unfortunately it is currently not possible to call the cli from another directory so change to it.
+
+    cd /opt/axsh/wakame-vdc/dcmgr/bin/
+
+First of all we need to tell Wakame-vdc how we are storing these backup objects. We are currently just keeping them on the local file system. Let's tell Wakame-vdc about that.
+
+    ./vdc-manage backupstorage add \
+      --uuid bkst-local \
+      --display-name "local storage" \
+      --base-uri "file:///var/lib/wakame-vdc/images" \
+      --storage-type local \
+      --description "storage on the local filesystem"
+
+Now register the backup objects and assign them to the local storage that we just made.
 
 #### Create the network bridge
 
