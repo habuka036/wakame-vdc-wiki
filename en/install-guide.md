@@ -134,14 +134,26 @@ Now download both images in that directory.
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/ubuntu-lucid-kvm-md-32.raw.gz
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/lb-centos-openvz-md-64-stud.raw.gz
 
-Uncompress them
+The images should have the following md5 sums
 
-    sudo gunzip ubuntu-lucid-kvm-md-32.raw.gz
-    sudo gunzip lb-centos-openvz-md-64-stud.raw.gz
+    ad5904e9cf4213ce441fe5e12cd14b41  lb-centos-openvz-md-64-stud.raw.gz
+    55dcc87838af4aa14eb3eb986ea756d3  ubuntu-lucid-kvm-md-32.raw.gz
 
-After uncompressing the images should have the following md5 checksums.
-    22cf1844b64c391bb382764c24c8f5e2  ubuntu-lucid-kvm-md-32.raw
-    5728272e1d73dcae229953654343b58c  lb-centos-openvz-md-64-stud.raw
+##### Create the Wakame-vdc database
+
+Wakame-vdc uses a mysql database. Start mysql and create the database.
+
+    sudo /etc/init.d/mysqld start
+    mysqladmin -uroot create wakame_dcmgr
+
+We can use rake to create the database tables. Wakame-vdc comes with its own ruby binary that includes rake. It needs to be in your PATH. If you already have rake in your PATH, you can skip this step.
+
+    cd /opt/axsh/wakame-vdc/ruby/bin
+    PATH=$PWD:$PATH
+
+Now use rake to create the database tables.
+
+    rake db:up
 
 #### Create the network bridge
 
