@@ -111,6 +111,22 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
 We can't do much with Wakame-vdc without some initial data in the database and some machine images to start instances from. Let's put those things in place.
 
+##### Create the Wakame-vdc database
+
+Wakame-vdc uses a mysql database. Start mysql and create the database.
+
+    sudo /etc/init.d/mysqld start
+    mysqladmin -uroot create wakame_dcmgr
+
+We can use rake to create the database tables. Wakame-vdc comes with its own ruby binary that includes rake. It needs to be in your PATH. If you already have rake in your PATH, you can skip this step.
+
+    cd /opt/axsh/wakame-vdc/ruby/bin
+    PATH=$PWD:$PATH
+
+Now use rake to create the database tables.
+
+    rake db:up
+
 ##### Download machine images
 
 For this guide we are going to install two machine images:
@@ -138,22 +154,6 @@ The images should have the following md5 sums
 
     ad5904e9cf4213ce441fe5e12cd14b41  lb-centos-openvz-md-64-stud.raw.gz
     55dcc87838af4aa14eb3eb986ea756d3  ubuntu-lucid-kvm-md-32.raw.gz
-
-##### Create the Wakame-vdc database
-
-Wakame-vdc uses a mysql database. Start mysql and create the database.
-
-    sudo /etc/init.d/mysqld start
-    mysqladmin -uroot create wakame_dcmgr
-
-We can use rake to create the database tables. Wakame-vdc comes with its own ruby binary that includes rake. It needs to be in your PATH. If you already have rake in your PATH, you can skip this step.
-
-    cd /opt/axsh/wakame-vdc/ruby/bin
-    PATH=$PWD:$PATH
-
-Now use rake to create the database tables.
-
-    rake db:up
 
 #### Create the network bridge
 
