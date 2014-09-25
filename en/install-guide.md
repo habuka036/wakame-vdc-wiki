@@ -111,6 +111,8 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
 We can't do much with Wakame-vdc without some initial data in the database and some machine images to start instances from. Let's put those things in place.
 
+##### Download machine images
+
 For this guide we are going to install two machine images:
 
 * Load balancer
@@ -125,6 +127,12 @@ can start instances of. Instead when a user creates a *load balancer*, Wakame-vd
 Wakame-vdc's default directory for keeping images is `/var/lib/wakame-vdc/images`. Unfortunately the rpm packages don't create that directory automatically for us yet. Create it manually.
 
     sudo mkdir -p /var/lib/wakame-vdc/images
+
+Now download both images in that directory.
+
+    cd /var/lib/wakame-vdc/images
+    sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/ubuntu-lucid-kvm-md-32.raw.gz
+    sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/lb-centos-openvz-md-64-stud.raw.gz
 
 #### Create the network bridge
 
