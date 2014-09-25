@@ -134,6 +134,11 @@ Now download both images in that directory.
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/ubuntu-lucid-kvm-md-32.raw.gz
     sudo curl -O http://dlc.wakame.axsh.jp.s3.amazonaws.com/demo/vmimage/lb-centos-openvz-md-64-stud.raw.gz
 
+Uncompress them
+
+    sudo gunzip ubuntu-lucid-kvm-md-32.raw.gz
+    sudo gunzip lb-centos-openvz-md-64-stud.raw.gz
+
 #### Create the network bridge
 
 Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to
