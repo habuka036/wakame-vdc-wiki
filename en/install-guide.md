@@ -174,6 +174,16 @@ First of all we need to tell Wakame-vdc how we are storing these backup objects.
 
 Now register the backup objects and assign them to the local storage that we just made.
 
+    ./vdc-manage backupobject add \
+      --uuid bo-lucid5d \
+      --display-name "Ubuntu Lucid" \
+      --storage-id bkst-local \
+      --object-key ubuntu-lucid-kvm-md-32.raw \
+      --size 149084 \
+      --allocation-size 359940 \
+      --container-format gz \
+      --checksum 55dcc87838af4aa14eb3eb986ea756d3
+
 #### Create the network bridge
 
 Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to
