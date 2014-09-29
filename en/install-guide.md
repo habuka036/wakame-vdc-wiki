@@ -127,7 +127,9 @@ Now use rake to create the database tables.
 
     rake db:up
 
-##### Download machine images
+##### Download machine image
+
+TODO: rewrite this to only include lucid5d
 
 For this guide we are going to install two machine images:
 
@@ -162,27 +164,76 @@ It's time to let Wakame-vdc know about the images we downloaded. First of all he
 We can use the `vdc-manage` cli to perform operations on Wakame-vdc's database. It's located in the following directory. Unfortunately it is currently not possible to call the cli from another directory so change to it.
 
     cd /opt/axsh/wakame-vdc/dcmgr/bin/
+    ./vdc-manage
 
 First of all we need to tell Wakame-vdc how we are storing these backup objects. We are currently just keeping them on the local file system. Let's tell Wakame-vdc about that.
 
-    ./vdc-manage backupstorage add \
+    backupstorage add \
       --uuid bkst-local \
       --display-name "local storage" \
       --base-uri "file:///var/lib/wakame-vdc/images" \
       --storage-type local \
       --description "storage on the local filesystem"
 
-Now register the backup objects and assign them to the local storage that we just made.
+Now register the backup object and assign it to the local storage that we just made.
 
-    ./vdc-manage backupobject add \
+    backupobject add \
       --uuid bo-lucid5d \
-      --display-name "Ubuntu Lucid" \
+      --display-name "Ubuntu Lucid root partition" \
       --storage-id bkst-local \
       --object-key ubuntu-lucid-kvm-md-32.raw \
       --size 149084 \
       --allocation-size 359940 \
       --container-format gz \
       --checksum 55dcc87838af4aa14eb3eb986ea756d3
+
+Next we tell Wakame-vdc that this backup object is a machine image that we can start instances from.
+
+    image add local bo-lucid5d \
+      --account-id a-shpoolxx \
+      --uuid wmi-lucid5d \
+      --display-name "Ubuntu lucid"
+
+##### Create a network
+
+We're also going to need a network for Wakame-vdc to start instances in. Create that through vdc-manage.
+
+We're done with vdc-manage now. Exit its shell.
+
+    exit
+
+##### Configure the GUI
+
+The GUI is a rails application that requires its own database. Create it and initialize its tables using rake.
+
+    mysqladmin -uroot create wakame_dcmgr_gui
+    cd /opt/axsh/wakame-vdc/frontend/dcmgr_gui/
+    rake db:init
+
+The GUI uses user/password authentication. Wakame-vdc's web API has no authentication so on a production environment you would want to show only the GUI to the outside world while keeping the web API on a private network. We're going to be talking about **users** and **accounts** here. Their meanings are slightly different.
+
+* An account is where rights are assigned. An account will be allowed to start a certain amount of instances and own certain resources.
+
+* A user is a person that has access to one or more accounts. You will log into the Wakame-vdc GUI with a user name and get access to the resources owned by any accounts your user is associated with.
+
+Users and accounts share a many-to-many relation. A user can belong to many accounts and an account can belong to many users.
+
+The GUI database has a cli called `gui-manage` which is similar to vdc-manage.
+
+    cd /opt/axsh/wakame-vdc/frontend/dcmgr_gui/bin
+    ./gui-manage
+
+Let's use it to create an account for ourselves. This is a special account that Wakame-vdc uses for certain shared resources.
+
+    account add --name default --uuid a-shpoolxx
+
+Next we'll add a user.
+
+    user add --name "demo user" --uuid u-demo --password demo --login-id demo
+
+Now associate the user and the account.
+
+    user associate u-demo --account-ids a-shpoolxx
 
 #### Create the network bridge
 
