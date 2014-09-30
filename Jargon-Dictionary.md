@@ -9,6 +9,11 @@
 ## G
 ## H
 ## I
+
+### Instance
+
+Virtual machine managed by wakame-vdc.
+
 ## J
 ## K
 ## L
