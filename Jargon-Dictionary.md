@@ -5,6 +5,11 @@
 ## C
 ## D
 ## E
+
+### Endpoint
+
+The logical endpoint of separate protocol traffic of a specific protocol layer. 
+
 ## F
 ## G
 ## H
@@ -12,7 +17,7 @@
 
 ### Instance
 
-Virtual machine managed by wakame-vdc.
+The virtual machine managed by wakame-vdc.
 
 ## J
 ## K
