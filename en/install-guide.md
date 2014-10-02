@@ -185,7 +185,7 @@ Remarks:
       --uuid bo-lucid5d \
       --display-name "Ubuntu 10.04 (Lucid Lynx) root partition" \
       --storage-id bkst-local \
-      --object-key ubuntu-lucid-kvm-md-32.raw \
+      --object-key ubuntu-lucid-kvm-md-32.raw.gz \
       --size 149084 \
       --allocation-size 359940 \
       --container-format gz \
@@ -196,6 +196,7 @@ Next we tell Wakame-vdc that this backup object is a machine image that we can s
     image add local bo-lucid5d \
       --account-id a-shpoolxx \
       --uuid wmi-lucid5d \
+      --root-device uuid:148bc5df-3fc5-4e93-8a16-7328907cb1c0 \
       --display-name "Ubuntu 10.04 (Lucid Lynx)"
 
 We're done with vdc-manage now. Exit its shell.
