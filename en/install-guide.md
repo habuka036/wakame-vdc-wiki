@@ -180,7 +180,7 @@ Now register the backup object and assign it to the local storage that we just m
 
 Remarks:
 
-    * This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.
+* This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.
 
     backupobject add \
       --uuid bo-lucid5d \
