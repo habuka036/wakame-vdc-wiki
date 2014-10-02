@@ -310,6 +310,10 @@ Now associate the user and the account.
 
     user associate u-demo --account-ids a-shpoolxx
 
+We're done with gui-manage. Exit the shell.
+
+    exit
+
 #### Start Wakame-vdc
 
 Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communicate. Rabbitmq-server is the AMQP exchange managing all that traffic.
