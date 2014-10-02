@@ -273,6 +273,9 @@ First we need to let Wakame-vdc know that it can attach instances to bridge `br0
     network dc add-network-mode public securitygroup
     network forward nw-demo1 public
 
+We're done with vdc-manage again. Exit its shell.
+
+    exit
 
 ##### Configure the GUI
 
