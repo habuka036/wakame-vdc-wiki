@@ -135,6 +135,7 @@ Now our HVA process will start up with `demo1` as its `node id`. Next we need to
        --hypervisor openvz \
        --arch x86_64 \
        --disk-space 102400 \
+       --force
 
 Remarks:
   * The `node id` would be *hva.demo1*. We set *demo1* in the above step but when the process starts, it is automatically prefixed by hva.
@@ -142,7 +143,6 @@ Remarks:
   * *Memory-size* and *cpu-cores* do not represent the actual memory size and cpu cores of the host node. They represent the amount of either to be offered to instances. Setting cpu-cores to 100 means that you can start for example 100 instances with 1 cpu core each or in another example, 50 instances with 2 cpu cores each.
 
   * The *force* flag is set so we can add the host node even though Wakame-vdc can't currently see it through AMQP. Since we haven't started the Wakame-vdc services yet, it's only natural that it can't see it yet. It will once we start them.
-       --force
 
 ##### Download and register a machine image
 
