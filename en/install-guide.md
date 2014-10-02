@@ -112,6 +112,7 @@ We can use rake to create the database tables. Wakame-vdc comes with its own rub
 
 Now use rake to create the database tables.
 
+    cd /opt/axsh/wakame-vdc/dcmgr
     rake db:up
 
 ##### Register the HVA
@@ -134,14 +135,14 @@ Remarks:
   * The *force* flag is set so we can add the host node even though Wakame-vdc can't currently see it through AMQP. Since we haven't started the Wakame-vdc services yet, it's only natural that it can't see it yet. It will once we start them.
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage host add hva.demo1 \
-     --uuid hn-demo1 \
-     --display-name "demo hva 1" \
-     --cpu-cores 100 \
-     --memory-size 10240 \
-     --hypervisor openvz \
-     --arch x86_64 \
-     --disk-space 102400 \
-     --force
+       --uuid hn-demo1 \
+       --display-name "demo hva 1" \
+       --cpu-cores 100 \
+       --memory-size 10240 \
+       --hypervisor openvz \
+       --arch x86_64 \
+       --disk-space 102400 \
+       --force
 
 ##### Download and register a machine image
 
