@@ -64,7 +64,7 @@ Install it with the following command.
 The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts instances. On a production environment, you would likely have a dedicated bare metal host for this. Right now we are
 just going to install it on the same machine as dcmgr.
 
-Remark: In this installation the instances are going to be OpenVz containers. Therefore we install the OpenVz specific hva package.
+**Remark:** In this installation the instances are going to be [OpenVZ](http://openvz.org/Main_Page) containers. Therefore we install the OpenVz specific hva package.
 
     sudo yum install -y wakame-vdc-hva-openvz-vmapp-config
 
