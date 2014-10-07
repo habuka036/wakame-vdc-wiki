@@ -78,6 +78,43 @@ This is Wakame-vdc's GUI. It's actually a rails application that sits in front t
 
 These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Reboot your machine so that kernel gets loaded.
 
+#### Set up bridged networking
+
+Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to
+attach instances to.
+
+If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
+
+For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`.
+Change these values to match your environment.
+
+Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following contents
+
+    DEVICE=br0
+    TYPE=Bridge
+    BOOTPROTO=static
+    ONBOOT=yes
+    NM_CONTROLLED=no
+    IPADDR=192.168.3.100
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.3.1
+    DNS1=8.8.8.8
+    DELAY=0
+
+Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
+
+    DEVICE="eth0"
+    ONBOOT="yes"
+    BRIDGE=br0
+    NM_CONTROLLED=no
+
+Restart the network.
+
+**Be careful!** If you have made any mistakes setting up these files for your environment, this next command will cause networking to go down on your machine. Triple check these values if
+you're running this guide on a remote machine!
+
+    sudo  /etc/init.d/network restart
+
 #### Configuration
 
 The different Wakame-vdc services require their own config files. Unfortunately they aren't automatically installed with the rpm packages. There are examples included in the Wakame-vdc source
@@ -202,41 +239,6 @@ We're done with vdc-manage now. Exit its shell.
     exit
 
 ##### Set up networking
-
-Wakame-vdc uses bridged networking to allow users to connect to instances. We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) to
-attach instances to.
-
-If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
-
-For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`.
-Change these values to match your environment.
-
-Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following contents
-
-    DEVICE=br0
-    TYPE=Bridge
-    BOOTPROTO=static
-    ONBOOT=yes
-    NM_CONTROLLED=no
-    IPADDR=192.168.3.100
-    NETMASK=255.255.255.0
-    GATEWAY=192.168.3.1
-    DNS1=8.8.8.8
-    DELAY=0
-
-Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
-
-    DEVICE="eth0"
-    ONBOOT="yes"
-    BRIDGE=br0
-    NM_CONTROLLED=no
-
-Restart the network.
-
-**Be careful!** If you have made any mistakes setting up these files for your environment, this next command will cause networking to go down on your machine. Triple check these values if
-you're running this guide on a remote machine!
-
-    sudo  /etc/init.d/network restart
 
 As described above, we are going to use this network to start instances in. Again we will use `vdc-manage` to make Wakame-vdc aware of that.
 
