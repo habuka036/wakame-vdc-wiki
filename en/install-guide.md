@@ -63,8 +63,8 @@ Install it with the following command.
 
 #### Install HVA
 
-The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts instances. On a production environment, you would likely have a dedicated bare metal host for this. Right now we are
-just going to install it on the same machine as dcmgr.
+The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts instances. On a production environment, you would likely have several dedicated bare metal hosts for this. Right now we are
+just going to install one HVA on the same machine as dcmgr.
 
 **Remark:** In this installation the instances are going to be [OpenVZ](http://openvz.org/Main_Page) containers. Therefore we install the OpenVz specific hva package.
 
