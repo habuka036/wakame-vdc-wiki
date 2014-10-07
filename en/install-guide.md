@@ -15,12 +15,14 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
   * A machine running [Centos](http://www.centos.org) 6.4 with x86 64 bit processor architecture. This can be either bare metal or a virtual machine. Instances are going to run as
 [OpenVZ](http://openvz.org/Main_Page) containers so you don't need to worry about nested virtualization.
 
-  * About two gigabytes of disk space available in the `/opt` directory. Wakame-vdc itself and its demo images are going to be placed there.
+  * About 350 MB of disk space available in the `/opt` directory. Wakame-vdc itself is going to be placed there.
 
-  * One gigabyte of RAM memory should be more than enough for Wakame-vdc to run in this simple demo environment.
+  * 1 GB of RAM should be more than enough for Wakame-vdc to run in this simple demo environment.
 
-  * Some free disk space in the `/var/lib` directory. How much you need depends on how many instances you want to start. Wakame-vdc is going to place its instances data in
-`/var/lib/wakame-vdc`. One instance of the Ubuntu Lucid image used in this guide takes up about 350 MB.
+  * Some free disk space in the `/var/lib` directory. How much you need depends on how many instances you want to start. Wakame-vdc is going to place both its machine images and instances data in
+`/var/lib/wakame-vdc`.
+
+  This guide will install only a single machine image. The image itself is compressed and will take up 146 MB. Instances of it will take up 351 MB each when started.
 
   * Internet access. (to download rpm packages and machine images)
 
