@@ -80,11 +80,6 @@ These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on 
 
 #### Configuration
 
-By default Wakame-vdc's [upstart jobs](http://upstart.ubuntu.com) require an environment variable `RUN=yes` to be set. We can set it right now in the `/etc/default/vdc-*` scripts so we don't
-have to worry about it when starting services any more.
-
-    sudo sed -i -e 's/^#\(RUN=yes\)/\1/' /etc/default/vdc-*
-
 The different Wakame-vdc services require their own config files. Unfortunately they aren't automatically installed with the rpm packages. There are examples included in the Wakame-vdc source
 tree though. Copy those over manually.
 
