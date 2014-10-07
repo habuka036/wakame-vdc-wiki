@@ -44,9 +44,9 @@ Add the Axsh OpenVZ yum repository to `/etc/yum.repos.d`. We are hosting an olde
 
     sudo curl -o /etc/yum.repos.d/openvz.repo -R https://raw.githubusercontent.com/axsh/wakame-vdc/master/rpmbuild/openvz.repo
 
-Install [EPEL](https://fedoraproject.org/wiki/EPEL). We need to pull some OpenVZ dependencies from here. This url will just redirect to the official EPEL site.
+Install [EPEL](https://fedoraproject.org/wiki/EPEL). We need to pull some OpenVZ dependencies from here.
 
-    sudo rpm -Uvh http://dlc.wakame.axsh.jp.s3-website-us-east-1.amazonaws.com/epel-release
+    sudo rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 #### Install Dcmgr
 
