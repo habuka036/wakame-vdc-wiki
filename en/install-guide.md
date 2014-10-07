@@ -317,6 +317,10 @@ Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communic
 
     sudo /etc/init.d/rabbitmq-server start
 
+If you've been following this guide, MySQL should still be running. If it isn't running, start it.
+
+    sudo /etc/init.d/mysqld start
+
 After all this hard work we should be able to get Wakame-vdc up and running. Start the upstart jobs.
 
     sudo start vdc-dcmgr
