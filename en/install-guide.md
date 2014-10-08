@@ -133,7 +133,7 @@ After running the script and [optionally reserving ip addresses](install-guide#r
 
 ##### Manual configuration
 
-The different Wakame-vdc services require their own config files. Unfortunately they aren't automatically installed with the rpm packages. There are examples included in the Wakame-vdc source
+The different Wakame-vdc services require their own config files. Unfortunately they currently aren't automatically installed with the rpm packages. Until we have that fixed, you will have to copy them over manually.
 tree though. Copy those over manually.
 
     sudo cp /opt/axsh/wakame-vdc/dcmgr/config/dcmgr.conf.example /etc/wakame-vdc/dcmgr.conf
