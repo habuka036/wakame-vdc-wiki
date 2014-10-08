@@ -197,7 +197,7 @@ Remarks:
 
 Of course we can't start any instances if we don't have a machine image to instantiate. For this guide we are just going to download a simple machine image containing Ubuntu 10.04 (Lucid Lynx).
 
-Wakame-vdc's default directory for keeping images is `/var/lib/wakame-vdc/images`. Unfortunately the rpm packages don't create that directory automatically for us yet. Create it manually.
+Wakame-vdc's default directory for keeping images is `/var/lib/wakame-vdc/images`. Create it.
 
     sudo mkdir -p /var/lib/wakame-vdc/images
 
@@ -208,15 +208,15 @@ Now download the image in that directory.
 
 The image should have the following md5 sum. We will need it when registering it in the database.
 
-    55dcc87838af4aa14eb3eb986ea756d3  ubuntu-lucid-kvm-md-32.raw.gz
+    1f841b195e0fdfd4342709f77325ce29  ubuntu-lucid-kvm-md-32.raw.gz
 
 Now we need to let Wakame-vdc know that it has a machine image to start instances from. First of all here's a brief explanation of how Wakame-vdc treats machine images. There are two terms we'll need to understand here. **Backup objects** and **machine images**. A *backup object* is basically a hard drive image. A *machine image* is a backup object that's bootable. In case of a linux instance, the *machine image* would hold the root partition.
 
-To register both the backup object and the related machine image, we will again use the vdc-manage cli but since we are going to run more than one operation now, it's more efficient to call it without arguments. This will result in a special shell where we can run vdc-manage commands. This is more efficient because we only need to establish a connection to the database once and can then feed many commands through it.
+To register both the *backup object* and the related *machine image*, we will again use the `vdc-manage` cli but since we are going to run more than one operation now, it's more efficient to call it without arguments. This will result in a special shell where we can run `vdc-manage` commands. This is more efficient because we only need to establish a connection to the database once and can then feed many commands through it.
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage
 
-First of all we need to tell Wakame-vdc how we are storing these backup objects. We are currently just keeping them on the local file system. Let's tell Wakame-vdc about that.
+First of all we need to tell Wakame-vdc how we are storing these *backup objects*. We are currently just keeping them on the local file system.
 
     backupstorage add \
       --uuid bkst-local \
@@ -226,8 +226,6 @@ First of all we need to tell Wakame-vdc how we are storing these backup objects.
       --description "storage on the local filesystem"
 
 Now register the backup object and assign it to the local storage that we just made.
-
-Remarks:
 
 This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.
 
@@ -239,9 +237,9 @@ This image is compressed with gzip to save space. In order to properly manage it
       --size 149084 \
       --allocation-size 359940 \
       --container-format gz \
-      --checksum 55dcc87838af4aa14eb3eb986ea756d3
+      --checksum 1f841b195e0fdfd4342709f77325ce29
 
-Next we tell Wakame-vdc that this backup object is a machine image that we can start instances from.
+Next we tell Wakame-vdc that this backup object is a machine image that we can start instances of.
 
     image add local bo-lucid5d \
       --account-id a-shpoolxx \
@@ -249,17 +247,11 @@ Next we tell Wakame-vdc that this backup object is a machine image that we can s
       --root-device uuid:148bc5df-3fc5-4e93-8a16-7328907cb1c0 \
       --display-name "Ubuntu 10.04 (Lucid Lynx)"
 
-We're done with vdc-manage now. Exit its shell.
+##### Register a network
 
-    exit
+Wakame-vdc needs to know which network instances will be connected to. As described above, this guide assumes that network to be `192.168.3.0/24`. Make sure to change these values if you intend to use another network.
 
-##### Set up networking
-
-As described above, we are going to use this network to start instances in. Again we will use `vdc-manage` to make Wakame-vdc aware of that.
-
-    /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage
-
-Now enter the following command in the `vdc-manage` shell to register the network.
+You can register more than one network and then decide which one to use when you start instances.
 
     network add \
       --uuid nw-demo1 \
@@ -274,23 +266,35 @@ Wakame-vdc is now aware of this network but it still doesn't know which ip addre
     network dhcp addrange nw-demo1 192.168.3.1 192.168.3.254
 
 <a name="reserve-ip" />
-You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that ip address. Instead we should be worried about our host node's ip address being in the same range (192.168.3.100). Wakame-vdc is not aware of the host node ip. It uses AMQP to contact host nodes and is only aware of the AMQP `node id`. Let Wakame-vdc know that this ip address is reserved.
+You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that ip address.
+
+If you have other ip addresses inside the dhcp range that can not be used by Wakame-vdc, you need to reserve them so Wakame-vdc knows these can't be used. For example if the address 192.168.3.100 can not be used, you can reserve it with the following command. If you do not have any ip addresses that need to be reserved, just skip this step.
 
     network reserve nw-demo1 --ipv4 192.168.3.100
 
-Wakame-vdc needs to know which mac addresses are available to be assigned to instances.
+Wakame-vdc needs to know which mac addresses are available to assign to instances.
 
     macrange add 525400 1 ffffff --uuid mr-demomacs
 
-First we need to let Wakame-vdc know that it can attach instances to bridge `br0` which we made in the above step. **TODO:** explain this a little more
+Next, Wakame-vdc needs to know which bridge to attach its intances' virtual network interfaces (vnics) to, and which interface on that bridge is connected to the outside world. You do that by registering a `dc network`.
 
     network dc add public --uuid dcn-public --description "the network instances are started in"
     network dc add-network-mode public securitygroup
     network forward nw-demo1 public
 
-We're done with vdc-manage again. Exit its shell.
+We're done with vdc-manage. Exit its shell.
 
     exit
+
+Earlier in this guide we have set up a bridge named `br0` and it's connected to the outside world through a network interface `eth0`. If you are also using these names, you should be fine.
+
+*If* you are using other names, you need to go update `/etc/wakame-vdc/hva.conf`. Find the following in that file and change it to match the names that you're using.
+
+    dc_network('public') {
+      bridge_type 'linux'
+      interface 'eth0'
+      bridge 'br0'
+    }
 
 ##### Configure the GUI
 
@@ -298,26 +302,27 @@ The GUI is a rails application that requires its own database. Create it and ini
 
     mysqladmin -uroot create wakame_dcmgr_gui
     cd /opt/axsh/wakame-vdc/frontend/dcmgr_gui/
-    rake db:init
+    /opt/axsh/wakame-vdc/ruby/bin/rake db:init
 
-The GUI uses user/password authentication. Wakame-vdc's web API has no authentication so on a production environment you would want to show only the GUI to the outside world while keeping the web API on a private network. We're going to be talking about **users** and **accounts** here. Their meanings are slightly different.
+The GUI uses user/password authentication. Wakame-vdc's web API has no authentication so on a production environment, you'd want to show only the GUI to the outside world while keeping the web API on a private network.
+
+We're going to be talking about **users** and **accounts** here. Their meanings are slightly different.
 
 * An account is where rights are assigned. An account will be allowed to start a certain amount of instances and own certain resources.
 
-* A user is a person that has access to one or more accounts. You will log into the Wakame-vdc GUI with a user name and get access to the resources owned by any accounts your user is associated with.
+* A user is a username/password combination that has access to one or more accounts. You will log into the Wakame-vdc GUI as a user and get access to the resources owned by any accounts your user is associated with.
 
 Users and accounts share a many-to-many relation. A user can belong to many accounts and an account can belong to many users.
 
 The GUI database has a cli called `gui-manage` which is similar to vdc-manage.
 
-    cd /opt/axsh/wakame-vdc/frontend/dcmgr_gui/bin
-    ./gui-manage
+    /opt/axsh/wakame-vdc/frontend/dcmgr_gui/bin/gui-manage
 
-Let's use it to create an account for ourselves. This is a special account that Wakame-vdc uses for certain shared resources.
+Let's use it to create an account for ourselves. This account with uuid `a-shpoolxx` is a special account that Wakame-vdc uses for certain shared resources.
 
     account add --name default --uuid a-shpoolxx
 
-Next we'll add a user.
+Next we'll add a user. The *login-id* is the name we're going to use when logging into the GUI.
 
     user add --name "demo user" --uuid u-demo --password demo --login-id demo
 
@@ -341,6 +346,8 @@ If you've been following this guide, MySQL should still be running. If it isn't 
     sudo /etc/init.d/mysqld start
 
 After all this hard work we should be able to get Wakame-vdc up and running. Start the upstart jobs.
+
+These 4 upstart jobs can be started in any order as long as *rabbitmq-server* and *mysqld* have been started first.
 
     sudo start vdc-dcmgr
     sudo start vdc-collector
