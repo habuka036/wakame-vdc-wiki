@@ -162,7 +162,7 @@ We can use rake to create the database tables. Wakame-vdc comes with its own rub
 
 ##### Register the HVA
 
-As describe above, the HVA or host node is the part of Wakame-vdc that actually starts instances. Wakame-vdc can manage any number if these but in order for it to know where they are, we have to register every HVA in the database. The words HVA and host node will be use interchangibly in this guide.
+As describe above, the HVA or host node is the part of Wakame-vdc that actually starts instances. Wakame-vdc can manage any number of these. The words HVA and host node will be use interchangeably in this guide.
 
 Wakame-vdc recognises host nodes by their `node id`. That is a unique id that [AMQP](http://www.amqp.org) uses to identify each service. We will assign the id `demo1` to our HVA.
 
@@ -170,7 +170,9 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
     NODE_ID=demo1
 
-Now our HVA process will start up with `demo1` as its `node id`. Next we need to add a database entry to let Wakame-vdc know how much memory, cpu power and disk space it has available, etc. We can use the `vdc-manage` cli to do this. Of course the parameters of this command will vary depending on the capacity of your hva. Ajust them accordingly.
+Now our HVA process will start up with `demo1` as its `node id`. Next we need to add a database entry to let Wakame-vdc know how much memory, cpu power and disk space it has available, etc.
+
+We can use the `vdc-manage` cli to do this. Of course the parameters of this command will vary depending on the capacity of your hva. Adjust them accordingly.
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage host add hva.demo1 \
        --uuid hn-demo1 \
@@ -183,11 +185,13 @@ Now our HVA process will start up with `demo1` as its `node id`. Next we need to
        --force
 
 Remarks:
-  * The `node id` would be *hva.demo1*. We set *demo1* in the above step but when the process starts, it is automatically prefixed by hva.
+  * The `node id` would be *hva.demo1*. We set *demo1* in the above step but when the process starts, it is automatically prefixed by *hva*.
 
-  * *Memory-size* and *cpu-cores* do not represent the actual memory size and cpu cores of the host node. They represent the amount of either to be offered to instances. Setting cpu-cores to 100 means that you can start for example 100 instances with 1 cpu core each or in another example, 50 instances with 2 cpu cores each.
+  * *Memory-size* and *cpu-cores* do not represent the actual memory size and cpu cores of the host node. They represent the amount of either to be offered to instances.
 
-  * The *force* flag is set so we can add the host node even though Wakame-vdc can't currently see it through AMQP. Since we haven't started the Wakame-vdc services yet, it's only natural that it can't see it yet. It will once we start them.
+  Setting cpu-cores to 100 means that you can start for example 100 instances with 1 cpu core each or in another example, 50 instances with 2 cpu cores each.
+
+  * The *force* flag is set so we can register the host node even though Wakame-vdc can't currently see it through AMQP. Since we haven't started the Wakame-vdc services yet, it's only natural that it can't see it yet. It will once we start them.
 
 ##### Download and register a machine image
 
