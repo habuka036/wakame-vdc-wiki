@@ -88,7 +88,7 @@ attach instances to.
 If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
 
 For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`.
-Change these values to match your environment.
+**Change these values to match your environment.**
 
 Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following contents
 
@@ -118,6 +118,20 @@ you're running this guide on a remote machine!
     sudo  /etc/init.d/network restart
 
 #### Configuration
+
+Next we are going to configure Wakame-vdc and download a machine image containing Ubuntu 10.04 that we can start instances of. You can either do it manually or run a script we have provided. Both methods will amount to the same result. The script should be easier but doing it manually will teach you more about Wakame-vdc.
+
+##### Using the script
+
+The script can be found here: https://raw.githubusercontent.com/axsh/wakame-vdc/master/scripts/install_guide_demo_data.sh
+
+It will perform all the steps explained below except reserving ip addresses. (which is optional)
+
+You need to tell it about the network you want to start your instances in. Run the script without parameters to see how to use it.
+
+After running the script and [optionally reserving ip addresses](install-guide#reserve-ip), skip over to the [Start Wakame-vdc](install-guide#start) section.
+
+##### Manual configuration
 
 The different Wakame-vdc services require their own config files. Unfortunately they aren't automatically installed with the rpm packages. There are examples included in the Wakame-vdc source
 tree though. Copy those over manually.
@@ -260,6 +274,7 @@ Wakame-vdc is now aware of this network but it still doesn't know which ip addre
 
     network dhcp addrange nw-demo1 192.168.3.1 192.168.3.254
 
+<a name="reserve-ip" />
 You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that ip address. Instead we should be worried about our host node's ip address being in the same range (192.168.3.100). Wakame-vdc is not aware of the host node ip. It uses AMQP to contact host nodes and is only aware of the AMQP `node id`. Let Wakame-vdc know that this ip address is reserved.
 
     network reserve nw-demo1 --ipv4 192.168.3.100
@@ -315,6 +330,7 @@ We're done with gui-manage. Exit the shell.
 
     exit
 
+<a name="start" />
 #### Start Wakame-vdc
 
 Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communicate. Rabbitmq-server is the AMQP exchange managing all that traffic.
