@@ -270,7 +270,7 @@ Wakame-vdc is now aware of this network but it still doesn't know which ip addre
 <a name="reserve-ip" />
 You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that ip address.
 
-If you have other ip addresses inside the dhcp range that can not be used by Wakame-vdc, you need to reserve them so Wakame-vdc knows these can't be used. For example if the address 192.168.3.100 can not be used, you can reserve it with the following command. If you do not have any ip addresses that need to be reserved, just skip this step.
+If you have other ip addresses inside the dhcp range that can not be used by Wakame-vdc, you need to reserve them so Wakame-vdc knows these can't be used. For example in this guide we were using 192.168.3.100 as the host node's ip address and therefore it can not be used. You can reserve it with the following command. If you do not have any ip addresses that need to be reserved, just skip this step.
 
     network reserve nw-demo1 --ipv4 192.168.3.100
 
@@ -356,7 +356,7 @@ These 4 upstart jobs can be started in any order as long as *rabbitmq-server* an
     sudo start vdc-hva
     sudo start vdc-webui
 
-If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
+If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to your machine's ip address on port 9000. If you're using the same ip address as this guide, that would be `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
 
 The `lucid5d` image has password login through ssh enabled. After starting instances you are able to log in using username `ubuntu` and password `ubuntu`. You are of course also able to log in using username `ubuntu` and a key pair registered with Wakame-vdc.
 
