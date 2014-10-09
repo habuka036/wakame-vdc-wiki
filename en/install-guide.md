@@ -251,9 +251,9 @@ Next we tell Wakame-vdc that this backup object is a machine image that we can s
 
 ##### Register a network
 
-Wakame-vdc needs to know which network instances will be connected to. As described above, this guide assumes that network to be `192.168.3.0/24`. Make sure to change these values if you intend to use another network.
+Wakame-vdc needs to know which network instances will be connected to. You can register more than one network and then decide which one to use when you start instances.
 
-You can register more than one network and then decide which one to use when you start instances.
+**Remark:** As described above, this guide assumes that network to be `192.168.3.0/24`. Make sure to change these values if you intend to use another network.
 
     network add \
       --uuid nw-demo1 \
