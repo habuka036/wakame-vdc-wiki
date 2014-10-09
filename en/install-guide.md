@@ -90,6 +90,10 @@ If you want to connect to instances from somewhere else than the host, we will n
 For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`.
 **Change these values to match your environment.**
 
+The network setup that this guide assumes places the host in the same network as the instances. That means the instances will have access to everything the host has access to. If the host can connect to the internet, the instances will be able to as well.
+
+**Remark:** With this setup, the host itself will not be able to connect to the instances through networking because of security groups' arp wall. More info on that will be available in the near future, when we write a guide for security groups.
+
 Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following contents
 
     DEVICE=br0
