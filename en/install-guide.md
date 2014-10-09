@@ -105,6 +105,8 @@ Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following co
 
 Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
 
+**Remark:** If your machine's network interface is called `eth1` or something else, make sure to reflect that in the file name.
+
     DEVICE="eth0"
     ONBOOT="yes"
     BRIDGE=br0
