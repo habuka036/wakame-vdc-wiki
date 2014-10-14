@@ -57,7 +57,7 @@ The dcmgr package contains two things.
 * The Wakame-vdc collector. This is Wakame-vdc's decision making organ. When you start an instance it decides which HVA (We'll tell you what an HVA is below) will host it, which IP address it
 will get, etc.
 
-Install it with the following command.
+Install the dcmgr package with the following command.
 
     sudo yum install -y wakame-vdc-dcmgr-vmapp-config
 
