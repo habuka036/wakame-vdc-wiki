@@ -66,7 +66,7 @@ Install the dcmgr package with the following command.
 The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts instances. On a production environment, you would likely have several dedicated bare metal hosts for this. Right now we are
 just going to install one HVA on the same machine as dcmgr.
 
-**Remark:** In this installation the instances are going to be [OpenVZ](http://openvz.org/Main_Page) containers. Therefore we install the OpenVZ specific hva package.
+**Remark:** In this installation the instances are going to be [OpenVZ](http://openvz.org/Main_Page) containers. Therefore we install the OpenVZ specific HVA package.
 
     sudo yum install -y wakame-vdc-hva-openvz-vmapp-config
 
@@ -177,11 +177,11 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
 Now our HVA process will start up with `demo1` as its `node id`. Next we need to add a database entry to let Wakame-vdc know how much memory, cpu power and disk space it has available, etc.
 
-We can use the `vdc-manage` cli to do this. Of course the parameters of this command will vary depending on the capacity of your hva. Adjust them accordingly.
+We can use the `vdc-manage` cli to do this. Of course the parameters of this command will vary depending on the capacity of your HVA. Adjust them accordingly.
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage host add hva.demo1 \
        --uuid hn-demo1 \
-       --display-name "demo hva 1" \
+       --display-name "demo HVA 1" \
        --cpu-cores 100 \
        --memory-size 10240 \
        --hypervisor openvz \
