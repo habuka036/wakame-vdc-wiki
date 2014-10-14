@@ -155,7 +155,7 @@ The different Wakame-vdc services require their own config files. Unfortunately 
 
 ##### Create the Wakame-vdc database
 
-Wakame-vdc uses a mysql database. Start mysql and create the database.
+Wakame-vdc uses a [MySQL](http://www.mysql.com) database. Start MySQL and create the database.
 
     sudo /etc/init.d/mysqld start
     mysqladmin -uroot create wakame_dcmgr
