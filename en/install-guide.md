@@ -175,7 +175,7 @@ Edit the file `/etc/default/vdc-hva` and uncomment the following line:
 
     NODE_ID=demo1
 
-Now our HVA process will start up with `demo1` as its `node id`. Next we need to add a database entry to let Wakame-vdc know how much memory, cpu power and disk space it has available, etc.
+Now our HVA process will start up with `demo1` as its `node id`. Next we need to add a database entry to let Wakame-vdc know how much memory, CPU power and disk space it has available, etc.
 
 We can use the `vdc-manage` cli to do this. Of course the parameters of this command will vary depending on the capacity of your HVA. Adjust them accordingly.
 
@@ -192,9 +192,9 @@ We can use the `vdc-manage` cli to do this. Of course the parameters of this com
 Remarks:
   * The `node id` would be *hva.demo1*. We set *demo1* in the above step but when the process starts, it is automatically prefixed by *hva*.
 
-  * *Memory-size* and *cpu-cores* do not represent the actual memory size and cpu cores of the host node. They represent the amount of either to be offered to instances.
+  * *Memory-size* and *cpu-cores* do not represent the actual memory size and CPU cores of the host node. They represent the amount of either to be offered to instances.
 
-  Setting cpu-cores to 100 means that you can start for example 100 instances with 1 cpu core each or in another example, 50 instances with 2 cpu cores each.
+  Setting *cpu-cores* to 100 means that you can start for example 100 instances with 1 CPU core each or in another example, 50 instances with 2 CPU cores each.
 
   * The *force* flag is set so we can register the host node even though Wakame-vdc can't currently see it through AMQP. Since we haven't started the Wakame-vdc services yet, it's only natural that it can't see it yet. It will once we start them.
 
