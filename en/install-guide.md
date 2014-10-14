@@ -72,7 +72,7 @@ just going to install one HVA on the same machine as dcmgr.
 
 #### Install webui
 
-This is Wakame-vdc's GUI. It's actually a rails application that sits in front of the dcmgr web API.
+This is Wakame-vdc's GUI. It's actually a [Rails application](http://rubyonrails.org) that sits in front of the dcmgr web API.
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
 
