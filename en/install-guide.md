@@ -107,9 +107,9 @@ Create the file `/etc/sysconfig/network-scripts/ifcfg-br0` with the following co
     DNS1=8.8.8.8
     DELAY=0
 
-Next we need to attach `eth0` to the bridge. Create the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
+Next we need to attach `eth0` to the bridge. Modify the file `/etc/sysconfig/network-scripts/ifcfg-eth0` with the following contents.
 
-**Remark:** If your machine's network interface is called `eth1` or something else, make sure to reflect that in the file name.
+**Remark:** If your machine's network interface is called `eth1`, `wlan0` or something else, make sure to edit its file instead. (e.g. ifcfg-eth1, ifcfg-wlan0, etc.) Also make sure to modify the *DEVICE=* line accordingly
 
     DEVICE="eth0"
     ONBOOT="yes"
