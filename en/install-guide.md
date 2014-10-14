@@ -87,7 +87,7 @@ attach instances to.
 
 If you want to connect to instances from somewhere else than the host, we will need a network interface on the host that attaches an outside network to the bridge.
 
-For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static ip address `192.168.3.100`.
+For the sake of this guide, we are going to assume that we will start instances in network `192.168.3.0/24`. The host has a network interface `eth0` with static IP address `192.168.3.100`.
 **Change these values to match your environment.**
 
 The network setup that this guide assumes places the host in the same network as the instances. That means the instances will have access to everything the host has access to. If the host can connect to the internet, the instances will be able to as well.
@@ -131,7 +131,7 @@ Next we are going to configure Wakame-vdc and download a machine image containin
 
 The script can be found here: https://raw.githubusercontent.com/axsh/wakame-vdc/master/scripts/install_guide_demo_data.sh
 
-It will perform all the steps explained below except reserving ip addresses. (which is optional)
+It will perform all the steps explained below except reserving IP addresses. (which is optional)
 
 You need to tell it about the network you want to start your instances in. Run the script without parameters to see how to use it.
 
@@ -266,14 +266,14 @@ Wakame-vdc needs to know which network instances will be connected to. You can r
       --account-id a-shpoolxx \
       --display-name "demo network"
 
-Wakame-vdc is now aware of this network but it still doesn't know which ip addresses in it are available to assign to instances. Register a dhcp range.
+Wakame-vdc is now aware of this network but it still doesn't know which IP addresses in it are available to assign to instances. Register a dhcp range.
 
     network dhcp addrange nw-demo1 192.168.3.1 192.168.3.254
 
 <a name="reserve-ip" />
-You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that ip address.
+You might be worried because the gateway is included in dhcp range. Don't be. Wakame-vdc is smart enough to know that it can't use that IP address.
 
-If you have other ip addresses inside the dhcp range that can not be used by Wakame-vdc, you need to reserve them so Wakame-vdc knows these can't be used. For example in this guide we were using 192.168.3.100 as the host node's ip address and therefore it can not be used. You can reserve it with the following command. If you do not have any ip addresses that need to be reserved, just skip this step.
+If you have other IP addresses inside the dhcp range that can not be used by Wakame-vdc, you need to reserve them so Wakame-vdc knows these can't be used. For example in this guide we were using 192.168.3.100 as the host node's ip address and therefore it can not be used. You can reserve it with the following command. If you do not have any IP addresses that need to be reserved, just skip this step.
 
     network reserve nw-demo1 --ipv4 192.168.3.100
 
@@ -359,7 +359,7 @@ These 4 upstart jobs can be started in any order as long as *rabbitmq-server* an
     sudo start vdc-hva
     sudo start vdc-webui
 
-If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to your machine's ip address on port 9000. If you're using the same ip address as this guide, that would be `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
+If everything went right, Wakame-vdc is now up and running. Start a web browser and surf to your machine's IP address on port 9000. If you're using the same IP address as this guide, that would be `192.168.3.100:9000`. Log in with user `demo` and password `demo`.
 
 The `lucid5d` image has password login through ssh enabled. After starting instances you are able to log in using username `ubuntu` and password `ubuntu`. You are of course also able to log in using username `ubuntu` and a key pair registered with Wakame-vdc.
 
