@@ -54,7 +54,7 @@ The dcmgr package contains two things.
 
 * The Wakame-vdc web API. This is Wakame-vdc's user interface. You tell Wakame-vdc to do stuff by making http requests to this API.
 
-* The Wakame-vdc collector. This is Wakame-vdc's decision making organ. When you start an instance it decides which HVA (We'll tell you what a HVA is below) will host it, which IP address it
+* The Wakame-vdc collector. This is Wakame-vdc's decision making organ. When you start an instance it decides which HVA (We'll tell you what an HVA is below) will host it, which IP address it
 will get, etc.
 
 Install it with the following command.
