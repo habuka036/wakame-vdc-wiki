@@ -303,7 +303,7 @@ Earlier in this guide we have set up a bridge named `br0` and it's connected to 
 
 ##### Configure the GUI
 
-The GUI is a rails application that requires its own database. Create it and initialize its tables using rake.
+The GUI is a rails application that requires its own database. Create it and initialize its tables using Rake.
 
     mysqladmin -uroot create wakame_dcmgr_gui
     cd /opt/axsh/wakame-vdc/frontend/dcmgr_gui/
