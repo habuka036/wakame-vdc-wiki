@@ -160,7 +160,7 @@ Wakame-vdc uses a [MySQL](http://www.mysql.com) database. Start MySQL and create
     sudo /etc/init.d/mysqld start
     mysqladmin -uroot create wakame_dcmgr
 
-We can use rake to create the database tables. Wakame-vdc comes with its own ruby binary that includes rake.
+We can use [Rake](https://github.com/ruby/rake) to create the database tables. Wakame-vdc comes with its own ruby binary that includes Rake.
 
     cd /opt/axsh/wakame-vdc/dcmgr
     /opt/axsh/wakame-vdc/ruby/bin/rake db:up
