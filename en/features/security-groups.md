@@ -4,7 +4,7 @@ Security Groups make up Wakame-vdc's dynamic firewall. By putting instances in g
 
 ### Contents
 
-* [Features](#Features)
+* [#Features]
 
 ### Features
 
