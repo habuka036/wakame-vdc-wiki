@@ -34,9 +34,9 @@ The following image shows a couple of instances with vnics in different security
 
 #### Rules
 
-By default all incoming traffic to instances is blocked. Security Group rules allow you to open specific tcp ports, udp ports, or icmp traffic.
+By default all incoming traffic to instances is blocked. Security Group rules allow you to open specific TCP ports, UDP ports, or ICMP traffic.
 
-The following image shows an example of a security group that opens tcp port 22 with 3 vnics in it.
+The following image shows an example of a security group that opens TCP port 22 with 3 vnics in it.
 
 [[security-groups-images/rules.png]]
 
@@ -50,27 +50,27 @@ For the ICMP protocol:
 
     icmp:<icmp-type>,<icmp-code>,ip4:<ip-address>
 
-A list of the icmp types and codes can be found [here](http://www.faqs.org/docs/iptables/icmptypes.html). The wildcard to accept any type or code is -1.
+A list of the ICMP types and codes can be found [here](http://www.faqs.org/docs/iptables/icmptypes.html). The wildcard to accept any type or code is -1.
 
 **Examples**
 
-A rule that opens tcp port 22 for all incoming traffic.
+A rule that opens TCP port 22 for all incoming traffic.
 
     tcp:22,22,ip4:0.0.0.0
 
-A rule that opens tcp ports 1024 to 2048 to all ip addresses from local network 192.168.0.0/24.
+A rule that opens TCP ports 1024 to 2048 to all ip addresses from local network 192.168.0.0/24.
 
     tcp:1024,2048,ip4:192.168.0.0/24
 
-A rule that opens udp port 53 to google's dns server located at 8.8.8.8.
+A rule that opens UDP port 53 to google's dns server located at 8.8.8.8.
 
     udp:53,53,ip4:8.8.8.8
 
-A rule that allows all incoming icmp traffic (like ping).
+A rule that allows all incoming ICMP traffic (like ping).
 
     icmp:-1,-1,ip4:0.0.0.0
 
-A rule that accepts *network unreachable* icmp messages (type/code: 3/0) from ip address 192.168.2.1.
+A rule that accepts *network unreachable* ICMP messages (type/code: 3/0) from ip address 192.168.2.1.
 
     icmp:3,0,ip4:192.168.2.1
 
