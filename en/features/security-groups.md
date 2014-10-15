@@ -42,7 +42,15 @@ The following image shows an example of a security group that opens tcp port 22 
 
 ##### Syntax
 
+For TCP and UDP protocols:
+
     <protocol>:<start-port>,<end-port>,ip4:<ip-address>
+
+For the ICMP protocol:
+
+    icmp:<icmp-type>,<icmp-code>,ip4:<ip-address>
+
+A list of the icmp types and codes can be found [here](http://www.faqs.org/docs/iptables/icmptypes.html). The wildcard to accept any type or code is -1.
 
 **Examples**
 
@@ -60,9 +68,11 @@ A rule that opens udp port 53 to google's dns server located at 8.8.8.8.
 
 A rule that allows all incoming icmp traffic (like ping).
 
-**TODO:** Explain what the -1 means.
-
     icmp:-1,-1,ip4:0.0.0.0
+
+A rule that accepts *network unreachable* icmp messages (type/code: 3/0) from ip address 192.168.2.1.
+
+    icmp:3,0,ip4:192.168.2.1
 
 #### Reference
 
