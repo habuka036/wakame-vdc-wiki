@@ -2,6 +2,10 @@
 
 Security Groups make up Wakame-vdc's dynamic firewall. By putting instances in groups, you can create a firewall that dynamically updates as the virtual datacenter changes. That basically means that when new instances are started, they will automatically be taken into account by the firewall.
 
+### Contents
+
+* [Features](#Features)
+
 ### Features
 
 Security groups come with three distinct features.
