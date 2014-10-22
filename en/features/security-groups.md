@@ -7,7 +7,8 @@
   - [Isolation](#Isolation)
   - [Rules](#Rules)
   - [Reference](#Reference)
-* [Creating security groups through the Wakame-vdc GUI](#Creating-security-groups-through-the-Wakame-vdc-GUI)
+* [Creating security groups using the Wakame-vdc GUI](#Creating-security-groups-using-the-Wakame-vdc-GUI)
+* [Adding and removing vnics from security groups using the Wakame-vdc GUI|#Adding-and-removing-vnics-from-security-groups-using-the-Wakame-vdc-GUI]
 
 ### Overview
 
