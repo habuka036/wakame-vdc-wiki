@@ -13,7 +13,7 @@
 
 In Wakame-vdc, every virtual network interface (vnic) will have its own firewall. These firewalls are implemented using [Netfilter](http://www.netfilter.org). Even if one instance has multiple vnics, they will still each have their own firewall.
 
-These firewalls are implemented on the HVA and network traffic is filtered before it reaches the instance's vnic.
+These firewalls are implemented on the [[HVA|Jargon-Dictionary#HVA]] and network traffic is filtered before it reaches the instance's vnic.
 
 [[security-groups-images/low_level_overview.png]]
 
