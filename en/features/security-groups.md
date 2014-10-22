@@ -109,7 +109,7 @@ For this example two security groups exist. *sg-dbsrv* which has the database se
 
     tcp:3306,3306,sg-dbclnts
 
-### Creating security groups through the Wakame-vdc GUI
+### Creating security groups using the Wakame-vdc GUI
 
 After logging into the GUI, click on `Security Groups` in the menu on the left. Next click on `Create Security Group`.
 
@@ -118,3 +118,19 @@ After logging into the GUI, click on `Security Groups` in the menu on the left. 
 The following dialog will pop up. In here you will be able to write rules for your security group.
 
 [[/en/usage_guide/basics_images/07_security_groups_dialog.png]]
+
+### Adding and removing vnics from security groups using the Wakame-vdc GUI
+
+When starting an instance using the Wakame-vdc GUI, you will be required to put its vnic(s) in at least one security group. Although it is possible to start instances with vnic(s) that aren't in any security groups (which results in all incoming network traffic being blocked) by querying the WebAPI directly, the GUI requires one or more to be set.
+
+When starting an instance, you'll see the following dialog. The instance's security groups can be set here. When using the GUI, all vnics of this instance will be placed in the same security groups. If you wish to have one instance with multiple vnics in different security groups, you will need to call the WebAPI directly.
+
+[[security-groups-images/start_instance.png]]
+
+When you want to change the security groups of a running instance's vnic(s), click on Instances in the menu on the left of the main GUI window. Next to your instance you should see a button saying `edit`. Click it.
+
+[[security-groups-images/instance_edit_button.png]]
+
+The dialog that pops up will allow you to set the security groups for *all* vnics of the instance.
+
+[[security-groups-images/edit_instance.png]]
