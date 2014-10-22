@@ -1,7 +1,5 @@
 # Security Groups
 
-Security Groups make up Wakame-vdc's dynamic firewall. By putting instances in groups, you can create a firewall that dynamically updates as the virtual datacenter changes. That basically means that when new instances are started, they will automatically be taken into account by the firewall.
-
 ### Contents
 
 * [Overview](#Overview)
@@ -13,9 +11,17 @@ Security Groups make up Wakame-vdc's dynamic firewall. By putting instances in g
 
 ### Overview
 
-[[security-groups-images/high_level_overview.png]]
+In Wakame-vdc, every virtual network interface (vnic) will have its own firewall. These firewalls are implemented using [Netfilter](http://www.netfilter.org). Even if one instance has multiple vnics, they will still each have their own firewall.
+
+These firewalls are implemented on the HVA and network traffic is filtered before it reaches the instance's vnic.
 
 [[security-groups-images/low_level_overview.png]]
+
+From the user's perspective, this firewall is controlled through *security groups*. A user can create security groups and place vnics in them. Depending on what groups a vnic is in, its firewall will decide what network traffic is allowed to pass through.
+
+Security groups are dynamic. Instances can be enter and leave groups on the fly and groups can change their rules of allowed network traffic at any time. No restarts of any kind are required. Whenever a change happens in the security groups layout, the firewall of every vnic affected will update itself automatically.
+
+[[security-groups-images/high_level_overview.png]]
 
 ### Features
 
