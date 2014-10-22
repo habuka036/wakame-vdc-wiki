@@ -19,7 +19,7 @@ These firewalls are implemented on the [[HVA|Jargon-Dictionary#HVA]] and network
 
 From the user's perspective, this firewall is controlled through *security groups*. A user can create security groups and place vnics in them. Depending on what groups a vnic is in, its firewall will decide what network traffic is allowed to pass through.
 
-Security groups are dynamic. Instances can be enter and leave groups on the fly and groups can change their rules of allowed network traffic at any time. No restarts of any kind are required. Whenever a change happens in the security groups layout, the firewall of every vnic affected will update itself automatically.
+Security groups are dynamic. Instances can enter and leave groups on the fly and groups can change their rules of allowed network traffic at any time. No restarts of any kind are required. Whenever a change happens in the security groups layout, the firewall of every vnic affected will update itself automatically.
 
 [[security-groups-images/high_level_overview.png]]
 
