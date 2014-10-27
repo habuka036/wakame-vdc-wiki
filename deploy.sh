@@ -1,15 +1,15 @@
 #!/bin/bash
 
+#
+# Deploys the Wiki to its production url.
+# For internal Axsh use only.
+#
+
 set -eu
 
-deploy_remote_uri='git@github.com:axsh/wakame-vdc.wiki.git'
-deploy_remote_name='production'
+deploy_uri='git@github.com:axsh/wakame-vdc.wiki.git'
 
 git checkout master
 git pull --rebase
 
-if [[  $(git remote) != *${deploy_remote_name}* ]]; then
-  git remote add ${deploy_remote_name} ${deploy_remote_uri}
-fi
-
-git push ${deploy_remote_uri} master
+git push ${deploy_uri} master
