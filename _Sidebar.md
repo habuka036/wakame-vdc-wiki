@@ -5,6 +5,7 @@
 + [VirtualBox demo image](http://wakameusersgroup.org/demo_image.html)
 + [[Installation guide|install-guide]]
 + [[Basic usage|Basic-usage]]
++ [[Custom images|Custom-images]]
 + [[Security Groups|security-groups]]
 + [[Instance backup|backup-instances]]
 + [[Jargon dictionary|Jargon-Dictionary]]
