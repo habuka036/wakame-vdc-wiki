@@ -103,7 +103,7 @@ Exit the OpenVZ container.
     [root@localhost etc]# exit
 
 Now we are back at the demo box prompt. The following instructions are adapted from
-http://wiki.openvz.org/Ubuntu_template_update:
+http://wiki.openvz.org/Updating_Ubuntu_template:
 
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
