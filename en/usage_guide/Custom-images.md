@@ -51,6 +51,7 @@ create a top Web page configure the web service to to start when the
 image is instantiated.
 
     ssh centos@a.b.c.d  # where a.b.c.d is the demo VM's IP address
+    [centos@wakame-vdc-1box ~]$ sudo su
     [root@wakame-vdc-1box centos]# cd /vz/template/cache
     [root@wakame-vdc-1box cache]# wget http://download.openvz.org/template/precreated/centos-6-x86_64-minimal.tar.gz
     [root@wakame-vdc-1box cache]# vzctl create 101 --ostemplate centos-6-x86_64-minimal --ipadd a.b.c.vv --hostname localhost
@@ -70,6 +71,7 @@ image is instantiated.
 Note: This step is necessary so that Wakame-vdc can do last-minute
 specialization necessary when each instance is booted.
 
+    [root@localhost /]# cd /etc
     [root@localhost etc]# wget https://raw.githubusercontent.com/axsh/wakame-vdc/master/wakame-init/rhel/6/wakame-init
     [root@localhost etc]# echo '/etc/wakame-init' >>rc.local
 
@@ -98,17 +100,17 @@ not have this file.
 
 Exit the OpenVZ container.
 
-    [root@localhost /]# exit
+    [root@localhost etc]# exit
 
 Now we are back at the demo box prompt. The following instructions are adapted from
 http://wiki.openvz.org/Ubuntu_template_update:
 
     [root@wakame-vdc-1box cache]# vzctl stop 101
-    [root@wakame-vdc-1box cache]# vzctl set 111 --ipdel all --save
-    [root@wakame-vdc-1box cache]# cd /vz/private/111
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner czf /vz/template/cache/new-wakame-image-name.tar.gz ## ((TODO: check this))
+    [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
+    [root@wakame-vdc-1box cache]# cd /vz/private/101
+    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-wakame-image-name.tar.gz . ## ((TODO: check this))
     [root@wakame-vdc-1box 111]# cd ..
-    [root@wakame-vdc-1box private]# vzctl destroy 111
+    [root@wakame-vdc-1box private]# vzctl destroy 101
 
 #### Step 5: Register this file with Wakame-vdc
 
