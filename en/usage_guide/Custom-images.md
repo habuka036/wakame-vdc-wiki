@@ -108,9 +108,29 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
     [root@wakame-vdc-1box cache]# cd /vz/private/101
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-wakame-image-name.tar.gz . ## ((TODO: check this))
+    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz . ## ((TODO: check this))
     [root@wakame-vdc-1box 111]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
+
+Wakame-vdc's preferred method of packaging images is inside of
+partitioned VM images files.  The following commands show one way to
+create such an image file and store the new customized OS distribution
+inside it:
+
+    [root@wakame-vdc-1box images]# truncate -s 10G wakame-vdc-custom-image.raw
+    [root@wakame-vdc-1box images]# parted wakame-vdc-custom-image.raw mklabel msdos
+    [root@wakame-vdc-1box images]# parted --script -- wakame-vdc-custom-image.raw mkpart primary ext2 63s -0
+    [root@wakame-vdc-1box images]# kpartx -va wakame-vdc-custom-image.raw
+    [root@wakame-vdc-1box images]# mkfs.ext4 -F -E lazy_itable_init=1 -L root /dev/mapper/loop0p1
+    [root@wakame-vdc-1box images]# tune2fs -o acl /dev/mapper/loop0p1
+    [root@wakame-vdc-1box images]# mkdir tmp-mount
+    [root@wakame-vdc-1box images]# mount /dev/mapper/loop0p1 tmp-mount/
+    [root@wakame-vdc-1box images]# cd tmp-mount/
+    [root@wakame-vdc-1box tmp-mount]# tar xzf /vz/template/cache/new-custom-image-temp.tar.gz
+    [root@wakame-vdc-1box tmp-mount]# cd ..
+    [root@wakame-vdc-1box images]# umount tmp-mount/
+    [root@wakame-vdc-1box images]# rmdir tmp-mount/
+    [root@wakame-vdc-1box images]# kpartx -vd wakame-vdc-custom-image.raw
 
 #### Step 5: Register this file with Wakame-vdc
 
@@ -119,13 +139,15 @@ in the [[Wakame-vdc install guide|install-guide]], and assumes that
 the directory and Wakame-vdc objects from those instructions have
 already been created.
 
-First, move the new image to Wakame-vdc's directory for keeping images.
+First, move the new image to Wakame-vdc's directory for keeping
+images.  (If the image came from the above example, the image is
+already there.)
 
-    mv /vz/template/cache/new-wakame-image-name.tar.gz /var/lib/wakame-vdc/images
+    mv wakame-vdc-custom-image.raw /var/lib/wakame-vdc/images
 
 Compute and remember md5 sum. We will need it when registering it in the database.
 
-    md5sum /var/lib/wakame-vdc/images/new-wakame-image-name.tar.gz | tee /tmp/remember.md5
+    md5sum /var/lib/wakame-vdc/images/wakame-vdc-custom-image.raw | tee /tmp/remember.md5
 
 Now we need to let Wakame-vdc know that it has a machine image to start instances from. First of all here's a brief explanation of how Wakame-vdc treats machine images. There are two terms we'll need to understand here. **Backup objects** and **machine images**. A *backup object* is basically a hard drive image. A *machine image* is a backup object that's bootable. In case of a Linux instance, the *machine image* would hold the root partition.
 
@@ -144,7 +166,7 @@ This image is compressed with gzip to save space. In order to properly manage it
       --uuid bo-newimage \
       --display-name "New image with web server and one static page" \
       --storage-id bkst-local \
-      --object-key new-wakame-image-name.tar.gz \
+      --object-key wakame-vdc-custom-image.raw \
       --size SSSSSS \
       --allocation-size AAAAAA \
       --container-format gz \
