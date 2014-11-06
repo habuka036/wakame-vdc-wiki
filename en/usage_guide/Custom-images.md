@@ -24,7 +24,7 @@ There are five basic steps for creating and using a custom image with Wakame-vdc
 Wakame-vdc supports various virtualization technologies (KVM, OpenVZ,
 LXC, etc.)  and methods of packaging (tar, gzip, etc.), and the
 details for doing the above steps depends on which are chosen.  Below
-we will explain the steps assuming OpenVZ virtualization and tarz
+we will explain the steps assuming OpenVZ virtualization and gz
 packaging.  The steps for other combinations are similar, but differ
 in crucial ways that will be documented later.
 
@@ -108,7 +108,7 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
     [root@wakame-vdc-1box cache]# cd /vz/private/101
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz . ## ((TODO: check this))
+    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz . ## ((TODO: check the rules on file names for images))
     [root@wakame-vdc-1box 111]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
 
@@ -162,7 +162,7 @@ To register both the *backup object* and the related *machine image*, we will ag
 
 Now register the backup object and assign it to the local storage made in the [[Wakame-vdc install guide|install-guide]].
 
-This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.
+This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.  The $() expressions in the examples below will insert the correct information, assuming it was collected as in the example steps above.
 
     backupobject add \
       --uuid bo-customimage \
@@ -175,8 +175,6 @@ This image is compressed with gzip to save space. In order to properly manage it
       --checksum $(/tmp/remember.md5)
 
 Next we tell Wakame-vdc that this backup object is a machine image that we can start instances of.
-
-((what is root device for OpenVZ???))
 
     image add local bo-customimage \
       --account-id a-shpoolxx \
