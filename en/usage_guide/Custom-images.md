@@ -130,7 +130,16 @@ inside it:
     [root@wakame-vdc-1box tmp-mount]# cd ..
     [root@wakame-vdc-1box images]# umount tmp-mount/
     [root@wakame-vdc-1box images]# rmdir tmp-mount/
+    [root@wakame-vdc-1box images]# blkid -o export /dev/mapper/loop0p1 | tee /tmp/remember.uuid-etc
     [root@wakame-vdc-1box images]# kpartx -vd wakame-vdc-custom-image.raw
+    [root@wakame-vdc-1box images]# ls -l wakame-vdc-custom-image.raw | awk '{print $5}' | tee /tmp/remember.size
+    [root@wakame-vdc-1box images]# gzip wakame-vdc-custom-image.raw
+    [root@wakame-vdc-1box images]# ls -l wakame-vdc-custom-image.raw.gz | awk '{print $5}' | tee /tmp/remember.alloc_size
+    [root@wakame-vdc-1box images]# md5sum /var/lib/wakame-vdc/images/wakame-vdc-custom-image.raw.gz | head -c 32 | tee /tmp/remember.md5
+
+Notice some of the steps collect information about the image into
+files in the /tmp directory.  This information will be necessary when
+registering the image with Wakame-vdc.
 
 #### Step 5: Register this file with Wakame-vdc
 
@@ -140,14 +149,10 @@ the directory and Wakame-vdc objects from those instructions have
 already been created.
 
 First, move the new image to Wakame-vdc's directory for keeping
-images.  (If the image came from the above example, the image is
+images.  (If the image was created by the above steps, the image is
 already there.)
 
-    mv wakame-vdc-custom-image.raw /var/lib/wakame-vdc/images
-
-Compute and remember md5 sum. We will need it when registering it in the database.
-
-    md5sum /var/lib/wakame-vdc/images/wakame-vdc-custom-image.raw | tee /tmp/remember.md5
+    mv wakame-vdc-custom-image.raw.gz /var/lib/wakame-vdc/images
 
 Now we need to let Wakame-vdc know that it has a machine image to start instances from. First of all here's a brief explanation of how Wakame-vdc treats machine images. There are two terms we'll need to understand here. **Backup objects** and **machine images**. A *backup object* is basically a hard drive image. A *machine image* is a backup object that's bootable. In case of a Linux instance, the *machine image* would hold the root partition.
 
@@ -159,26 +164,23 @@ Now register the backup object and assign it to the local storage made in the [[
 
 This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.
 
-((question...what does the uncompressed size mean for an openvz directory))
-((TODO: compute size and AAA
-
     backupobject add \
-      --uuid bo-newimage \
+      --uuid bo-customimage \
       --display-name "New image with web server and one static page" \
       --storage-id bkst-local \
-      --object-key wakame-vdc-custom-image.raw \
-      --size SSSSSS \
-      --allocation-size AAAAAA \
+      --object-key wakame-vdc-custom-image.raw.gz \
+      --size $(cat /tmp/remember.size) \
+      --allocation-size $(cat /tmp/remember.alloc_size) \
       --container-format gz \
-      --checksum $(head -c 32 /tmp/remember.md5)
+      --checksum $(/tmp/remember.md5)
 
 Next we tell Wakame-vdc that this backup object is a machine image that we can start instances of.
 
 ((what is root device for OpenVZ???))
 
-    image add local bo-newimage \
+    image add local bo-customimage \
       --account-id a-shpoolxx \
-      --uuid wmi-newimage \
-      --root-device uuid:148bc5df-3fc5-4e93-8a16-7328907cb1c0 \
+      --uuid wmi-customimage \
+      --root-device uuid:$(source /tmp/remember.uuid-etc ; echo $UUID)
       --display-name "New image with web server and one static page"
 
