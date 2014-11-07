@@ -115,7 +115,7 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
 Wakame-vdc's preferred method of packaging images is inside of
 partitioned VM images files.  The following commands show one way to
 create such an image file and store the new customized OS distribution
-inside it:
+inside it using standard GNU/Linux commands.
 
     [root@wakame-vdc-1box images]# truncate -s 10G wakame-vdc-custom-image.raw
     [root@wakame-vdc-1box images]# parted wakame-vdc-custom-image.raw mklabel msdos
