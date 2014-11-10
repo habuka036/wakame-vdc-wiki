@@ -181,7 +181,7 @@ This image is compressed with gzip to save space. In order to properly manage it
       --size $(cat /tmp/remember.size) \
       --allocation-size $(cat /tmp/remember.alloc_size) \
       --container-format gz \
-      --checksum $(/tmp/remember.md5)
+      --checksum $(cat /tmp/remember.md5)
 
 Next we tell Wakame-vdc that this backup object is a machine image that we can start instances of.
 
