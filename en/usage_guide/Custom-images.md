@@ -17,9 +17,9 @@ There are five basic steps for creating and using a custom image with Wakame-vdc
 
 3. Specialize the OS installation for Wakame-vdc.
 
-4. Package it all into one file.
+4. Package it all into one image file.
 
-5. Register this file with Wakame-vdc.
+5. Register this image file with Wakame-vdc.
 
 Wakame-vdc supports various virtualization technologies (KVM, OpenVZ,
 LXC, etc.)  and methods of packaging (tar, gzip, etc.), and the
@@ -103,7 +103,7 @@ not have this file.
 
     rm /etc/udev/rules.d/70-persistent-net.rules
 
-#### Step 4: Package it all into one file
+#### Step 4: Package it all into one image file
 
 Exit the OpenVZ container.
 
@@ -148,12 +148,7 @@ Notice some of the steps collect information about the image into
 files in the /tmp directory.  This information will be necessary when
 registering the image with Wakame-vdc.
 
-#### Step 5: Register this file with Wakame-vdc
-
-This step follows a slightly modified version of related instructions
-in the [[Wakame-vdc install guide|install-guide]], and assumes that
-the directory and Wakame-vdc objects from those instructions have
-already been created.
+#### Step 5: Register this image file with Wakame-vdc
 
 First, move the new image to Wakame-vdc's directory for keeping
 images.  (If the image was created by the above steps, the image might
@@ -161,19 +156,13 @@ already be there.)
 
     mv wakame-vdc-custom-image.raw.gz /var/lib/wakame-vdc/images
 
-Now we need to let Wakame-vdc know that it has a machine image to start instances from. First of all here's a brief explanation of how Wakame-vdc treats machine images. There are two terms we'll need to understand here. **Backup objects** and **machine images**. A *backup object* is basically a hard drive image. A *machine image* is a backup object that's bootable. In case of a Linux instance, the *machine image* would hold the root partition.
+Registering the image file requires two vdc-manage commands.  The
+first registers the file as a `backup object` and assigns it to a
+`backup storage` node.  For example, to register the image created
+above into a node named `bkst-local`, the following command could be
+used:
 
-To register both the *backup object* and the related *machine image*, we will again use the `vdc-manage` cli but since we are going to run more than one operation now, it's more efficient to call it without arguments. This will result in a special shell where we can run `vdc-manage` commands. This is more efficient because we only need to establish a connection to the database once and can then feed many commands through it.
-
-    /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage
-
-Now register the backup object and assign it to a `backup storage` node. If
-you have followed the [[Wakame-vdc install guide|install-guide]], the
-`backup storage` node to assign it to would be `bkst-local`.
-
-This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.  The $() expressions in the examples below will insert the correct information, assuming it was collected as in the example steps above.
-
-    backupobject add \
+    /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage backupobject add \
       --uuid bo-customimage \
       --display-name "New image with web server and one static page" \
       --storage-id bkst-local \
@@ -183,11 +172,18 @@ This image is compressed with gzip to save space. In order to properly manage it
       --container-format gz \
       --checksum $(cat /tmp/remember.md5)
 
-Next we tell Wakame-vdc that this backup object is a machine image that we can start instances of.
+The second vdc-manage command tells Wakame-vdc that this backup object
+is a machine image that we can start instances of.
 
-    image add local bo-customimage \
+    /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage image add local bo-customimage \
       --account-id a-shpoolxx \
       --uuid wmi-customimage \
       --root-device uuid:$(source /tmp/remember.uuid-etc ; echo $UUID)
       --display-name "New image with web server and one static page"
 
+Note that the $() expressions here supply the command with necessary
+details about the image, assuming it was collected as in the example
+steps above.  The names `bkst-local` and `a-shpoolxx` will work if
+your are installing into an environment that was created by following
+the [[Wakame-vdc install guide|install-guide]].  The correct values for
+other situations can be typed directly into the command line.
