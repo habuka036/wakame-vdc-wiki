@@ -38,9 +38,9 @@ The virtual machine managed by wakame-vdc.
 ## R
 ## S
 
-### [Security Group](features/security-groups)
+### Security Group
 
-Wakame-vdc's dynamically updating firewall. You can put vnics into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the security groups guide for more details.
+Wakame-vdc's dynamically updating firewall. You can put [vnics|vnic] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
 
 ## T
 ## U
