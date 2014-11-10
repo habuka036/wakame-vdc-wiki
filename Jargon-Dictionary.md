@@ -46,13 +46,9 @@ Wakame-vdc's dynamically updating firewall. You can put [vnics|vnic] into groups
 ## U
 ## V
 
-### Vnic
+### Vnic / Vif
 
 A virtual network interface. Basically an instance's network card is referred to as a vnic or vif.
-
-#### Vif
-
-See vnic.
 
 ## W
 
