@@ -6,13 +6,13 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
   * We will have a simple *machine image* running Ubuntu 10.04 (Lucid Lynx). We will be able to start instances of this image.
 
-  * We will be able to create dynamic firewalls using security groups.
+  * We will be able to create dynamic firewalls using [Security Groups](security-groups).
 
   * We will be able to use either password or rsa key authentication when logging into instances.
 
 ### Installation requirements
 
-  * A machine running [Centos](http://www.centos.org) 6.4 with x86 64 bit processor architecture. This can be either bare metal or a virtual machine. Instances are going to run as
+  * A machine running [Centos](http://www.centos.org) 6.5 with x86 64 bit processor architecture. This can be either bare metal or a virtual machine. Instances are going to run as
 [OpenVZ](http://openvz.org/Main_Page) containers so you don't need to worry about nested virtualization.
 
   * About 350 MB of disk space available in the `/opt` directory. Wakame-vdc itself is going to be placed there.
@@ -75,6 +75,12 @@ just going to install one HVA on the same machine as dcmgr.
 This is Wakame-vdc's GUI. It's actually a [Rails application](http://rubyonrails.org) that sits in front of the dcmgr web API.
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
+
+#### Downgrade Ruby
+
+Unfortunately a bug has recently popped up that causes OpenVZ instances to fail [as discussed in Japanese on the Wakame Users Group](https://groups.google.com/forum/#!topic/wakame-ug/KVTddkmgq_Q). We expect to have that fixed soon but until then, downgrading Wakame-vdc's ruby package will function as a workaround.
+
+    sudo yum downgrade -y http://dlc.wakame.axsh.jp/packages/3rd/rhel/6/master/wakame-vdc-ruby-2.0.0.247.axsh0-1.x86_64.rpm
 
 #### Reboot to load OpenVZ kernel
 
