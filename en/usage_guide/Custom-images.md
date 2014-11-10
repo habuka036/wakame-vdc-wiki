@@ -4,7 +4,7 @@ Although there are a variety of pre-built images for Wakame-vdc, in
 most cases it will be necessary to install extra software and do other
 miscellaneous setup after starting an instance.  To reduce this setup
 effort, in some cases it makes sense for users to create their own
-custom images.  Then by simply starting an instance Wakame-vdc, it is
+custom images.  Then by simply starting an instance in Wakame-vdc, it is
 possible to have a virtual machine up and running that is already
 perfectly set up.  All necessary software and services, for whatever
 purpose, can be "ready-to-go".
@@ -43,11 +43,13 @@ The most straightforward way to install and configure the installed OS
 distribution is from inside OpenVZ itself.  An environment created by
 following the [[installation guide|install-guide]] or the [VirtualBox
 demo image guide](http://wakameusersgroup.org/demo_image.html) provide
-enough OpenVZ functionality to do this.  As an example, running
+enough OpenVZ functionality to do this.
+
+As an example, running
 following shell commands in a VM booted with the demo image will
-download a minimal "template cache" for CentOS and install web server
-software.  For example miscellaneous configure, the shell commands
-create a top Web page configure the web service to to start when the
+download a minimal "template cache" for CentOS specialize it by installing web server
+software.  For an example of miscellaneous configuration, the shell commands
+create a top Web page and set up the web service to automatically start when the
 image is instantiated.
 
     ssh centos@a.b.c.d  # where a.b.c.d is the demo VM's IP address
@@ -69,7 +71,12 @@ image is instantiated.
 ##### Insert the wakame-init script and run it from /etc/rc.local:
 
 Note: This step is necessary so that Wakame-vdc can do last-minute
-specialization necessary when each instance is booted.
+specialization that is necessary when each instance is booted.  For
+example, the wakame-init script sets up network addresses and routing
+and installs ssh keys.  It also ensures that instances can access
+information from special "meta-data" storage.  One use of this storage
+is to pass arbitrary "user data" that opens up opportunities for user
+provided scripts to do additional last-minute specialization.
 
     [root@localhost /]# cd /etc
     [root@localhost etc]# wget https://raw.githubusercontent.com/axsh/wakame-vdc/master/wakame-init/rhel/6/wakame-init
@@ -149,8 +156,8 @@ the directory and Wakame-vdc objects from those instructions have
 already been created.
 
 First, move the new image to Wakame-vdc's directory for keeping
-images.  (If the image was created by the above steps, the image is
-already there.)
+images.  (If the image was created by the above steps, the image might
+already be there.)
 
     mv wakame-vdc-custom-image.raw.gz /var/lib/wakame-vdc/images
 
@@ -160,7 +167,9 @@ To register both the *backup object* and the related *machine image*, we will ag
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage
 
-Now register the backup object and assign it to the local storage made in the [[Wakame-vdc install guide|install-guide]].
+Now register the backup object and assign it to a `backup storage` node. If
+you have followed the [[Wakame-vdc install guide|install-guide]], the
+`backup storage` node to assign it to would be `bkst-local`.
 
 This image is compressed with gzip to save space. In order to properly manage its disk space usage, Wakame-vdc needs to know both the compressed size and uncompressed size of the image. These translate to the *size* and *allocation-size* options respectively.  The $() expressions in the examples below will insert the correct information, assuming it was collected as in the example steps above.
 
