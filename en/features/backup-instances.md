@@ -32,30 +32,30 @@ You need to have started an [[instance|Jargon-Dictionary#Instance]] in order to 
 
 Before you can create a backup, you have to power off your instance. Tick the checkbox next to your instance and click on `Select an Action`.
 
-[[backup-instance-images/01_select_an_action.png]]
+[[backup-instances-images/01_select_an_action.png]]
 
 Next, click on `Power Off`.
 
 **Remark:** Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instance while keeping it's ip address and memory etc. reserved. When starting it again afterwards, it will run a new instance in its place. `Power Off` means that the instance's OS will get the shutdown signal and the instance will gracefully shut down. It is equivalent to shutting down a physical server. You will be able to `Power On` the same instance again later.
 
-[[backup-instance-images/02_power_off.png]]
+[[backup-instances-images/02_power_off.png]]
 
 Your instance should now have the state of `halting`. Wait a few moments and lick on the `Refresh` button. Repeat until your instance has reached the state of `halted`.
 
 Now tick the checkbox next to your instance again and click `Backup`.
 
-[[backup-instance-images/03_backup.png]]
+[[backup-instances-images/03_backup.png]]
 
 The `Create Instance Backup` dialog will pop up. Fill in the `Backup Display Name` field. This name will be shown in the list of machine images. Click on `Backup` when you've filled it in.
 
-[[backup-instance-images/04_create_backup_dialog.png]]
+[[backup-instances-images/04_create_backup_dialog.png]]
 
 You'll be taken back to the instances panel. Click on `Machine Images` in the menu on the left.
 
-[[backup-instance-images/05_machine_image_creating.png]]
+[[backup-instances-images/05_machine_image_creating.png]]
 
 You should see your new machine image with the state of `creating`. Wait a few moments and click on `Refresh`. Eventually your image will reach the state of available.
 
-[[backup-instance-images/06_create_image_available.png]]
+[[backup-instances-images/06_create_image_available.png]]
 
 You are done. You are now free to `Power On` the original instance again and start new instances off of this machine image.
