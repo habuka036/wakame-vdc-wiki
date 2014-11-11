@@ -32,7 +32,7 @@ The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts [[inst
 
 ### Instance
 
-The virtual machine managed by wakame-vdc.
+A virtual machine managed by wakame-vdc.
 
 ## J
 ## K
