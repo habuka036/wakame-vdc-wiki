@@ -2,13 +2,18 @@
 
 ## A
 ## B
+
+### Backup Object
+
+A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [machine images|#Machine Image].
+
 ## C
 ## D
 ## E
 
 ### Endpoint
 
-The logical endpoint of separate protocol traffic of a specific protocol layer. 
+An endpoint is a single part of the [WebAPI|#WebAPI] that the user can call to control Wakame-vdc. For example `GET http://<webapi ip>:<webapi port>/api/instances` is an endpoint. `POST http://<webapi ip>:<webapi port>/api/images` is another endpoint and so on.
 
 ## F
 ## G
@@ -31,6 +36,11 @@ The virtual machine managed by wakame-vdc.
 ## K
 ## L
 ## M
+
+### Machine Image
+
+A [backup object|#Backup Object] that holds a bootable partition. You are able to start [instances|#Instance] of machine images.
+
 ## N
 ## O
 ## P
@@ -40,7 +50,7 @@ The virtual machine managed by wakame-vdc.
 
 ### Security Group
 
-Wakame-vdc's dynamically updating firewall. You can put [vnics|vnic] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
+Wakame-vdc's dynamically updating firewall. You can put [vnics|#vnic] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
 
 ## T
 ## U
