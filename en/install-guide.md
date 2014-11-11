@@ -8,6 +8,8 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
   * We will be able to create dynamic firewalls using [Security Groups](security-groups).
 
+  * We will be able to take running instances and turn them into new machine images.
+
   * We will be able to use either password or rsa key authentication when logging into instances.
 
 ### Installation requirements
