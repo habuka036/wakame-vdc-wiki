@@ -26,7 +26,7 @@ See [[WebUI|Jargon-Dictionary#WebUI]].
 
 ### HVA
 
-The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts instances. On a production environment, you would likely have several dedicated bare metal hosts for this.
+The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts [[instances|Jargon-Dictionary#Instance]]. On a production environment, you would likely have several dedicated bare metal hosts for this.
 
 ## I
 
@@ -60,7 +60,7 @@ Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionar
 
 ### Vnic / Vif
 
-A virtual network interface. Basically an instance's network card is referred to as a vnic or vif.
+A virtual network interface. Basically an [[instance's|Jargon-Dictionary#Instance]] network card is referred to as a vnic or vif.
 
 ## W
 
