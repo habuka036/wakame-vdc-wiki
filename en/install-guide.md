@@ -76,12 +76,6 @@ This is Wakame-vdc's GUI. It's actually a [Rails application](http://rubyonrails
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
 
-#### Downgrade Ruby
-
-Unfortunately a bug has recently popped up that causes OpenVZ instances to fail [as discussed in Japanese on the Wakame Users Group](https://groups.google.com/forum/#!topic/wakame-ug/KVTddkmgq_Q). We expect to have that fixed soon but until then, downgrading Wakame-vdc's ruby package will function as a workaround.
-
-    sudo yum downgrade -y http://dlc.wakame.axsh.jp/packages/3rd/rhel/6/master/wakame-vdc-ruby-2.0.0.247.axsh0-1.x86_64.rpm
-
 #### Reboot to load OpenVZ kernel
 
 These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Reboot your machine so that kernel gets loaded.
