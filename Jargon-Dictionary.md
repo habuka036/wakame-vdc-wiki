@@ -52,7 +52,7 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 
 ### Security Group
 
-Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionary#vnic]] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
+Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionary#Vnic-/-Vif]] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
 
 ## T
 ## U
