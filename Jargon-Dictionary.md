@@ -60,7 +60,7 @@ Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionar
 
 ### Vnic / Vif
 
-A virtual network interface. Basically an [[instance's|Jargon-Dictionary#Instance]] network card is referred to as a vnic or vif.
+Stands for Virtual Network Interface Card or Virtual Interface. In either case, the term refers to an [[instance's|Jargon-Dictionary#Instance]] simulated network card.
 
 ## W
 
