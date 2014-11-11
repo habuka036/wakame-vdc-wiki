@@ -5,7 +5,7 @@
 
 ### Backup Object
 
-A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [machine images|#Machine Image].
+A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [[machine images|Jargon-Dictionary#Machine-Image]].
 
 ## C
 ## D
@@ -13,12 +13,12 @@ A backup object is basically a hard drive image. Backup objects that hold bootab
 
 ### Endpoint
 
-An endpoint is a single part of the [WebAPI|#WebAPI] that the user can call to control Wakame-vdc. For example `GET http://<webapi ip>:<webapi port>/api/instances` is an endpoint. `POST http://<webapi ip>:<webapi port>/api/images` is another endpoint and so on.
+An endpoint is a single part of the [[WebAPI|Jargon-Dictionary#WebAPI]] that the user can call to control Wakame-vdc. For example `GET http://<webapi ip>:<webapi port>/api/instances` is an endpoint. `POST http://<webapi ip>:<webapi port>/api/images` is another endpoint and so on.
 
 ## F
 ## G
 
-See [WebUI|#WebUI].
+See [[WebUI|Jargon-Dictionary#WebUI]].
 
 ## H
 
@@ -39,7 +39,7 @@ The virtual machine managed by wakame-vdc.
 
 ### Machine Image
 
-A [backup object|#Backup Object] that holds a bootable partition. You are able to start [instances|#Instance] of machine images.
+A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partition. You are able to start [[instances|Jargon-Dictionary#Instance]] of machine images.
 
 ## N
 ## O
@@ -50,7 +50,7 @@ A [backup object|#Backup Object] that holds a bootable partition. You are able t
 
 ### Security Group
 
-Wakame-vdc's dynamically updating firewall. You can put [vnics|#vnic] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
+Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionary#vnic]] into groups that determine which network traffic is blocked and which is accepted. These firewalls are updated dynamically as the layout of the virtual data center changes. Read the [security groups guide](en/features/security-groups) for more details.
 
 ## T
 ## U
@@ -68,7 +68,7 @@ This is Wakame-vdc's user interface. You tell Wakame-vdc to do stuff by making h
 
 ### WebUI
 
-Wakame-vdc's GUI. It's actually a Rails application that sits in front of the [WebAPI|#WebAPI].
+Wakame-vdc's GUI. It's actually a Rails application that sits in front of the [[WebAPI|Jargon-Dictionary#WebAPI]].
 
 ## X
 ## Y
