@@ -18,6 +18,8 @@ An endpoint is a single part of the [[WebAPI|Jargon-Dictionary#WebAPI]] that the
 ## F
 ## G
 
+### GUI
+
 See [[WebUI|Jargon-Dictionary#WebUI]].
 
 ## H
