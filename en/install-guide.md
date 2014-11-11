@@ -121,7 +121,7 @@ Restart the network.
 **Be careful!** If you have made any mistakes setting up these files for your environment, this next command will cause networking to go down on your machine. Triple check these values if
 you're running this guide on a remote machine!
 
-    sudo  /etc/init.d/network restart
+    sudo  service network restart
 
 #### Configuration
 
@@ -157,7 +157,7 @@ The different Wakame-vdc services require their own config files. Unfortunately 
 
 Wakame-vdc uses a [MySQL](http://www.mysql.com) database. Start MySQL and create the database.
 
-    sudo /etc/init.d/mysqld start
+    sudo service mysqld start
     mysqladmin -uroot create wakame_dcmgr
 
 We can use [Rake](https://github.com/ruby/rake) to create the database tables. Wakame-vdc comes with its own ruby binary that includes Rake.
@@ -356,11 +356,11 @@ We're done with gui-manage. Exit the shell.
 
 Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communicate. Rabbitmq-server is the AMQP exchange managing all that traffic.
 
-    sudo /etc/init.d/rabbitmq-server start
+    sudo service rabbitmq-server start
 
 If you've been following this guide, MySQL should still be running. If it isn't running, start it.
 
-    sudo /etc/init.d/mysqld start
+    sudo service mysqld start
 
 After all this hard work we should be able to get Wakame-vdc up and running. Start the upstart jobs.
 
