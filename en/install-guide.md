@@ -263,6 +263,7 @@ Wakame-vdc needs to know which network instances will be connected to. You can r
       --ipv4-network 192.168.3.0 \
       --prefix 24 \
       --ipv4-gw 192.168.3.1 \
+      --dns 8.8.8.8 \
       --account-id a-shpoolxx \
       --display-name "demo network"
 
