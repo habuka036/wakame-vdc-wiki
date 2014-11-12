@@ -70,6 +70,6 @@ You should see your new machine image with the state of `creating`. Wait a few m
 
 [[backup-instances-images/07_machine_image_creating.png]]
 
-Once your image has reached the state of `available`, you are done. You are now free to `Power On` the original instance again and start new instances of this machine image.
+Once your image has reached the state of `available`, you are done. You are now free to `Power On` the original instance again and/or start new instances of this machine image.
 
 [[backup-instances-images/08_create_image_available.png]]
