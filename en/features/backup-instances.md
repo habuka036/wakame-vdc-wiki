@@ -56,7 +56,7 @@ Now tick the checkbox next to your instance again and click `Backup`.
 
 [[backup-instances-images/04_backup.png]]
 
-The `Create Instance Backup` dialog will pop up. Fill in the `Backup Display Name` field. This name will be shown in the list of machine images. Click on `Backup` when you've filled it in.
+The `Create Instance Backup` dialog will pop up. Fill in the `Backup Display Name` field. This will become the name of your new [[machine image|Jargon-Dictionary#Machine-Image]]. Click on `Backup` when you've filled it in.
 
 [[backup-instances-images/05_create_backup_dialog.png]]
 
