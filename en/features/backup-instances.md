@@ -34,17 +34,21 @@ If it does not show the UUID of the backup storage you want to use, open the fil
 
 You need to have started an [[instance|Jargon-Dictionary#Instance]] in order to back it up. If you don't know how to start an instance, you can find the instructions in [[the basic usage guide|Basic-usage]].
 
-Before you can create a backup, you have to power off your instance. Tick the checkbox next to your instance and click on `Select an Action`.
+Before you can create a backup, you have to power off your instance. On the Instances page of the GUI, tick the checkbox next to your instance and click on `Select an Action`.
 
 [[backup-instances-images/01_select_an_action.png]]
 
 Next, click on `Power Off`.
 
-**Remark:** Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instance while keeping it's ip address and memory etc. reserved. When starting it again afterwards, it will run a new instance in its place. `Power Off` means that the instance's OS will get the shutdown signal and the instance will gracefully shut down. It is equivalent to shutting down a physical server. You will be able to `Power On` the same instance again later.
+**Remark**
+
+Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instance while keeping it's ip address and memory etc. reserved. When starting it again afterwards, it will run a new instance in its place.
+
+`Power Off` means that the instance's OS will get the shutdown signal and the instance will gracefully shut down. It is equivalent to shutting down a physical server. You will be able to `Power On` the same instance again later.
 
 [[backup-instances-images/02_power_off.png]]
 
-Your instance should now have the state of `halting`. Wait a few moments and lick on the `Refresh` button. Repeat until your instance has reached the state of `halted`.
+Your instance should now have the state of `halting`. Wait a few moments and click on the `Refresh` button. Repeat until your instance has reached the state of `halted`.
 
 Now tick the checkbox next to your instance again and click `Backup`.
 
