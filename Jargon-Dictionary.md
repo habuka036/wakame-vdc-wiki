@@ -3,6 +3,10 @@
 ## A
 ## B
 
+### Backup storage
+
+Backup storage is a means of storing [[backup objects|#Backup-Object]]. Backup objects can be stored on a local file system, served through http or using [Indelible FS](http://www.igeekinc.com/indeliblefs/en/indeliblefs.html) (experimental).
+
 ### Backup Object
 
 A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [[machine images|Jargon-Dictionary#Machine-Image]].
