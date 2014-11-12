@@ -3,6 +3,10 @@
 ## A
 ## B
 
+### Backup storage
+
+Backup storage is a means of storing [[backup objects|#Backup-Object]]. Backup objects can be stored on a local file system, served through http or using [Indelible FS](http://www.igeekinc.com/indeliblefs/en/indeliblefs.html) (experimental).
+
 ### Backup Object
 
 A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [[machine images|Jargon-Dictionary#Machine-Image]].
@@ -32,7 +36,7 @@ The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts [[inst
 
 ### Instance
 
-The virtual machine managed by wakame-vdc.
+A virtual machine managed by wakame-vdc.
 
 ## J
 ## K
@@ -60,7 +64,7 @@ Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionar
 
 ### Vnic / Vif
 
-A virtual network interface. Basically an [[instance's|Jargon-Dictionary#Instance]] network card is referred to as a vnic or vif.
+Stands for Virtual Network Interface Card or Virtual Interface. In either case, the term refers to an [[instance's|Jargon-Dictionary#Instance]] simulated network card.
 
 ## W
 
