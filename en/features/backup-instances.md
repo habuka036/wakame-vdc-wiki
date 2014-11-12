@@ -8,7 +8,7 @@ In Wakame-vdc it is possible to take a running [[instance|Jargon-Dictionary#Inst
 
 You of course need a working Wakame-vdc installation. You can use either the [VirtualBox demo image](http://wakameusersgroup.org/demo_image.html) or create your own environment using the [[installation guide|install-guide]].
 
-You need to tell Wakame-vdc which backup storage to use when backing up instances. Both the VirtualBox image and the installation guide will set that up but just in case, here it is again.
+You need to tell Wakame-vdc which [[backup storage|Jargon-Dictionary#Backup-Storage]] to use when backing up instances. Both the VirtualBox image and the installation guide will set that up but just in case, here it is again.
 
 Figure out which backup storage you want to use with `vdc-manage`.
 
