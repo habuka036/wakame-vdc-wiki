@@ -50,20 +50,22 @@ Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instanc
 
 Your instance should now have the state of `halting`. Wait a few moments and click on the `Refresh` button. Repeat until your instance has reached the state of `halted`.
 
+[[backup-instances-images/03_halting.png]]
+
 Now tick the checkbox next to your instance again and click `Backup`.
 
-[[backup-instances-images/03_backup.png]]
+[[backup-instances-images/04_backup.png]]
 
 The `Create Instance Backup` dialog will pop up. Fill in the `Backup Display Name` field. This name will be shown in the list of machine images. Click on `Backup` when you've filled it in.
 
-[[backup-instances-images/04_create_backup_dialog.png]]
+[[backup-instances-images/05_create_backup_dialog.png]]
 
 You'll be taken back to the instances panel. Click on `Machine Images` in the menu on the left.
 
-[[backup-instances-images/05_machine_image_creating.png]]
+[[backup-instances-images/06_machine_image_creating.png]]
 
 You should see your new machine image with the state of `creating`. Wait a few moments and click on `Refresh`. Eventually your image will reach the state of available.
 
-[[backup-instances-images/06_create_image_available.png]]
+[[backup-instances-images/07_create_image_available.png]]
 
 You are done. You are now free to `Power On` the original instance again and start new instances off of this machine image.
