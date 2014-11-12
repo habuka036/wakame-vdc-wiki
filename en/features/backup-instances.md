@@ -60,12 +60,14 @@ The `Create Instance Backup` dialog will pop up. Fill in the `Backup Display Nam
 
 [[backup-instances-images/05_create_backup_dialog.png]]
 
-You'll be taken back to the instances panel. Click on `Machine Images` in the menu on the left.
+You'll be taken back to the instances page. Click on `Machine Images` in the menu on the left.
 
-[[backup-instances-images/06_machine_image_creating.png]]
+[[backup-instances-images/06_instance_after_backup.png]]
 
-You should see your new machine image with the state of `creating`. Wait a few moments and click on `Refresh`. Eventually your image will reach the state of available.
+You should see your new machine image with the state of `creating`. Wait a few moments and click on `Refresh`. Eventually your image will reach the state of `available`.
 
-[[backup-instances-images/07_create_image_available.png]]
+[[backup-instances-images/07_machine_image_creating.png]]
 
-You are done. You are now free to `Power On` the original instance again and start new instances off of this machine image.
+Once your image has reached the state of `available`, you are done. You are now free to `Power On` the original instance again and start new instances of this machine image.
+
+[[backup-instances-images/08_create_image_available.png]]
