@@ -5,7 +5,7 @@
 
 ### Backup Storage
 
-Backup storage is a means of storing [[backup objects|#Backup-Object]]. Backup objects can be stored on a local file system, served through http or using [Indelible FS](http://www.igeekinc.com/indeliblefs/en/indeliblefs.html) (experimental).
+Backup storage is a means of storing [[backup objects|Jargon-Dictionary#Backup-Object]]. Backup objects can be stored on a local file system, served through http or using [Indelible FS](http://www.igeekinc.com/indeliblefs/en/indeliblefs.html) (experimental).
 
 ### Backup Object
 
