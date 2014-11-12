@@ -4,6 +4,8 @@
 
 In Wakame-vdc it is possible to take a running [[instance|Jargon-Dictionary#Instance]] and turn it into a new [[machine image|Jargon-Dictionary#Machine-Image]]. We simply call this process *backup*.
 
+This is a quick and easy way to create new machine images. For example, you could start up an instance, install a web server in it and then back it up. Now you'll have a machine image with a web server installed and you'll immediately be able to start a theoretically infinite amount if web server instances.
+
 ### Requirements
 
 You of course need a working Wakame-vdc installation. You can use either the [VirtualBox demo image](http://wakameusersgroup.org/demo_image.html) or create your own environment using the [[installation guide|install-guide]].
