@@ -23,7 +23,11 @@ There's only one backup storage defined and its UUID is `bkst-local`. We need to
 
     grep backup_storage_id /etc/wakame-vdc/dcmgr.conf
 
-If the above command does not show the UUID of the backup storage you want to use, open the file with a text editor and change that line.
+That command should have an output similar to this.
+
+    backup_storage_id 'bkst-local'
+
+If it does not show the UUID of the backup storage you want to use, open the file with a text editor and change that line.
 
 
 ### Usage
