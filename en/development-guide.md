@@ -36,6 +36,8 @@ The firewall (Security Groups) related code is located in the [dcmgr/lib/dcmgr/e
 
 Wakame-vdc uses an in house developed framework that handles all the [AMQP](http://www.amqp.org) messaging. It's called Isono and can be found in its own github repository. [[https://github.com/axsh/isono]]
 
+The classes that implement Isono can be found in the [dcmgr/lib/dcmgr/node_modules](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/node_modules) and [dcmgr/lib/dcmgr/rpc](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/rpc) directories.
+
 #### Database access
 
 We use [Sequel](http://sequel.jeremyevans.net) to handle database access. The model classes are in the [dcmgr/lib/dcmgr/models](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/models) directory.
