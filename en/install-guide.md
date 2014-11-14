@@ -296,11 +296,12 @@ We're done with vdc-manage. Exit its shell.
 
 One of the steps above included setting up a `backup storage` with uuid `bkst-local`. That told Wakame-vdc to keep machine images on the local filesystem. One of Wakame's features is to `backup` an existing instance and turn it into a new machine image. In order to use that feature, we have to tell Wakame-vdc which `backup storage` to use when making backups. Open up `/etc/wakame-vdc/dcmgr.conf` and find the following:
 
-    ...
+    --snip--
     service_type("std", "StdServiceType") {
       backup_storage_id 'bkst-demo2'
-    ...
+      --snip--
     }
+    --snip--
 
 Change the `backup_storage_id` line to contain the uuid of the backup storage we made earlier.
 
