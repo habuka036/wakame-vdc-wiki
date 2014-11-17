@@ -84,6 +84,10 @@ Integration tests using [RSpec](http://rspec.info) are here: [spec_integration](
 
 The instances need to do be made aware of meta-data that Wakame-vdc sets for them like ip address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
 
+#### Upstart jobs
+
+The upstart jobs that are used to start Wakame-vdc services are located here: [contrib/etc](https://github.com/axsh/wakame-vdc/tree/master/contrib/etc)
+
 ## Contributing code
 
 We encourage you to send some of your code back to us. You can do so by using github's *fork & pull* method as described [here](https://help.github.com/articles/using-pull-requests/#fork--pull). You will need to have a github account.
