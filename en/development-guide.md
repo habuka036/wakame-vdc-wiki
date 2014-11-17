@@ -56,7 +56,7 @@ The *gui-manage* CLI can be found in [frontend/dcmgr_gui/lib/cli](https://github
 
 #### Configuration files
 
-The configuration files use an in house developed framework called [Fuguta](https://github.com/axsh/fuguta). Their definition can be found in the [dcmgr/lib/dcmgr/configurations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/configurations) directory. Examples of the configuration files themselves can be found here: [dcmgr/config](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config)
+The configuration files use an in house developed framework called [Fuguta](https://github.com/axsh/fuguta). Their definitions can be found in the [dcmgr/lib/dcmgr/configurations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/configurations) directory. Examples of the configuration files themselves can be found here: [dcmgr/config](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config)
 
 
 #### RPM packaging
