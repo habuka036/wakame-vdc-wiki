@@ -7,4 +7,5 @@
 + [[Basic usage|Basic-usage]]
 + [[Custom images|Custom-images]]
 + [[Security Groups|security-groups]]
++ [[Jargon dictionary|Jargon-Dictionary]]
 + [[F.A.Q.|faq]]
