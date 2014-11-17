@@ -6,6 +6,6 @@
 + [[Installation guide|install-guide]]
 + [[Basic usage|Basic-usage]]
 + [[Security Groups|security-groups]]
-+ [[Instace backup|backup-instances]]
++ [[Instance backup|backup-instances]]
 + [[Jargon dictionary|Jargon-Dictionary]]
 + [[F.A.Q.|faq]]
