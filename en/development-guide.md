@@ -58,7 +58,6 @@ The *gui-manage* CLI can be found in [frontend/dcmgr_gui/lib/cli](https://github
 
 The configuration files use an in house developed framework called [Fuguta](https://github.com/axsh/fuguta). Their definitions can be found in the [dcmgr/lib/dcmgr/configurations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/configurations) directory. Examples of the configuration files themselves can be found here: [dcmgr/config](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config)
 
-
 #### RPM packaging
 
 The rpm packaging scripts are in the aptly named [rpmbuild](https://github.com/axsh/wakame-vdc/tree/master/rpmbuild) directory.
@@ -66,6 +65,24 @@ The rpm packaging scripts are in the aptly named [rpmbuild](https://github.com/a
 #### Debian packaging
 
 You might notice a [debian](https://github.com/axsh/wakame-vdc/tree/master/debian) directory in the main repository. Even though the directory is there, Debian packaging is currently **not** officially supported. Feel free to play around with the packaging info in this directory but don't expect it to work.
+
+#### Mussel
+
+Mussel is an API client and autotesting framework for Wakame-vdc written in bash. It can be found here: [client/mussel](https://github.com/axsh/wakame-vdc/tree/master/client/mussel)
+
+#### Autotesting
+
+There are currently three autotest suites for Wakame-vdc.
+
+Unit tests using [RSpec](http://rspec.info) are here: [dcmgr/spec](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/spec)
+
+Integration tests using the Mussel framework are here: [client/mussel/test](https://github.com/axsh/wakame-vdc/tree/master/client/mussel/test)
+
+Integration tests using [RSpec](http://rspec.info) are here: [spec_integration](https://github.com/axsh/wakame-vdc/tree/master/spec_integration)
+
+#### Instance init scripts
+
+The instances need to do be made aware of meta-data that Wakame-vdc sets for them like ip address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
 
 ## Contributing code
 
