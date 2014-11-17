@@ -12,6 +12,11 @@ Backup storage is a means of storing [[backup objects|Jargon-Dictionary#Backup-O
 A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [[machine images|Jargon-Dictionary#Machine-Image]].
 
 ## C
+
+### Collector
+
+The collector is one of Wakame-vdc's processes. It's in charge of making [[scheduling decisions|Jargon-Dictionary#Scheduling]] and database access.
+
 ## D
 ## E
 
@@ -53,6 +58,10 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 ## Q
 ## R
 ## S
+
+### Scheduling
+
+The decision making process when starting a new instance. Deciding things like network to join, mac and ip address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
 
 ### Security Group
 
