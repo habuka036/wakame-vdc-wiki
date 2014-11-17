@@ -25,8 +25,10 @@ Wakame-vdc supports various virtualization technologies (KVM, OpenVZ,
 LXC, etc.)  and methods of packaging (tar, gzip, etc.), and the
 details for doing the above steps depends on which are chosen.  Below
 we will explain the steps assuming OpenVZ virtualization and gz
-packaging.  The steps for other combinations are similar, but differ
-in crucial ways that will be documented later.
+packaging, and to make things a little more interesting, set up the
+machine image to automatically start up a web server with a single
+static web page to show.  The steps for other combinations are
+similar, but differ in crucial ways that will be documented later.
 
 
 #### Step 1: Install an OS into a bootable disk or directory structure 
@@ -42,12 +44,12 @@ installations of the major Linux distributions are available.
 The most straightforward way to install and configure the installed OS
 distribution is from inside OpenVZ itself.  An environment created by
 following the [[installation guide|install-guide]] or the [VirtualBox
-demo image guide](http://wakameusersgroup.org/demo_image.html) provide
+demo image guide](http://wakameusersgroup.org/demo_image.html) provides
 enough OpenVZ functionality to do this.
 
 As an example, running
 following shell commands in a VM booted with the demo image will
-download a minimal "template cache" for CentOS specialize it by installing web server
+download a minimal "template cache" for CentOS and specialize it by installing web server
 software.  For an example of miscellaneous configuration, the shell commands
 create a top Web page and set up the web service to automatically start when the
 machine image is instantiated.
