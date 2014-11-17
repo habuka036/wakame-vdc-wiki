@@ -44,7 +44,7 @@ Next, click on `Power Off`.
 
 **Remark**
 
-Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instance while keeping it's ip address and memory etc. reserved. When starting it again afterwards, it will run a new instance in its place.
+Make sure to click on `Power Off` and not `Stop`. `Stop` will delete the instance while keeping its ip address and memory etc. reserved. When starting it again afterwards, it will run a new instance in its place.
 
 `Power Off` means that the instance's OS will get the shutdown signal and the instance will gracefully shut down. It is equivalent to shutting down a physical server. You will be able to `Power On` the same instance again later.
 
