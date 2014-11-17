@@ -4,7 +4,7 @@ Although there are a variety of pre-built machine images for Wakame-vdc, in
 most cases it will be necessary to install extra software and do other
 miscellaneous setup after starting an [[instance|Jargon-Dictionary#Instance]].  To reduce this setup
 effort, in some cases it makes sense for users to create their own
-custom [[machine images|Machine Image]].  Then by simply starting an instance in Wakame-vdc, it is
+custom [[machine images|Jargon-Dictionary#Machine Image]].  Then by simply starting an instance in Wakame-vdc, it is
 possible to have a virtual machine up and running that is already
 perfectly set up.  All necessary software and services, for whatever
 purpose, can be "ready-to-go".
