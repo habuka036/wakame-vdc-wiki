@@ -1,15 +1,15 @@
 ## Overview
 
-Although there are a variety of pre-built images for Wakame-vdc, in
+Although there are a variety of pre-built machine images for Wakame-vdc, in
 most cases it will be necessary to install extra software and do other
-miscellaneous setup after starting an instance.  To reduce this setup
+miscellaneous setup after starting an [[instance|Jargon-Dictionary#Instance]].  To reduce this setup
 effort, in some cases it makes sense for users to create their own
-custom images.  Then by simply starting an instance in Wakame-vdc, it is
+custom [[machine images|Machine Image]].  Then by simply starting an instance in Wakame-vdc, it is
 possible to have a virtual machine up and running that is already
 perfectly set up.  All necessary software and services, for whatever
 purpose, can be "ready-to-go".
 
-There are five basic steps for creating and using a custom image with Wakame-vdc:
+There are five basic steps for creating and using a custom machine image with Wakame-vdc:
 
 1. Install an OS into a bootable disk or directory structure.
 
@@ -17,9 +17,9 @@ There are five basic steps for creating and using a custom image with Wakame-vdc
 
 3. Specialize the OS installation for Wakame-vdc.
 
-4. Package it all into one image file.
+4. Package it all into one machine image file.
 
-5. Register this image file with Wakame-vdc.
+5. Register this machine image file with Wakame-vdc.
 
 Wakame-vdc supports various virtualization technologies (KVM, OpenVZ,
 LXC, etc.)  and methods of packaging (tar, gzip, etc.), and the
@@ -50,7 +50,7 @@ following shell commands in a VM booted with the demo image will
 download a minimal "template cache" for CentOS specialize it by installing web server
 software.  For an example of miscellaneous configuration, the shell commands
 create a top Web page and set up the web service to automatically start when the
-image is instantiated.
+machine image is instantiated.
 
     ssh centos@a.b.c.d  # where a.b.c.d is the demo VM's IP address
     [centos@wakame-vdc-1box ~]$ sudo su
@@ -103,7 +103,7 @@ not have this file.
 
     rm /etc/udev/rules.d/70-persistent-net.rules
 
-#### Step 4: Package it all into one image file
+#### Step 4: Package it all into one machine image file
 
 Exit the OpenVZ container.
 
@@ -119,7 +119,7 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box 111]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
 
-Wakame-vdc's preferred method of packaging images is inside of
+Wakame-vdc's preferred method of packaging machine images is inside of
 partitioned VM images files.  The following commands show one way to
 create such an image file and store the new customized OS distribution
 inside it using standard GNU/Linux commands.
@@ -146,19 +146,19 @@ inside it using standard GNU/Linux commands.
 
 Notice some of the steps collect information about the image into
 files in the /tmp directory.  This information will be necessary when
-registering the image with Wakame-vdc.
+registering the machine image with Wakame-vdc.
 
-#### Step 5: Register this image file with Wakame-vdc
+#### Step 5: Register this machine image file with Wakame-vdc
 
-First, move the new image to Wakame-vdc's directory for keeping
-images.  (If the image was created by the above steps, the image might
+First, move the new machine image to Wakame-vdc's directory for keeping
+images.  (If the machine image was created by the above steps, it might
 already be there.)
 
     mv wakame-vdc-custom-image.raw.gz /var/lib/wakame-vdc/images
 
-Registering the image file requires two vdc-manage commands.  The
+Registering the machine image file requires two vdc-manage commands.  The
 first registers the file as a `backup object` and assigns it to a
-`backup storage` node.  For example, to register the image created
+`backup storage` node.  For example, to register the machine image created
 above into a node named `bkst-local`, the following command could be
 used:
 
@@ -182,7 +182,7 @@ is a machine image that we can start instances of.
       --display-name "New image with web server and one static page"
 
 Note that the $() expressions here supply the command with necessary
-details about the image, assuming it was collected as in the example
+details about the machine image, assuming it was collected as in the example
 steps above.  The names `bkst-local` and `a-shpoolxx` will work if
 your are installing into an environment that was created by following
 the [[Wakame-vdc install guide|install-guide]].  The correct values for
