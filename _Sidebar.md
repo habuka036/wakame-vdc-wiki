@@ -7,5 +7,6 @@
 + [[Basic usage|Basic-usage]]
 + [[Custom images|Custom-images]]
 + [[Security Groups|security-groups]]
++ [[Instance backup|backup-instances]]
 + [[Jargon dictionary|Jargon-Dictionary]]
 + [[F.A.Q.|faq]]
