@@ -56,7 +56,7 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 
 ### Meta-data
 
-In Wakame-vdc's context, meta-data usually refers to information that is passed to instances when they start. It includes for example the instance's ip addresses, network host name and thrusted public keys. Meta-data is usually delivired as files on an extra (tiny) hard drive.
+In Wakame-vdc's context, meta-data usually refers to information that is passed to [[instances|Jargon-Dictionary#Instance]] when they start. It includes for example the instance's ip addresses, network host name and thrusted public keys. Meta-data is usually delivired as files on an extra (tiny) hard drive.
 
 ## N
 
