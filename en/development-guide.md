@@ -32,6 +32,8 @@ All decisions that need to be made in order to start instances (assignment of ho
 
 The firewall ([[Security Groups|security-groups]]) related code is located in the [dcmgr/lib/dcmgr/edge_networking](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/edge_networking) directory. This code is executed from the following file: [dcmgr/lib/dcmgr/node_modules/service_netfilter.rb](https://github.com/axsh/wakame-vdc/blob/master/dcmgr/lib/dcmgr/node_modules/service_netfilter.rb).
 
+The [dcmgr/lib/dcmgr/edge_networking/openflow](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/edge_networking/openflow) directory is actually a leftover from an obsolete feature concerning virtual networks. That feature got split off and turned into [OpenVNet](https://github.com/axsh/openvnet). The directory is still there because the natbox uses [OpenFlow](http://archive.openflow.org) to provide network address translation.
+
 #### AMQP messaging
 
 Wakame-vdc uses an in house developed framework that handles all the [AMQP](http://www.amqp.org) messaging. It's called Isono and can be found in its own github repository. https://github.com/axsh/isono
