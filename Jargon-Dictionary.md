@@ -47,6 +47,10 @@ A virtual machine managed by wakame-vdc.
 
 A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partition. You are able to start [[instances|Jargon-Dictionary#Instance]] of machine images.
 
+### Meta-data
+
+In Wakame-vdc's context, meta-data usually refers to information that is passed to instances when they start. It includes for example the instance's ip addresses, network host name and thrusted public keys. Meta-data is usually delivired as files on an extra (tiny) hard drive.
+
 ## N
 ## O
 ## P
@@ -60,6 +64,11 @@ Wakame-vdc's dynamically updating firewall. You can put [[vnics|Jargon-Dictionar
 
 ## T
 ## U
+
+### User data
+
+User data is an arbitrary field that users can set when starting an [[instance|Jargon-Dictionary#Instance]]. The user data will be delivered along with [[meta-data|Jargon-Dictionary#Meta-data]] and will thus be accessible from inside the instance. For example users can create [[custom images|custom-images]] with scripts in them that react to user data.
+
 ## V
 
 ### Vnic / Vif
