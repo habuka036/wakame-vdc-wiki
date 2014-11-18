@@ -42,6 +42,8 @@ The classes that implement Isono can be found in the [dcmgr/lib/dcmgr/node_modul
 
 We use [Sequel](http://sequel.jeremyevans.net) to handle database access. The model classes are in the [dcmgr/lib/dcmgr/models](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/models) directory.
 
+The database schema is managed using [Sequel Migrations](http://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html). The migration files are in [config/db/migrations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config/db/migrations).
+
 #### GUI
 
 The GUI is a [Rails](http://rubyonrails.org) application and is located in the [frontend/dcmgr_gui](https://github.com/axsh/wakame-vdc/tree/master/frontend/dcmgr_gui) directory. There's also a not quite as pretty admin guide available if you want to play around with it. [frontend/admin](https://github.com/axsh/wakame-vdc/tree/master/frontend/admin)
