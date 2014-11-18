@@ -53,6 +53,11 @@ A virtual machine managed by wakame-vdc.
 A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partition. You are able to start [[instances|Jargon-Dictionary#Instance]] of machine images.
 
 ## N
+
+### NATbox
+
+The NATbox is a Wakame-vdc node that provides one to one [network address translation](http://en.wikipedia.org/wiki/Network_address_translation) for [[instances|Jargon-Dictionary#Instance]].
+
 ## O
 ## P
 ## Q
