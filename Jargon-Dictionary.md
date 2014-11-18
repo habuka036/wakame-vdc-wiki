@@ -56,7 +56,7 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 
 ### NATbox
 
-The NATbox is a Wakame-vdc node that provides one to one [network address translation](http://en.wikipedia.org/wiki/Network_address_translation) for [[instances|Jargon-Dictionary#Instance]].
+The NATbox is an optional Wakame-vdc node that provides one to one [network address translation](http://en.wikipedia.org/wiki/Network_address_translation) for [[instances|Jargon-Dictionary#Instance]].
 
 ## O
 ## P
