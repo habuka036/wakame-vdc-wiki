@@ -28,7 +28,7 @@ we will explain the steps assuming OpenVZ virtualization and gz
 packaging, and to make things a little more interesting, set up the
 machine image to automatically start up a web server with a single
 static web page to show.  The steps for other combinations are
-similar, but differ in crucial ways that will be documented later.
+similar, but differ in subtle ways that will be documented later.
 
 
 #### Step 1: Install an OS into a bootable disk or directory structure 
