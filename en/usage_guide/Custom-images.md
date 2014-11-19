@@ -76,8 +76,8 @@ Note: This step is necessary so that Wakame-vdc can do last-minute
 specialization that is necessary when each instance is booted.  For
 example, the wakame-init script sets up network addresses and routing
 and installs ssh keys.  It also ensures that instances can access
-information from special "meta-data" storage.  One use of this storage
-is to pass arbitrary "user data" that opens up opportunities for user
+information from special [[meta-data|Jargon-Dictionary#Meta-data]] storage.  One use of this storage
+is to pass arbitrary [[user-data|Jargon-Dictionary#User-data]] that opens up opportunities for user
 provided scripts to do additional last-minute specialization.
 
     [root@localhost /]# cd /etc
