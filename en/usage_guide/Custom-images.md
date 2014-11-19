@@ -117,7 +117,7 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
     [root@wakame-vdc-1box cache]# cd /vz/private/101
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz . ## ((TODO: check the rules on file names for images))
+    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz
     [root@wakame-vdc-1box 111]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
 
