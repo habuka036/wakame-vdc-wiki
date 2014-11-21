@@ -22,9 +22,9 @@ There are five basic steps for creating and using a custom machine image with Wa
 5. Register this machine image file with Wakame-vdc.
 
 Wakame-vdc supports various virtualization technologies (KVM, OpenVZ,
-LXC, etc.)  and methods of packaging (tar, gzip, etc.), and the
-details for doing the above steps depends on which are chosen.  Below
-we will explain the steps assuming OpenVZ virtualization and gz
+and LXC) and methods of packaging (tar, gzip, disk partitions, etc.),
+and the details for doing the above steps depends on which are chosen.
+Below we will explain the steps assuming OpenVZ virtualization and gz
 packaging, and to make things a little more interesting, set up the
 machine image to automatically start up a web server with a single
 static web page to show.  The steps for other combinations are
