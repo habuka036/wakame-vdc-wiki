@@ -192,11 +192,12 @@ already be there.)
 
     mv wakame-vdc-custom-image.raw.gz /var/lib/wakame-vdc/images
 
-Registering the machine image file requires two vdc-manage commands.  The
-first registers the file as a `backup object` and assigns it to a
-`backup storage` node.  For example, to register the machine image created
-above into a node named `bkst-local`, the following command could be
-used:
+Registering the machine image file requires two vdc-manage commands.
+The first registers the file as a [[backup object|Jargon-Dictionary#Backup-Object]] and assigns it to a
+[[backup storage|Jargon-Dictionary#Backup-Storage]].  For example, to
+register the machine image created above into [[backup
+storage|Jargon-Dictionary#Backup-Storage]] named `bkst-local`, the
+following command could be used:
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage backupobject add \
       --uuid bo-customimage \
@@ -208,7 +209,7 @@ used:
       --container-format gz \
       --checksum $(cat /tmp/remember.md5)
 
-The second vdc-manage command tells Wakame-vdc that this backup object
+The second vdc-manage command tells Wakame-vdc that this [[backup object|Jargon-Dictionary#Backup-Object]]
 is a machine image that we can start instances of.
 
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage image add local bo-customimage \
