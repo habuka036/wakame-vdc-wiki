@@ -86,7 +86,7 @@ Integration tests using [RSpec](http://rspec.info) are here: [spec_integration](
 
 #### Instance init scripts
 
-The instances need to do be made aware of meta-data that Wakame-vdc sets for them like ip address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
+The instances need to be made aware of meta-data that Wakame-vdc sets for them like ip address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
 
 #### Upstart jobs
 
