@@ -6,9 +6,9 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
   * We will have a simple *machine image* running Ubuntu 10.04 (Lucid Lynx). We will be able to start instances of this image.
 
-  * We will be able to create dynamic firewalls using [Security Groups](security-groups).
+  * We will be able to create dynamic firewalls using [[Security Groups|security-groups]].
 
-  * We will be able to take running instances and turn them into new machine images.
+  * We will be able to [[back up running instances|backup-instances]] and turn them into new machine images.
 
   * We will be able to use either password or rsa key authentication when logging into instances.
 
