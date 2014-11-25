@@ -30,7 +30,7 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
 ### What will this guide do to my machine?
 
-  * Since we are going to use [OpenVZ](http://openvz.org/Main_Page), we will install OpenVZ's modified Linux kernel.
+  * Since we are going to use [OpenVZ](http://openvz.org/Main_Page), we will install OpenVZ's [modified Linux kernel](http://en.wikipedia.org/wiki/OpenVZ#Kernel).
 
   * We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) and connect the host's network interface to it.
 
