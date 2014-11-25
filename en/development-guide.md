@@ -48,7 +48,7 @@ The database schema is managed using [Sequel Migrations](http://sequel.jeremyeva
 
 #### GUI
 
-The GUI is a [Rails](http://rubyonrails.org) application and is located in the [frontend/dcmgr_gui](https://github.com/axsh/wakame-vdc/tree/master/frontend/dcmgr_gui) directory. There's also a not quite as pretty admin guide available if you want to play around with it. [frontend/admin](https://github.com/axsh/wakame-vdc/tree/master/frontend/admin)
+The GUI is a [Rails](http://rubyonrails.org) application and is located in the [frontend/dcmgr_gui](https://github.com/axsh/wakame-vdc/tree/master/frontend/dcmgr_gui) directory. There's also a not quite as pretty admin GUI available if you want to play around with it. [frontend/admin](https://github.com/axsh/wakame-vdc/tree/master/frontend/admin)
 
 #### CLI (vdc-manage and gui-manage)
 
