@@ -224,3 +224,21 @@ steps above.  The names `bkst-local` and `a-shpoolxx` will work if
 your are installing into an environment that was created by following
 the [[Wakame-vdc install guide|install-guide]].  The correct values for
 other situations can be typed directly into the command line.
+
+### Using and testing the new image
+
+It should now be possible to start an instance from the machine image
+by following the instructions in the [[basic usage
+guide|Basic-usage]].  The only necessary modification to these instructions
+is to use your new image name (such as `customimage` in the example above) instead of lucid5d.
+You can find the IP address of your instance from the "Instances" User Interface screen.
+
+If your image came from the instructions on this page, you can confirm that everything
+works by doing the following:
+
+1. Add the line "tcp:80,80,ip4:0.0.0.0" to the security group.
+2. Point a web browser to the instance's IP address.
+
+The web browser should now be displaying the text: "An Example top web page."
+
+
