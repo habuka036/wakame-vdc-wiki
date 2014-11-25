@@ -123,7 +123,7 @@ Restart the network.
 **Be careful!** If you have made any mistakes setting up these files for your environment, this next command will cause networking to go down on your machine. Triple check these values if
 you're running this guide on a remote machine!
 
-    sudo  service network restart
+    sudo service network restart
 
 #### Configuration
 
