@@ -120,15 +120,18 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
     [root@wakame-vdc-1box cache]# cd /vz/private/101
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz
+    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz .
     [root@wakame-vdc-1box 111]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
 
 Wakame-vdc's preferred method of packaging machine images is inside of
 partitioned VM images files.  The following commands show one way to
 create such an image file and store the new customized OS distribution
-inside it using standard GNU/Linux commands.
+inside it using standard GNU/Linux commands.  These commands create the
+image in the `/var/lib/wakame-vdc/images/` directory so that the image file
+will already be in the right place for testing with Wakame-vdc.
 
+    [root@wakame-vdc-1box private]# cd /var/lib/wakame-vdc/images/
     [root@wakame-vdc-1box images]# truncate -s 10G wakame-vdc-custom-image.raw
     [root@wakame-vdc-1box images]# parted wakame-vdc-custom-image.raw mklabel msdos
     [root@wakame-vdc-1box images]# parted --script -- wakame-vdc-custom-image.raw mkpart primary ext2 63s -0
