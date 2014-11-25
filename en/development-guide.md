@@ -36,7 +36,7 @@ The [dcmgr/lib/dcmgr/edge_networking/openflow](https://github.com/axsh/wakame-vd
 
 #### AMQP messaging
 
-Wakame-vdc uses an in house developed framework that handles all the [AMQP](http://www.amqp.org) messaging. It's called Isono and can be found in its own github repository. https://github.com/axsh/isono
+Wakame-vdc uses an in-house developed framework that handles all the [AMQP](http://www.amqp.org) messaging. It's called Isono and can be found in its own github repository. https://github.com/axsh/isono
 
 The classes that implement Isono can be found in the [dcmgr/lib/dcmgr/node_modules](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/node_modules) and [dcmgr/lib/dcmgr/rpc](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/rpc) directories.
 
@@ -60,7 +60,7 @@ The *gui-manage* CLI can be found in [frontend/dcmgr_gui/lib/cli](https://github
 
 #### Configuration files
 
-The configuration files use an in house developed framework called [Fuguta](https://github.com/axsh/fuguta). Their definitions can be found in the [dcmgr/lib/dcmgr/configurations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/configurations) directory. Examples of the configuration files themselves can be found here: [dcmgr/config](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config)
+The configuration files use an in-house developed framework called [Fuguta](https://github.com/axsh/fuguta). Their definitions can be found in the [dcmgr/lib/dcmgr/configurations](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/configurations) directory. Examples of the configuration files themselves can be found here: [dcmgr/config](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/config)
 
 #### RPM packaging
 
