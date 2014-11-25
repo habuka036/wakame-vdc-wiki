@@ -6,7 +6,9 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
   * We will have a simple *machine image* running Ubuntu 10.04 (Lucid Lynx). We will be able to start instances of this image.
 
-  * We will be able to create dynamic firewalls using [Security Groups](security-groups).
+  * We will be able to create dynamic firewalls using [[Security Groups|security-groups]].
+
+  * We will be able to [[back up running instances|backup-instances]] and turn them into new machine images.
 
   * We will be able to use either password or rsa key authentication when logging into instances.
 
@@ -28,7 +30,7 @@ This guide will set up a basic Wakame-vdc environment on a single host. When we 
 
 ### What will this guide do to my machine?
 
-  * Since we are going to use [OpenVZ](http://openvz.org/Main_Page), we will install OpenVZ's modified Linux kernel.
+  * Since we are going to use [OpenVZ](http://openvz.org/Main_Page), we will install OpenVZ's [modified Linux kernel](http://en.wikipedia.org/wiki/OpenVZ#Kernel).
 
   * We are going to set up a [Linux Bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge) and connect the host's network interface to it.
 
@@ -76,12 +78,6 @@ This is Wakame-vdc's GUI. It's actually a [Rails application](http://rubyonrails
 
     sudo yum install -y wakame-vdc-webui-vmapp-config
 
-#### Downgrade Ruby
-
-Unfortunately a bug has recently popped up that causes OpenVZ instances to fail [as discussed in Japanese on the Wakame Users Group](https://groups.google.com/forum/#!topic/wakame-ug/KVTddkmgq_Q). We expect to have that fixed soon but until then, downgrading Wakame-vdc's ruby package will function as a workaround.
-
-    sudo yum downgrade -y http://dlc.wakame.axsh.jp/packages/3rd/rhel/6/master/wakame-vdc-ruby-2.0.0.247.axsh0-1.x86_64.rpm
-
 #### Reboot to load OpenVZ kernel
 
 These Wakame-vdc packages have installed OpenVZ as a dependency. OpenVZ runs on a custom kernel. Reboot your machine so that kernel gets loaded.
@@ -127,7 +123,7 @@ Restart the network.
 **Be careful!** If you have made any mistakes setting up these files for your environment, this next command will cause networking to go down on your machine. Triple check these values if
 you're running this guide on a remote machine!
 
-    sudo  /etc/init.d/network restart
+    sudo service network restart
 
 #### Configuration
 
@@ -163,7 +159,7 @@ The different Wakame-vdc services require their own config files. Unfortunately 
 
 Wakame-vdc uses a [MySQL](http://www.mysql.com) database. Start MySQL and create the database.
 
-    sudo /etc/init.d/mysqld start
+    sudo service mysqld start
     mysqladmin -uroot create wakame_dcmgr
 
 We can use [Rake](https://github.com/ruby/rake) to create the database tables. Wakame-vdc comes with its own ruby binary that includes Rake.
@@ -269,6 +265,7 @@ Wakame-vdc needs to know which network instances will be connected to. You can r
       --ipv4-network 192.168.3.0 \
       --prefix 24 \
       --ipv4-gw 192.168.3.1 \
+      --dns 8.8.8.8 \
       --account-id a-shpoolxx \
       --display-name "demo network"
 
@@ -350,11 +347,11 @@ We're done with gui-manage. Exit the shell.
 
 Start the rabbitmq server. Wakame-vdc's different processes use AMQP to communicate. Rabbitmq-server is the AMQP exchange managing all that traffic.
 
-    sudo /etc/init.d/rabbitmq-server start
+    sudo service rabbitmq-server start
 
 If you've been following this guide, MySQL should still be running. If it isn't running, start it.
 
-    sudo /etc/init.d/mysqld start
+    sudo service mysqld start
 
 After all this hard work we should be able to get Wakame-vdc up and running. Start the upstart jobs.
 
