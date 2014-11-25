@@ -26,7 +26,7 @@ The code that actually starts instances is in the [dcmgr/lib/dcmgr/drivers/hyper
 
 #### Scheduling
 
-All decisions that need to be made in order to start instances (assignment of host node, ip address, mac address, etc.) are referred to as scheduling and are located in the [dcmgr/lib/dcmgr/scheduler](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/scheduler) directory. The code that actually executes these schedulers can be found here: [dcmgr/lib/dcmgr/node_modules/scheduler.rb)](https://github.com/axsh/wakame-vdc/blob/master/dcmgr/lib/dcmgr/node_modules/scheduler.rb)
+All decisions that need to be made in order to start instances (assignment of [[host node|Jargon-Dictionary#HVA]], IP address, MAC address, etc.) are referred to as scheduling and are located in the [dcmgr/lib/dcmgr/scheduler](https://github.com/axsh/wakame-vdc/tree/master/dcmgr/lib/dcmgr/scheduler) directory. The code that actually executes these schedulers can be found here: [dcmgr/lib/dcmgr/node_modules/scheduler.rb)](https://github.com/axsh/wakame-vdc/blob/master/dcmgr/lib/dcmgr/node_modules/scheduler.rb)
 
 #### Security Groups
 
@@ -64,7 +64,7 @@ The configuration files use an in-house developed framework called [Fuguta](http
 
 #### RPM packaging
 
-The rpm packaging scripts are in the aptly named [rpmbuild](https://github.com/axsh/wakame-vdc/tree/master/rpmbuild) directory.
+The RPM packaging scripts are in the aptly named [rpmbuild](https://github.com/axsh/wakame-vdc/tree/master/rpmbuild) directory.
 
 #### Debian packaging
 
@@ -86,7 +86,7 @@ Integration tests using [RSpec](http://rspec.info) are here: [spec_integration](
 
 #### Instance init scripts
 
-The instances need to be made aware of meta-data that Wakame-vdc sets for them like ip address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
+The instances need to be made aware of meta-data that Wakame-vdc sets for them like IP address, hostname, etc. Scripts to do this are located here: [wakame-init](https://github.com/axsh/wakame-vdc/tree/master/wakame-init)
 
 #### Upstart jobs
 
