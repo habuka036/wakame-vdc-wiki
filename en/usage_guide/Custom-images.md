@@ -85,6 +85,7 @@ special file at `/metadata/user-data`.
 
     [root@localhost /]# cd /etc
     [root@localhost etc]# wget https://raw.githubusercontent.com/axsh/wakame-vdc/master/wakame-init/rhel/6/wakame-init
+    [root@localhost etc]# chmod +x wakame-init
     [root@localhost etc]# echo '/etc/wakame-init' >>rc.local
 
 ##### Clear shell history:
@@ -213,7 +214,7 @@ is a machine image that we can start instances of.
     /opt/axsh/wakame-vdc/dcmgr/bin/vdc-manage image add local bo-customimage \
       --account-id a-shpoolxx \
       --uuid wmi-customimage \
-      --root-device uuid:$(source /tmp/remember.uuid-etc ; echo $UUID)
+      --root-device uuid:$(source /tmp/remember.uuid-etc ; echo $UUID) \
       --display-name "New image with web server and one static page"
 
 Note that the $() expressions here supply the command with necessary
