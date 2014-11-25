@@ -37,6 +37,8 @@ See [[WebUI|Jargon-Dictionary#WebUI]].
 
 The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts [[instances|Jargon-Dictionary#Instance]]. On a production environment, you would likely have several dedicated bare metal hosts for this.
 
+Also known as host or host node.
+
 ## I
 
 ### Instance
