@@ -62,7 +62,7 @@ The first few commands log into the demo VM and download a template image:
     [root@wakame-vdc-1box centos]# cd /vz/template/cache
     [root@wakame-vdc-1box cache]# wget http://download.openvz.org/template/precreated/centos-6-x86_64-minimal.tar.gz
 
-Next, this image an OpenVZ container based on this image is started.
+Next, an OpenVZ container based on this image is started.
 Note that the 101 that appears many times below can be any number that
 is not in use by OpenVZ.
 
@@ -70,7 +70,7 @@ is not in use by OpenVZ.
     [root@wakame-vdc-1box cache]# vzctl set 101 --nameserver 8.8.8.8 --save
     [root@wakame-vdc-1box cache]# vzctl start 101
 
-Now go inside the container and specialize it by installing and
+Now we can go inside the container and specialize it by installing and
 configuring software.
 
     [root@wakame-vdc-1box cache]# vzctl enter 101
