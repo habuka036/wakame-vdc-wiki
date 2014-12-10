@@ -179,9 +179,11 @@ then unmount the file system.
     [root@wakame-vdc-1box images]# umount tmp-mount/
     [root@wakame-vdc-1box images]# rmdir tmp-mount/
 
-Wakame-vdc requires certain information about the images.  Because,
-UUID needs to be found before the partition is removed from the loop
-device, so we determine it first and then release the loop device.
+Because in some use cases disk images can have multiple partitions,
+Wakame-vdc needs to know the UUID of the formatted disk partition to
+reliably identify it when booting instances.  This UUID needs to be
+found before the partition is removed from the loop device, so we
+determine it first and then release the loop device.
 
     [root@wakame-vdc-1box images]# blkid -o export /dev/mapper/loop0p1 | tee /tmp/remember.uuid-etc
     [root@wakame-vdc-1box images]# kpartx -vd wakame-vdc-custom-image.raw
