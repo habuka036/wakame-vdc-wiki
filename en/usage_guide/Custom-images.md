@@ -54,13 +54,25 @@ software.  For an example of miscellaneous configuration, the shell commands
 create a top Web page and set up the web service to automatically start when the
 machine image is instantiated.
 
+
+The first few commands log into the demo VM and download a template image:
+
     ssh centos@a.b.c.d  # where a.b.c.d is the demo VM's IP address
     [centos@wakame-vdc-1box ~]$ sudo su
     [root@wakame-vdc-1box centos]# cd /vz/template/cache
     [root@wakame-vdc-1box cache]# wget http://download.openvz.org/template/precreated/centos-6-x86_64-minimal.tar.gz
+
+Next, this image an OpenVZ container based on this image is started.
+Note that the 101 that appears many times below can be any number that
+is not in use by OpenVZ.
+
     [root@wakame-vdc-1box cache]# vzctl create 101 --ostemplate centos-6-x86_64-minimal --ipadd a.b.c.vv --hostname localhost
     [root@wakame-vdc-1box cache]# vzctl set 101 --nameserver 8.8.8.8 --save
     [root@wakame-vdc-1box cache]# vzctl start 101
+
+Now go inside the container and specialize it by installing and
+configuring software.
+
     [root@wakame-vdc-1box cache]# vzctl enter 101
     [root@localhost /]# yum install httpd
     [root@localhost /]# echo "<html>An Example top web page.</html>" >/var/www/html/index.html
@@ -121,8 +133,8 @@ http://wiki.openvz.org/Updating_Ubuntu_template:
     [root@wakame-vdc-1box cache]# vzctl stop 101
     [root@wakame-vdc-1box cache]# vzctl set 101 --ipdel all --save
     [root@wakame-vdc-1box cache]# cd /vz/private/101
-    [root@wakame-vdc-1box 111]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz .
-    [root@wakame-vdc-1box 111]# cd ..
+    [root@wakame-vdc-1box 101]# tar  --numeric-owner -czf /vz/template/cache/new-custom-image-temp.tar.gz .
+    [root@wakame-vdc-1box 101]# cd ..
     [root@wakame-vdc-1box private]# vzctl destroy 101
 
 Wakame-vdc's preferred method of packaging machine images is inside of
