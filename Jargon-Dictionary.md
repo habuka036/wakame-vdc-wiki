@@ -68,6 +68,10 @@ In Wakame-vdc's context, meta-data usually refers to information that is passed 
 
 The NATbox is an optional Wakame-vdc node that provides one to one [network address translation](http://en.wikipedia.org/wiki/Network_address_translation) for [[instances|Jargon-Dictionary#Instance]].
 
+### Node
+
+Refers to a server that a Wakame-vdc process runs on. Can be physical or a VM but will not be a VM managed by Wakame-vdc.
+
 ## O
 ## P
 ## Q
