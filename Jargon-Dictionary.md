@@ -72,7 +72,7 @@ The NATbox is an optional Wakame-vdc node that provides one to one [network addr
 
 ### Scheduling
 
-The decision making process when starting a new instance. Deciding things like network to join, mac and ip address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
+The decision making process when starting a new instance. Deciding things like network to join, MAC and IP address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
 
 ### Security Group
 
