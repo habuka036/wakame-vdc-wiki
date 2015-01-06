@@ -12,6 +12,11 @@ Backup storage is a means of storing [[backup objects|Jargon-Dictionary#Backup-O
 A backup object is basically a hard drive image. Backup objects that hold bootable partitions are called [[machine images|Jargon-Dictionary#Machine-Image]].
 
 ## C
+
+### Collector
+
+The collector is one of Wakame-vdc's processes. It's in charge of making [[scheduling decisions|Jargon-Dictionary#Scheduling]] and database access.
+
 ## D
 ## E
 
@@ -28,9 +33,15 @@ See [[WebUI|Jargon-Dictionary#WebUI]].
 
 ## H
 
+### Host/Host Node
+
+See [[HVA|Jargon-Dictionary#HVA]].
+
 ### HVA
 
 The HVA (HyperVisor Agent) is the part of Wakame-vdc that actually starts [[instances|Jargon-Dictionary#Instance]]. On a production environment, you would likely have several dedicated bare metal hosts for this.
+
+Also known as host or host node.
 
 ## I
 
@@ -49,14 +60,27 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 
 ### Meta-data
 
-In Wakame-vdc's context, meta-data usually refers to information that is passed to [[instances|Jargon-Dictionary#Instance]] when they start. It includes for example the instance's ip addresses, network host name and thrusted public keys. Meta-data is usually delivired as files on an extra (tiny) hard drive.
+In Wakame-vdc's context, meta-data usually refers to information that is passed to [[instances|Jargon-Dictionary#Instance]] when they start. It includes for example the instance's IP addresses, network host name and thrusted public keys. Meta-data is usually delivered as files on an extra (tiny) hard drive.
 
 ## N
+
+### NATbox
+
+The NATbox is an optional Wakame-vdc node that provides one to one [network address translation](http://en.wikipedia.org/wiki/Network_address_translation) for [[instances|Jargon-Dictionary#Instance]].
+
+### Node
+
+Refers to a server that a Wakame-vdc process runs on. Can be physical or a VM but not an [[instance|Jargon-Dictionary#Instance]].
+
 ## O
 ## P
 ## Q
 ## R
 ## S
+
+### Scheduling
+
+The decision making process when starting a new instance. Deciding things like the network to join, the MAC and IP address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
 
 ### Security Group
 
