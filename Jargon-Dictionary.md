@@ -60,7 +60,7 @@ A [[backup object|Jargon-Dictionary#Backup Object]] that holds a bootable partit
 
 ### Meta-data
 
-In Wakame-vdc's context, meta-data usually refers to information that is passed to [[instances|Jargon-Dictionary#Instance]] when they start. It includes for example the instance's ip addresses, network host name and thrusted public keys. Meta-data is usually delivired as files on an extra (tiny) hard drive.
+In Wakame-vdc's context, meta-data usually refers to information that is passed to [[instances|Jargon-Dictionary#Instance]] when they start. It includes for example the instance's IP addresses, network host name and thrusted public keys. Meta-data is usually delivered as files on an extra (tiny) hard drive.
 
 ## N
 
@@ -70,7 +70,7 @@ The NATbox is an optional Wakame-vdc node that provides one to one [network addr
 
 ### Node
 
-Refers to a server that a Wakame-vdc process runs on. Can be physical or a VM but will not be a VM managed by Wakame-vdc.
+Refers to a server that a Wakame-vdc process runs on. Can be physical or a VM but not an [[instance|Jargon-Dictionary#Instance]].
 
 ## O
 ## P
@@ -80,7 +80,7 @@ Refers to a server that a Wakame-vdc process runs on. Can be physical or a VM bu
 
 ### Scheduling
 
-The decision making process when starting a new instance. Deciding things like network to join, MAC and IP address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
+The decision making process when starting a new instance. Deciding things like the network to join, the MAC and IP address to be assigned, which [[HVA|Jargon-Dictionary#HVA]] to use, etc. are referred to as scheduling. Scheduling takes place in Wakame-vdc's [[collector|Jargon-Dictionary#Collector]].
 
 ### Security Group
 
